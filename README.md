@@ -17,7 +17,10 @@ Software Developer @ RentInTbilisi
 ---
 
 ### I code in  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/tailwind.png" /> <img width="48" height="48" src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwindcss"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/express.png" /> <img height="50" width="50" src="https://img.icons8.com/fluency/48/000000/next.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" />  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" />  <img width="48" height="48" src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwindcss"/> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" /> <img width="48" height="48" src="https://img.icons8.com/color/48/prisma-orm.png" alt="prisma-orm"/>
+<img width="50" height="50" src="https://img.icons8.com/ios/50/express-js.png" alt="express-js"/>
+<img width="48" height="48" src="https://img.icons8.com/color/48/nextjs.png" alt="nextjs"/>
+  <img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" />  
 
 ---
 

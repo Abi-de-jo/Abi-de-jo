@@ -25,18 +25,19 @@
 ---
 
 ### 🚀 Skills  
-**Languages & Frameworks:**  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/tailwindcss.png" alt="Tailwind CSS" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/prisma-orm.png" alt="Prisma" />  
-<img height="50" width="50" src="https://img.icons8.com/ios/50/express-js.png" alt="Express.js" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/nextjs.png" alt="Next.js" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" />  
-
+#### **Languages & Frameworks**  
+<div style="display: flex; align-items: center;">
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" title="HTML" /> ★★★★★  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" title="CSS" /> ★★★★★  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" title="JavaScript" /> ★★★★★  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" title="Bootstrap" /> ★★★★★  
+<img height="50" width="50" src="https://img.icons8.com/color/48/tailwindcss.png" alt="Tailwind CSS" title="Tailwind CSS" /> ★★★★★  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" title="Node.js" /> ★★★★★  
+<img height="50" width="50" src="https://img.icons8.com/color/48/prisma-orm.png" alt="Prisma" title="Prisma" /> ★★★★☆  
+<img height="50" width="50" src="https://img.icons8.com/ios/50/express-js.png" alt="Express.js" title="Express.js" /> ★★★★☆  
+<img height="50" width="50" src="https://img.icons8.com/color/48/nextjs.png" alt="Next.js" title="Next.js" /> ★★★★☆  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" title="GitHub" /> ★★★★★  
+</div>  
 ---
 
 ### 🛠️ Tools I Use  

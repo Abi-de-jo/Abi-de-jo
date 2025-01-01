@@ -4,7 +4,7 @@
 Software Developer @ RentInTbilisi  
 <img align="right" width="370" height="290" src="https://i.pinimg.com/originals/47/f0/34/47f0342cec72b800463bf003eac1257e.gif">  
 
-- 🔭 Here's my [portfolio](https://hareesh.web.app/)  
+ 
 - 🌱 I’m currently learning advanced web development  
 - 👯 I’m looking to collaborate on innovative projects  
 - 🤔 I’m passionate about sharing tech knowledge  
@@ -17,7 +17,7 @@ Software Developer @ RentInTbilisi
 ---
 
 ### I code in  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/tailwind-css.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/sql.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/express.png" /> <img height="50" width="50" src="https://img.icons8.com/fluency/48/000000/next.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" />  
+<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/tailwind.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/sql.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/express.png" /> <img height="50" width="50" src="https://img.icons8.com/fluency/48/000000/next.png" /> <img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" />  
 
 ---
 

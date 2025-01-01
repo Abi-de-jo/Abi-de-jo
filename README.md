@@ -11,7 +11,7 @@ Software Developer @ RentInTbilisi
 - 💬 Ask me about Web Development, Full-Stack Development, and Tech Tools  
 - 📫 How to reach me:  
   [<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />](https://instagram.com/codebyabi)  
-  [<img src="https://img.shields.io/badge/LinkedIn-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />](https://www.youtube.com/codebyabi)
+  [<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />](https://www.youtube.com/codebyabi)
   <br>
   [<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/abisheik-r-ba932b274/)
 - ⚡ Fun fact: I love experimenting with new frameworks  

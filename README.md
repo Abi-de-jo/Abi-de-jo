@@ -42,6 +42,6 @@ Follow me for tech insights and tips:
 
 ---
 
-![Abisheik's GitHub stats](https://github-readme-stats.vercel.app/api?username=codebyabi&theme=dark&show_icons=true&hide=issues,contribs)
+![Abisheik's GitHub stats](https://github-readme-activity-graph.vercel.app/graph?username=Abi-de-jo)
 
 [![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=codebyabi&bg_color=000000&color=ffffff&line=51f565&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)

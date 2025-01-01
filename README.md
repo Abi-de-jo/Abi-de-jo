@@ -25,6 +25,7 @@
 ---
 
 ### 🚀 Skills  
+
 #### **Languages & Frameworks**  
 <div style="display: flex; align-items: center;">
 <img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" title="HTML" /> ★★★★★  
@@ -38,6 +39,9 @@
 <img height="50" width="50" src="https://img.icons8.com/color/48/nextjs.png" alt="Next.js" title="Next.js" /> ★★★★☆  
 <img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" title="GitHub" /> ★★★★★  
 </div>  
+
+#### **Grade**: A  
+
 ---
 
 ### 🛠️ Tools I Use  

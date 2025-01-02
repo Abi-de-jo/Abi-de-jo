@@ -1,66 +1,7 @@
 ## Hi there 👋, I'm **Abisheik**  
-<script>
- const roles = ["Web Developer", "Content Creator", "Web Designer", "Software Developer"];
-const typingElement = document.getElementById("typing-animation");
 
-let roleIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+![Typing Animation](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Content+Creator;Web+Designer;Software+Developer&font=Fira%20Code&center=true&width=440&height=45&color=00bcd4&vCenter=true&size=22)
 
-function typeEffect() {
-  const currentRole = roles[roleIndex];
-  const currentText = isDeleting
-    ? currentRole.substring(0, charIndex--)
-    : currentRole.substring(0, charIndex++);
-
-  typingElement.textContent = currentText;
-
-  if (!isDeleting && charIndex === currentRole.length) {
-    setTimeout(() => (isDeleting = true), 1000); // Pause before deleting
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    roleIndex = (roleIndex + 1) % roles.length; // Go to next role
-  }
-
-  setTimeout(typeEffect, isDeleting ? 50 : 150); // Typing and deleting speeds
-}
-
-typeEffect();
-
-</script>
-
-<style>
- #typing-animation {
-  font-weight: bold;
-  border-right: 2px solid #fff; /* Cursor effect */
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  width: 16ch; /* Adjust for animation width */
-  animation: typing 2.5s steps(16), blink 0.5s step-end infinite;
-}
-
-/* Typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 16ch;
-  }
-}
-
-/* Cursor blinking */
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-</style>
-<h2>
-  I am a <span id="typing-animation"></span>
-</h2>
 @ **RentInTbilisi**  
 <img align="right" src="https://i.pinimg.com/originals/47/f0/34/47f0342cec72b800463bf003eac1257e.gif" alt="Coding Gif" width="370" height="290" />  
 

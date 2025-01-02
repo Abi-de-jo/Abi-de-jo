@@ -19,11 +19,20 @@
 
 ### 🌐 Connect with Me  
  
-[<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />](https://instagram.com/codebyabi)  
-[<img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />](https://www.youtube.com/@codebyabi)  
-[<img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/abisheik-r-ba932b274/)  
+### 🌐 Connect with Me
 
- 
+<div style="display: flex; gap: 10px; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
+  <a href="https://instagram.com/codebyabi" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  <a href="https://www.youtube.com/@codebyabi" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
+  </a>
+  <a href="https://www.linkedin.com/in/abisheik-r-ba932b274/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+</div>
+
 ---
 
 ### 🚀 Skills  

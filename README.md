@@ -3,7 +3,7 @@
 ![Typing Animation](https://readme-typing-svg.demolab.com/?lines=Web+Developer;Content+Creator;Web+Designer;Software+Developer&font=Fira%20Code&center=true&width=440&height=45&color=00bcd4&vCenter=true&size=22)
 
 Working at **RentInTbilisi**  
-<img align="right" src="https://i.pinimg.com/originals/47/f0/34/47f0342cec72b800463bf003eac1257e.gif" alt="Coding Gif" width="370" height="290" />  
+<img align="right" src="https://i.pinimg.com/originals/47/f0/34/47f0342cec72b800463bf003eac1257e.gif" alt="Coding Gif" width="300" height="250" />  
 
 🔹 Passionate about **Full-Stack Development**  
 🔹 Skilled at creating robust, scalable applications  
@@ -20,8 +20,7 @@ Working at **RentInTbilisi**
 ---
 
 ### 🌐 Connect with Me  
- 
-<div style="display: flex; gap: 10px; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
+<p align="left">
   <a href="https://instagram.com/codebyabi" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
@@ -31,27 +30,24 @@ Working at **RentInTbilisi**
   <a href="https://www.linkedin.com/in/abisheik-r-ba932b274/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-</div>
+</p>
 
 ---
 
 ### 🚀 Skills  
 
 #### **Languages & Frameworks**  
-<div style="display: flex; align-items: center;">
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" title="HTML" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" title="CSS" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" title="JavaScript" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" title="Bootstrap" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/tailwindcss.png" alt="Tailwind CSS" title="Tailwind CSS" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" title="Node.js" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/prisma-orm.png" alt="Prisma" title="Prisma" />  
-<img height="50" width="50" src="https://img.icons8.com/ios/50/express-js.png" alt="Express.js" title="Express.js" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/nextjs.png" alt="Next.js" title="Next.js" />  
-<img height="50" width="50" src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" title="GitHub" />  
-</div>  
-
-#### **Grade**: A  
+<p align="left">
+  <img height="40" src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML" title="HTML" />
+  <img height="40" src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS" title="CSS" />
+  <img height="40" src="https://img.icons8.com/color/48/000000/javascript.png" alt="JavaScript" title="JavaScript" />
+  <img height="40" src="https://img.icons8.com/color/48/000000/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
+  <img height="40" src="https://img.icons8.com/color/48/tailwindcss.png" alt="Tailwind CSS" title="Tailwind CSS" />
+  <img height="40" src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Node.js" title="Node.js" />
+  <img height="40" src="https://img.icons8.com/ios/50/express-js.png" alt="Express.js" title="Express.js" />
+  <img height="40" src="https://img.icons8.com/color/48/nextjs.png" alt="Next.js" title="Next.js" />
+  <img height="40" src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub" title="GitHub" />
+</p>
 
 ---
 
@@ -67,8 +63,10 @@ Working at **RentInTbilisi**
 ---
 
 ### 📊 GitHub Stats  
-![Abisheik's GitHub stats](https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=radical)  
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=radical" alt="Abisheik's GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=radical" alt="Top Languages" />
+</p>
 
 ---
 

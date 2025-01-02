@@ -19,8 +19,6 @@
 
 ### 🌐 Connect with Me  
  
-### 🌐 Connect with Me
-
 <div style="display: flex; gap: 10px; align-items: center; justify-content: flex-start; flex-wrap: wrap;">
   <a href="https://instagram.com/codebyabi" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />

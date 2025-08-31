@@ -1,12 +1,11 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&center=true&vCenter=true&width=500&lines=Hi+I'm+Abisheik!;Full-Stack+Developer;Creative+Tech+Educator;Building+Cool+Things+🚀" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&pause=1000&center=true&vCenter=true&width=550&lines=Hi+I'm+Abisheik+(Abi)!;Full-Stack+Developer;Creative+Tech+Educator;Building+Cool+Things+🚀" alt="Typing Animation" />
 </h1>
 
 <p align="center">
-  <img src="https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-b6b4-622f-872a-5751bc00ab93/raw?se=2025-04-14T13%3A11%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=340f5a2f-1602-5b7d-9059-0d94c97d9631&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-14T04%3A31%3A44Z&ske=2025-04-15T04%3A31%3A44Z&sks=b&skv=2024-08-04&sig=ezuu0/sMX16nCzIb1CbrBSBzRmS19lRz02rQZRvhljE%3D" width="300" />
+  <!-- Replace this image URL if it expires -->
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/source/06f21a161921919.63cd7887d0a70.gif" width="300" />
 </p>
-
-
 
 <h3 align="center">
   <strong>🚀 Full Stack @ <span style="color:#00bcd4;">RentInTbilisi</span> | Focused on Dev, Design & Systems ⚙️</strong>
@@ -20,7 +19,7 @@
 
 - 🔭 I build blazing-fast UIs and secure APIs  
 - 🧪 Exploring: `Next.js`, `AI Integration`, `DevOps`  
-- 💬 Ask me about: `React`, `Tailwind`, `Prisma`, `Node.js`  
+- 💬 Ask me about: `React`, `Next.js`, `TypeScript`, `Tailwind`, `Prisma`, `Node.js`, `MongoDB`, `GraphQL`  
 - 🧠 Fun Fact: I automate everything — from memes to markdowns
 
 ---
@@ -40,21 +39,26 @@
 
 ### 💻 Languages & Frameworks
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,mongodb,python,tailwind,bootstrap" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,nodejs,express,graphql,python,fastapi,tailwind,bootstrap" />
+</p>
+
+### 🗄️ Databases & Backends
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mongodb,postgres,prisma,redis" />
 </p>
 
 ### 🛠️ Tools I Use
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,postman,prisma,figma,npm" />
+  <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,postman,figma,npm,docker,aws" />
 </p>
 
 ---
 
 ## 💻 My Gear Setup
 
-| 💻 Laptop              | 🧠 Processor     | 🎮 Graphics         | 🔋 RAM   |
-|------------------------|------------------|----------------------|----------|
-| Lenovo IdeaPad Slim 3  | Ryzen 5 4600U    | Radeon Integrated    | 8GB      |
+| 💻 Laptop              | 🧠 Processor     | 🎮 Graphics         | 🔋 RAM |
+|------------------------|------------------|---------------------|--------|
+| Lenovo IdeaPad Slim 3  | Ryzen 5 4600U    | Radeon Integrated   | 8GB    |
 
 ---
 
@@ -97,7 +101,7 @@
 ## 🐍 Snake Eating My Contribution
 
 <p align="center">
-  <picture >
+  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
     <img alt="github-snake" src="https://raw.githubusercontent.com/tobiasmeyhoefer/tobiasmeyhoefer/output/github-snake.svg" />
@@ -111,7 +115,3 @@
 <p align="center">
   <img src="https://github-contributor-stats.vercel.app/api?username=Abi-de-jo&limit=5&theme=dark&combine_all_yearly_contributions=true" />
 </p>
-
----
-
- 

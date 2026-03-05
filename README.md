@@ -16,26 +16,43 @@
 
 ---
 
+## 🧠 `whoami`
 
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="340"   alt="Coder GIF"/>
-
-## 🧠 `Who Am I?`
+<table>
+<tr>
+<td width="55%" valign="top">
 
 ```ts
 const abi = {
   name: "Abisheik (Abi)",
   role: "Full-Stack Developer",
-  company: "RentInTbilisi 🏢",
-  location: "Building on the internet 🌐",
-  stack: ["React", "Next.js", "TypeScript", "Node.js", "Prisma", "GraphQL"],
-  database: ["MongoDB", "PostgreSQL", "Redis"],
-  currentlyExploring: ["AI Integration", "DevOps", "Edge Computing"],
-  funFact: "I automate everything — from memes to markdowns 🤖",
+  company: "RentInTbilisi",
+  location: "Building on the internet",
+  stack: [
+    "React", "Next.js",
+    "TypeScript", "Node.js",
+    "Prisma", "GraphQL"
+  ],
+  database: [
+    "MongoDB", "PostgreSQL", "Redis"
+  ],
+  exploring: [
+    "AI Integration",
+    "DevOps", "Edge Computing"
+  ],
+  funFact: "I automate everything 🤖",
   availableForWork: true,
 };
 ```
 
-<br clear="right"/>
+</td>
+<td width="45%" align="center" valign="top">
+
+<img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="280" alt="Coder GIF"/>
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -44,8 +61,8 @@ const abi = {
 <div align="center">
 
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/codebyabi)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/@codebyabi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abisheik-r-ba932b274/)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/codebyabi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/codebyabisheik/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abisheikabisheik102@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abi-de-jo)
 

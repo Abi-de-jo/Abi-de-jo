@@ -1,0 +1,146 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="horror full-page background">
+  <defs>
+    <linearGradient id="horrorSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0000"/>
+      <stop offset="50%" stop-color="#1a0505"/>
+      <stop offset="100%" stop-color="#2a0808"/>
+    </linearGradient>
+    <radialGradient id="bloodMoonGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#ff0000" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#aa0000" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#aa0000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="foggy">
+      <feTurbulence baseFrequency="0.02" numOctaves="3" seed="5"/>
+      <feDisplacementMap in="SourceGraphic" scale="3"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#horrorSky)"/>
+
+  <g fill="#aa0000" opacity="0.5">
+    <circle cx="100" cy="60" r="1"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="100" r="0.8"><animate attributeName="opacity" values="0.1;0.7;0.1" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="400" cy="40" r="1.2"><animate attributeName="opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="550" cy="80" r="0.7"><animate attributeName="opacity" values="0.2;0.6;0.2" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="50" r="1"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="90" r="0.9"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="60" r="0.8"><animate attributeName="opacity" values="0.1;0.6;0.1" dur="4.1s" repeatCount="indefinite"/></circle>
+    <circle cx="1140" cy="110" r="1"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.7s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <circle cx="980" cy="120" r="80" fill="url(#bloodMoonGlow)">
+    <animate attributeName="r" values="80;85;80" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="980" cy="120" r="40" fill="#cc0000" opacity="0.95"/>
+  <circle cx="990" cy="115" r="40" fill="#0a0000"/>
+
+  <g fill="#cc0000" opacity="0.3">
+    <ellipse cx="980" cy="125" rx="6" ry="2"/>
+    <ellipse cx="985" cy="135" rx="4" ry="1.5"/>
+  </g>
+
+  <g transform="translate(0, 400)">
+    <path d="M0,200 L0,140 L40,140 L40,100 L80,80 L120,100 L120,140 L160,140 L160,200 Z" fill="#000000" stroke="#3a0000" stroke-width="1"/>
+    <rect x="60" y="140" width="6" height="12" fill="#aa0000">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="95" y="140" width="6" height="12" fill="#aa0000">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M80,80 L88,65 L96,80" fill="#000000" stroke="#3a0000" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(180, 420)">
+    <path d="M0,180 L0,130 L30,130 L30,100 L60,85 L90,100 L90,130 L120,130 L120,180 Z" fill="#000000" stroke="#3a0000" stroke-width="1"/>
+    <rect x="40" y="130" width="6" height="12" fill="#aa0000">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="75" y="130" width="6" height="12" fill="#aa0000">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g transform="translate(950, 400)">
+    <path d="M0,200 L0,140 L40,140 L40,90 L80,70 L120,90 L120,140 L160,140 L160,200 Z" fill="#000000" stroke="#3a0000" stroke-width="1"/>
+    <rect x="60" y="140" width="6" height="14" fill="#aa0000">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="2.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="95" y="140" width="6" height="14" fill="#aa0000">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="2.6s" repeatCount="indefinite"/>
+    </rect>
+    <path d="M80,70 L90,55 L100,70" fill="#000000" stroke="#3a0000" stroke-width="1"/>
+    <line x1="80" y1="55" x2="100" y2="55" stroke="#aa0000" stroke-width="0.5"/>
+  </g>
+
+  <g transform="translate(1140, 420)">
+    <path d="M0,180 L0,130 L25,130 L25,100 L50,85 L75,100 L75,130 L100,130 L100,180 Z" fill="#000000" stroke="#3a0000" stroke-width="1"/>
+    <rect x="35" y="130" width="5" height="10" fill="#aa0000">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="60" y="130" width="5" height="10" fill="#aa0000">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g stroke="#1a0000" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M50,500 L50,460 M50,470 L40,460 M50,470 L60,460 M50,475 L38,470 M50,475 L62,470"/>
+    <path d="M180,510 L180,470 M180,480 L168,470 M180,480 L192,470 M180,485 L166,478 M180,485 L194,478"/>
+    <path d="M320,500 L320,460 M320,470 L310,460 M320,470 L330,460 M320,475 L308,470 M320,475 L332,470"/>
+    <path d="M450,505 L450,465 M450,475 L438,465 M450,475 L462,465 M450,480 L436,473 M450,480 L464,473"/>
+    <path d="M580,500 L580,460 M580,470 L570,460 M580,470 L590,460 M580,475 L568,470 M580,475 L592,470"/>
+    <path d="M720,505 L720,465 M720,475 L708,465 M720,475 L732,465"/>
+    <path d="M850,500 L850,460 M850,470 L840,460 M850,470 L860,460"/>
+    <path d="M1080,505 L1080,465 M1080,475 L1068,465 M1080,475 L1092,465"/>
+  </g>
+
+  <g fill="#0a0000" stroke="#3a0000" stroke-width="0.5" opacity="0.9">
+    <path d="M70,540 A6,6 0 0,1 82,540 L82,560 L70,560 Z"/>
+    <text x="76" y="555" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M200,545 A6,6 0 0,1 212,545 L212,565 L200,565 Z"/>
+    <text x="206" y="560" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M340,540 A6,6 0 0,1 352,540 L352,560 L340,560 Z"/>
+    <text x="346" y="555" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M470,545 A6,6 0 0,1 482,545 L482,565 L470,565 Z"/>
+    <text x="476" y="560" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M600,540 A6,6 0 0,1 612,540 L612,560 L600,560 Z"/>
+    <text x="606" y="555" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M740,545 A6,6 0 0,1 752,545 L752,565 L740,565 Z"/>
+    <text x="746" y="560" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M870,540 A6,6 0 0,1 882,540 L882,560 L870,560 Z"/>
+    <text x="876" y="555" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+
+    <path d="M1100,545 A6,6 0 0,1 1112,545 L1112,565 L1100,565 Z"/>
+    <text x="1106" y="560" text-anchor="middle" font-family="monospace" font-size="6" fill="#3a0000">R.I.P</text>
+  </g>
+
+  <g fill="#0a0000" opacity="0.6">
+    <path d="M0,560 Q300,550 600,560 T1200,555 L1200,600 L0,600 Z"/>
+    <path d="M0,580 Q200,575 400,580 T800,575 T1200,580 L1200,600 L0,600 Z"/>
+  </g>
+
+  <g font-family="Courier New, monospace" text-anchor="middle">
+    <text x="600" y="280" font-weight="bold" font-size="72" fill="#ff0000" letter-spacing="12">
+      ABISHEIK
+      <animate attributeName="fill" values="#ff0000;#aa0000;#ff0000" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="600" y="320" font-size="18" fill="#aa0000" letter-spacing="8">FULL-STACK DEVELOPER</text>
+    <text x="600" y="350" font-size="11" fill="#5a0000" letter-spacing="4">// the developer of the night //</text>
+  </g>
+
+  <g fill="none" stroke="#5a0000" stroke-width="0.5" opacity="0.6">
+    <line x1="100" y1="500" x2="350" y2="500"/>
+    <line x1="850" y1="500" x2="1100" y2="500"/>
+  </g>
+
+  <g transform="translate(550, 510)">
+    <text font-family="monospace" font-size="14" fill="#5a0000" letter-spacing="3">[ 64 REPOS // 1,276 COMMITS // THE GRAVEYARD ]</text>
+  </g>
+</svg>

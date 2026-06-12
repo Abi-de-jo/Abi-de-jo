@@ -1,5 +1,12 @@
-<!-- HORROR THEME WRAPPER -->
-<div style="background-color:#0a0000;padding:40px;border-radius:8px;border:1px solid #3a0000;">
+<!-- HORROR THEME WRAPPER - extends full width to cover grey GitHub background -->
+<div style="background-color:#0a0000;background-image:linear-gradient(180deg, #0a0000 0%, #1a0505 100%);padding:0;border-radius:8px;border:1px solid #3a0000;">
+
+<!-- GIANT HORROR HERO - fills the visible top of profile with horror bg -->
+<p align="center" style="margin:0;padding:0;line-height:0;">
+  <img src="assets/hero.svg" alt="Abisheik horror hero" width="100%" style="display:block;"/>
+</p>
+
+<div style="padding:40px;">
 
 <!-- HORROR BANNER -->
 <p align="center">
@@ -284,11 +291,12 @@ I also teach. Over <span style="color:#ff0000;font-weight:bold;">50 students</sp
 &gt; exit
 </div>
 
-<br/><br/>
+<br/>
 
 <p style="font-family:monospace;color:#5a0000;font-size:13px;font-style:italic;">"First, solve the problem. Then, write the code." -- John Johnson</p>
 
 </div>
 
+</div>
 </div>
 <!-- END HORROR THEME WRAPPER -->

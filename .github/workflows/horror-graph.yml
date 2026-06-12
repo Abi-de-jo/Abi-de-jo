@@ -14,8 +14,10 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,15 +28,44 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          mkdir -p dist
           python scripts/generate-horror.py \
             --username ${{ github.repository_owner }} \
             --output dist/horror.svg
+          ls -la dist/
+          echo "---"
+          head -5 dist/horror.svg
+
+      - name: Save horror.svg artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: horror-svg
+          path: dist/horror.svg
 
       - name: Deploy to output branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          destination_dir: .
-          force_orphan: false
-          keep_files: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Fetch the output branch (don't switch yet)
+          git fetch origin output
+
+          # Create an orphan-style worktree for output branch
+          git worktree add --force ../output-branch origin/output
+
+          # Copy the new horror.svg into the worktree
+          cp dist/horror.svg ../output-branch/horror.svg
+
+          # Commit and push from the worktree
+          cd ../output-branch
+          git add horror.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: regenerate horror contribution graveyard"
+            git push origin HEAD:output
+            echo "Pushed to output branch"
+          fi
+
+          # Cleanup
+          git worktree remove --force ../output-branch || true

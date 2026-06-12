@@ -2,9 +2,6 @@
 """
 HORROR CONTRIBUTION GRAVEYARD — Horror Game SVG Generator
 Fetches real GitHub contributions and generates an animated horror-themed SVG.
-
-Usage:
-    python generate-horror.py --username Abi-de-jo [--output dist/horror.svg] [--token ghp_xxx]
 """
 
 import json
@@ -14,8 +11,6 @@ import argparse
 import random
 from datetime import datetime, timezone
 from xml.sax.saxutils import escape as xml_escape
-
-# ─── GitHub API ──────────────────────────────────────────────────────────────
 
 GRAPHQL_QUERY = """
 query($login: String!) {
@@ -38,8 +33,7 @@ query($login: String!) {
 """
 
 
-def fetch_contributions(username: str, token: str | None = None) -> dict:
-    """Fetch contribution calendar data from GitHub GraphQL API."""
+def fetch_contributions(username, token=None):
     token = token or os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if not token:
         print("::warning::No GitHub token found. Using mock data.", file=sys.stderr)
@@ -67,8 +61,7 @@ def fetch_contributions(username: str, token: str | None = None) -> dict:
         return _mock_data()
 
 
-def _mock_data() -> dict:
-    """Generate mock contribution data for local preview."""
+def _mock_data():
     from datetime import timedelta
 
     weeks = []
@@ -88,7 +81,7 @@ def _mock_data() -> dict:
     return {"totalContributions": 1276, "weeks": weeks}
 
 
-def _level_name(count: int) -> str:
+def _level_name(count):
     if count == 0:
         return "NONE"
     if count <= 3:
@@ -100,16 +93,13 @@ def _level_name(count: int) -> str:
     return "FOURTH_QUARTILE"
 
 
-# ─── SVG Generator ───────────────────────────────────────────────────────────
-
 CELL_SIZE = 10
 CELL_GAP = 4
 STEP = CELL_SIZE + CELL_GAP
 ROWS = 7
 
 
-def generate_horror_svg(calendar: dict, username: str) -> str:
-    """Generate horror-themed contribution graveyard SVG."""
+def generate_horror_svg(calendar, username):
     weeks_data = calendar["weeks"]
     total_commits = calendar["totalContributions"]
 
@@ -120,7 +110,7 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
     house_x = grid_x_offset + (cols * STEP) + 15
     width = house_x + 90
     ground_y = top_padding + (ROWS * STEP) + 5
-    height = ground_y + 55
+    height = ground_y + 60
 
     level_map = {
         "NONE": "empty",
@@ -138,14 +128,14 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
         f'aria-label="Horror contribution graveyard for {username}">',
         f'<desc>Horror-themed contribution grid showing {total_commits:,} commits as a haunted graveyard.</desc>',
         "<style>",
-        "  .bg { fill: #0a0a0f; }",
-        "  .ground { fill: #1a1a1a; }",
-        "  .ground-top { fill: #2a0a0a; }",
-        "  .empty { fill: rgba(30,30,30,0.4); rx: 1; ry: 1; }",
-        "  .fog { fill: #1a1a2e; rx: 1; ry: 1; stroke: #16213e; stroke-width: 0.5; }",
-        "  .crypt { fill: #1a0a2e; rx: 1; ry: 1; stroke: #4a1a5e; stroke-width: 0.5; }",
-        "  .ghost { fill: #0a2a1e; rx: 1; ry: 1; stroke: #1a4a2e; stroke-width: 0.5; }",
-        "  .skull { fill: #2a0a0a; rx: 1; ry: 1; stroke: #5a1a1a; stroke-width: 0.5; }",
+        "  .bg { fill: #0a0000; }",
+        "  .ground { fill: #1a0505; }",
+        "  .ground-top { fill: #3d0a0a; }",
+        "  .empty { fill: rgba(40,10,10,0.4); rx: 1; ry: 1; }",
+        "  .fog { fill: #1a0a0a; rx: 1; ry: 1; stroke: #5a0000; stroke-width: 0.5; }",
+        "  .crypt { fill: #2a0a0a; rx: 1; ry: 1; stroke: #7a0000; stroke-width: 0.5; }",
+        "  .ghost { fill: #3a0a0a; rx: 1; ry: 1; stroke: #8a0000; stroke-width: 0.5; }",
+        "  .skull { fill: #4a0a0a; rx: 1; ry: 1; stroke: #aa0000; stroke-width: 0.5; }",
         "  @keyframes flicker { 0%,100%{opacity:1} 50%{opacity:0.7} }",
         "  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }",
         "  @keyframes drift { 0%{transform:translateX(0)} 100%{transform:translateX(-20px)} }",
@@ -167,7 +157,7 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
         "  CC  CC     ",
         "  LL  LL     ",
     ]
-    hooded_colors = {"D": "#1a1a1a", "F": "#2a2a2a", "E": "#ff4444", "C": "#3a1a2a", "L": "#1a0a1a"}
+    hooded_colors = {"D": "#0a0000", "F": "#1a0505", "E": "#ff0000", "C": "#2a0a0a", "L": "#000000"}
 
     svg.append('  <g id="hooded">')
     for y_idx, row in enumerate(hooded):
@@ -190,7 +180,7 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
     for y_idx, row in enumerate(bat_pixels):
         for x_idx, ch in enumerate(row):
             if ch == "B":
-                svg.append(f'    <rect x="{x_idx*1.0:.1f}" y="{y_idx*1.0:.1f}" width="1" height="1" fill="#2a2a2a" />')
+                svg.append(f'    <rect x="{x_idx*1.0:.1f}" y="{y_idx*1.0:.1f}" width="1" height="1" fill="#0a0000" />')
     svg.append("  </g>")
 
     # ── Skull sprite ──
@@ -206,21 +196,21 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
     for y_idx, row in enumerate(skull_pixels):
         for x_idx, ch in enumerate(row):
             if ch == "W":
-                svg.append(f'    <rect x="{x_idx*0.8:.1f}" y="{y_idx*0.8:.1f}" width="0.8" height="0.8" fill="#cccccc" />')
+                svg.append(f'    <rect x="{x_idx*0.8:.1f}" y="{y_idx*0.8:.1f}" width="0.8" height="0.8" fill="#aa0000" />')
             elif ch == "B":
-                svg.append(f'    <rect x="{x_idx*0.8:.1f}" y="{y_idx*0.8:.1f}" width="0.8" height="0.8" fill="#1a1a1a" />')
+                svg.append(f'    <rect x="{x_idx*0.8:.1f}" y="{y_idx*0.8:.1f}" width="0.8" height="0.8" fill="#000000" />')
     svg.append("  </g>")
 
     # ── Cross ──
     svg.append('  <g id="cross">')
-    svg.append('    <rect x="3" y="0" width="2" height="8" fill="#3a3a3a" />')
-    svg.append('    <rect x="0" y="2" width="8" height="2" fill="#3a3a3a" />')
+    svg.append('    <rect x="3" y="0" width="2" height="8" fill="#1a0000" />')
+    svg.append('    <rect x="0" y="2" width="8" height="2" fill="#1a0000" />')
     svg.append("  </g>")
 
     # ── Tombstone ──
     svg.append('  <g id="tomb">')
-    svg.append('    <rect x="1" y="3" width="6" height="5" fill="#2a2a2a" stroke="#3a3a3a" />')
-    svg.append('    <path d="M1,3 A3,3 0 0,1 7,3" fill="#2a2a2a" stroke="#3a3a3a" />')
+    svg.append('    <rect x="1" y="3" width="6" height="5" fill="#0a0000" stroke="#3a0000" />')
+    svg.append('    <path d="M1,3 A3,3 0 0,1 7,3" fill="#0a0000" stroke="#3a0000" />')
     svg.append("  </g>")
 
     svg.append("</defs>")
@@ -228,16 +218,16 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
     # ── SKY ──
     svg.append(f'  <rect width="100%" height="100%" class="bg" />')
 
-    # Moon
-    svg.append(f'  <circle cx="{width-60}" cy="20" r="14" fill="#ddd" opacity="0.9" />')
-    svg.append(f'  <circle cx="{width-57}" cy="18" r="12" fill="#0a0a0f" />')
+    # Blood moon
+    svg.append(f'  <circle cx="{width-60}" cy="20" r="14" fill="#aa0000" opacity="0.9" />')
+    svg.append(f'  <circle cx="{width-57}" cy="18" r="12" fill="#0a0000" />')
 
     # Stars
     for i in range(20):
         sx = random.randint(10, width - 80)
         sy = random.randint(2, top_padding - 10)
         dur = random.uniform(2, 5)
-        svg.append(f'  <circle cx="{sx}" cy="{sy}" r="0.5" fill="#ffffff" opacity="0.3">')
+        svg.append(f'  <circle cx="{sx}" cy="{sy}" r="0.5" fill="#aa0000" opacity="0.3">')
         svg.append(f'    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="{dur:.1f}s" repeatCount="indefinite" />')
         svg.append("  </circle>")
 
@@ -248,14 +238,14 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
     # Dead trees
     for i in range(5):
         tx = random.randint(20, width - 100)
-        svg.append(f'  <line x1="{tx}" y1="{ground_y}" x2="{tx}" y2="{ground_y-25}" stroke="#2a1a1a" stroke-width="2" />')
-        svg.append(f'  <line x1="{tx}" y1="{ground_y-18}" x2="{tx-8}" y2="{ground_y-28}" stroke="#2a1a1a" stroke-width="1.5" />')
-        svg.append(f'  <line x1="{tx}" y1="{ground_y-12}" x2="{tx+6}" y2="{ground_y-22}" stroke="#2a1a1a" stroke-width="1.5" />')
+        svg.append(f'  <line x1="{tx}" y1="{ground_y}" x2="{tx}" y2="{ground_y-25}" stroke="#1a0000" stroke-width="2" />')
+        svg.append(f'  <line x1="{tx}" y1="{ground_y-18}" x2="{tx-8}" y2="{ground_y-28}" stroke="#1a0000" stroke-width="1.5" />')
+        svg.append(f'  <line x1="{tx}" y1="{ground_y-12}" x2="{tx+6}" y2="{ground_y-22}" stroke="#1a0000" stroke-width="1.5" />')
 
     # ── FOG ──
     for i in range(3):
         fy = ground_y - 5 + (i * 4)
-        svg.append(f'  <rect x="0" y="{fy}" width="{width}" height="8" fill="#1a1a2e" opacity="{0.15 - i*0.04}">')
+        svg.append(f'  <rect x="0" y="{fy}" width="{width}" height="8" fill="#1a0000" opacity="{0.15 - i*0.04}">')
         svg.append(f'    <animate attributeName="x" values="0;-20;0" dur="{8+i*3}s" repeatCount="indefinite" />')
         svg.append("  </rect>")
 
@@ -324,24 +314,24 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
     # ── HAUNTED HOUSE ──
     hy = ground_y - 50
     svg.append("  <!-- Haunted House -->")
-    svg.append(f'  <path d="M {house_x} {ground_y} L {house_x} {hy} L {house_x+25} {hy-20} L {house_x+50} {hy} L {house_x+50} {ground_y} Z" fill="#1a0a1a" stroke="#2a1a2a" stroke-width="1" />')
-    svg.append(f'  <rect x="{house_x+10}" y="{hy+15}" width="12" height="18" fill="#0a0a0f" />')
-    svg.append(f'  <rect x="{house_x+28}" y="{hy+15}" width="12" height="18" fill="#0a0a0f" />')
+    svg.append(f'  <path d="M {house_x} {ground_y} L {house_x} {hy} L {house_x+25} {hy-20} L {house_x+50} {hy} L {house_x+50} {ground_y} Z" fill="#000000" stroke="#3a0000" stroke-width="1" />')
+    svg.append(f'  <rect x="{house_x+10}" y="{hy+15}" width="12" height="18" fill="#000000" />')
+    svg.append(f'  <rect x="{house_x+28}" y="{hy+15}" width="12" height="18" fill="#000000" />')
 
     # Glowing windows
-    svg.append(f'  <rect x="{house_x+12}" y="{hy+17}" width="8" height="12" fill="#ff4400" opacity="0.6">')
+    svg.append(f'  <rect x="{house_x+12}" y="{hy+17}" width="8" height="12" fill="#ff0000" opacity="0.6">')
     svg.append(f'    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" />')
     svg.append("  </rect>")
-    svg.append(f'  <rect x="{house_x+30}" y="{hy+17}" width="8" height="12" fill="#ff4400" opacity="0.4">')
+    svg.append(f'  <rect x="{house_x+30}" y="{hy+17}" width="8" height="12" fill="#ff0000" opacity="0.4">')
     svg.append(f'    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite" />')
     svg.append("  </rect>")
 
     # Door
-    svg.append(f'  <rect x="{house_x+20}" y="{hy+25}" width="10" height="25" fill="#0a0505" />')
+    svg.append(f'  <rect x="{house_x+20}" y="{hy+25}" width="10" height="25" fill="#000000" />')
 
     # Roof cross
-    svg.append(f'  <line x1="{house_x+25}" y1="{hy-25}" x2="{house_x+25}" y2="{hy-15}" stroke="#3a3a3a" stroke-width="1.5" />')
-    svg.append(f'  <line x1="{house_x+21}" y1="{hy-21}" x2="{house_x+29}" y2="{hy-21}" stroke="#3a3a3a" stroke-width="1.5" />')
+    svg.append(f'  <line x1="{house_x+25}" y1="{hy-25}" x2="{house_x+25}" y2="{hy-15}" stroke="#1a0000" stroke-width="1.5" />')
+    svg.append(f'  <line x1="{house_x+21}" y1="{hy-21}" x2="{house_x+29}" y2="{hy-21}" stroke="#1a0000" stroke-width="1.5" />')
 
     # ── GRAVE MARKERS ──
     for i in range(8):
@@ -350,44 +340,42 @@ def generate_horror_svg(calendar: dict, username: str) -> str:
 
     # ── LIGHTNING ──
     lx = random.randint(50, width - 100)
-    svg.append(f'  <polyline points="{lx},{top_padding-15} {lx-5},{top_padding+5} {lx+3},{top_padding+5} {lx-2},{top_padding+25}" fill="none" stroke="#ffffaa" stroke-width="1" opacity="0">')
+    svg.append(f'  <polyline points="{lx},{top_padding-15} {lx-5},{top_padding+5} {lx+3},{top_padding+5} {lx-2},{top_padding+25}" fill="none" stroke="#aa0000" stroke-width="1" opacity="0">')
     svg.append(f'    <animate attributeName="opacity" values="0;0;0;0.8;0;0.5;0;0" dur="8s" repeatCount="indefinite" />')
     svg.append("  </polyline>")
 
     # ── TITLE ──
-    svg.append(f'  <text x="{grid_x_offset}" y="{top_padding-25}" fill="#ff4444" font-family="monospace" font-weight="bold" font-size="16" letter-spacing="2">')
+    svg.append(f'  <text x="{grid_x_offset}" y="{top_padding-25}" fill="#aa0000" font-family="monospace" font-weight="bold" font-size="16" letter-spacing="2">')
     svg.append(f"    {xml_escape(username.upper())}")
     svg.append(f'    <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" />')
     svg.append("  </text>")
-    svg.append(f'  <text x="{grid_x_offset}" y="{top_padding-12}" fill="#666" font-family="monospace" font-size="10" letter-spacing="1">')
+    svg.append(f'  <text x="{grid_x_offset}" y="{top_padding-12}" fill="#5a0000" font-family="monospace" font-size="10" letter-spacing="1">')
     svg.append("    contribution graveyard")
     svg.append("  </text>")
 
     # ── STATS ──
-    svg.append(f'  <text x="{width - 100}" y="{top_padding-25}" fill="#ff4444" font-family="monospace" font-size="10" text-anchor="end">')
+    svg.append(f'  <text x="{width - 100}" y="{top_padding-25}" fill="#aa0000" font-family="monospace" font-size="10" text-anchor="end">')
     svg.append(f"    {total_commits:,} commits")
     svg.append("  </text>")
 
     # ── LEGEND ──
     legend_y = ground_y + 10
     legend_x = grid_x_offset
-    items = [("empty", "No commits"), ("fog", "Low"), ("crypt", "Medium"), ("ghost", "High"), ("skull", "Maximum")]
+    items = [("empty", "none"), ("fog", "low"), ("crypt", "med"), ("ghost", "high"), ("skull", "max")]
     for i, (cls, label) in enumerate(items):
         lx = legend_x + i * 80
         svg.append(f'  <rect x="{lx}" y="{legend_y}" width="8" height="8" class="{cls}" />')
-        svg.append(f'  <text x="{lx+12}" y="{legend_y+7}" fill="#555" font-family="monospace" font-size="7">{label}</text>')
+        svg.append(f'  <text x="{lx+12}" y="{legend_y+7}" fill="#5a0000" font-family="monospace" font-size="7">{label}</text>')
 
     # ── FOOTER ──
-    svg.append(f'  <text x="{width // 2}" y="{height - 8}" fill="#333" font-family="monospace" font-size="7" text-anchor="middle">')
-    svg.append(f"    github.com/{xml_escape(username)}/{xml_escape(username)}")
+    svg.append(f'  <text x="{width // 2}" y="{height - 8}" fill="#3a0000" font-family="monospace" font-size="7" text-anchor="middle">')
+    svg.append(f"    github.com/{xml_escape(username)}")
     svg.append("  </text>")
 
     svg.append("</svg>")
 
     return "\n".join(svg)
 
-
-# ─── Main ────────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser(description="Generate horror contribution graveyard SVG")

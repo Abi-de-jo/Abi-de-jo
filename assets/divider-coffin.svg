@@ -1,0 +1,10 @@
+<svg width="1200" height="40" viewBox="0 0 1200 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="coffin divider">
+  <line x1="0" y1="20" x2="500" y2="20" stroke="#3a0000" stroke-width="1"/>
+  <line x1="700" y1="20" x2="1200" y2="20" stroke="#3a0000" stroke-width="1"/>
+
+  <g transform="translate(600, 20)">
+    <path d="M-50,-10 L50,-10 L60,0 L50,10 L-50,10 L-60,0 Z" fill="#1a0000" stroke="#3a0000" stroke-width="1"/>
+    <line x1="-20" y1="-10" x2="-20" y2="10" stroke="#3a0000" stroke-width="0.5"/>
+    <line x1="20" y1="-10" x2="20" y2="10" stroke="#3a0000" stroke-width="0.5"/>
+  </g>
+</svg>

@@ -19,21 +19,17 @@
 
 ## whoami
 
-<div style="text-align: justify">
+**R. Abisheik (Abi)** -- Full-Stack Developer from Tamilnadu, India.
 
-I am **R. Abisheik (Abi)**, a Full-Stack Developer based in Tamilnadu, India. I specialize in building enterprise-grade systems with modern web technologies -- from blazing-fast user interfaces to secure, scalable APIs. My work spans the entire stack: crafting intuitive frontends with React and TypeScript, engineering robust backends with Node.js and Express, and designing efficient data layers with PostgreSQL, MongoDB, and Prisma.
+I build enterprise-grade systems. React + TypeScript on the frontend. Node.js + Express on the backend. PostgreSQL, MongoDB, Prisma for data. That's the stack. That's what I do.
 
-As a core contributor at **Sree-Cognicoders**, I architect and ship production systems that handle real-world complexity -- identity management, queue monitoring, time tracking, visitor management, and more. Each system is built with a focus on reliability, security, and maintainability.
+Core contributor at **Sree-Cognicoders** -- building production systems that handle real-world complexity: identity management, queue monitoring, time tracking, visitor management. Reliability, security, maintainability. That's the order.
 
-Beyond building software, I am passionate about teaching the next generation of developers. I have guided over **50 students** through full-stack development, sharing practical knowledge that bridges the gap between classroom theory and production engineering. I believe that clear communication and well-documented code are as important as the code itself.
-
-</div>
+I also teach. Over **50 students** trained in full-stack development. Bridging the gap between classroom theory and production engineering.
 
 ---
 
 ## what-i-do
-
-<div style="text-align: justify" align="center">
 
 <table>
 <tr>
@@ -42,8 +38,6 @@ Beyond building software, I am passionate about teaching the next generation of 
 <td width="33%" align="center"><b>Data & Infrastructure</b><br/><sub>PostgreSQL, MongoDB, Redis, Prisma, Docker, Cloud Deployments</sub></td>
 </tr>
 </table>
-
-</div>
 
 ---
 
@@ -150,8 +144,6 @@ Beyond building software, I am passionate about teaching the next generation of 
 
 ## sree-cognicoders
 
-<div align="center">
-
 | System | Role | Stack |
 |:------:|:----:|:-----:|
 | **Chronologix** -- Time & Attendance | Full-Stack | TypeScript | Node.js | MySQL |
@@ -165,8 +157,6 @@ Beyond building software, I am passionate about teaching the next generation of 
 | **Time Tracking Tool** | Full-Stack | TypeScript | React |
 | **Intranet Portal** | Full-Stack | TypeScript |
 
-</div>
-
 ---
 
 ## activity
@@ -179,18 +169,18 @@ Beyond building software, I am passionate about teaching the next generation of 
 
 ---
 
-## operation-grid-strike
+## contribution-graveyard
 
 <div align="center">
 
-Military command center visualization of the contribution grid. Each green cell represents captured territory. Soldiers advance across the battlefield as commits are made. The scan line sweeps the theater of operations.
+A hooded wanderer traverses the graveyard of commits. Each tombstone marks a day of contribution. Skulls appear on maximum activity days. Bats swarm across the night sky. The haunted house awaits at the end of the path.
 
 <br/><br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/game.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/game.svg" />
-  <img alt="operation grid strike - military contribution game" src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/game.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/horror.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/horror.svg" />
+  <img alt="contribution graveyard - horror contribution game" src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/horror.svg" />
 </picture>
 
 </div>
@@ -212,8 +202,6 @@ Military command center visualization of the contribution grid. Each green cell 
 
 ## battle-station
 
-<div align="center">
-
 | Component | Spec |
 |:---------:|:----:|
 | **Machine** | Lenovo IdeaPad Slim 3 |
@@ -223,19 +211,13 @@ Military command center visualization of the contribution grid. Each green cell 
 | **OS** | Windows 11 / WSL2 Ubuntu |
 | **Editor** | VS Code |
 
-</div>
-
 ---
 
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
 
-<div style="text-align: justify">
-
 *"First, solve the problem. Then, write the code." -- John Johnson*
-
-</div>
 
 <sub>64 repos | 1,276 commits | 23 JavaScript | 11 TypeScript | 162 followers</sub>
 

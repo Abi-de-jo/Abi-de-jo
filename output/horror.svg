@@ -1,0 +1,985 @@
+<svg width="873" height="213" viewBox="0 0 873 213" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Horror contribution graveyard for Abi-de-jo">
+<desc>Horror-themed contribution grid showing 1,276 commits as a haunted graveyard.</desc>
+<style>
+  .bg { fill: #0a0a0f; }
+  .ground { fill: #1a1a1a; }
+  .ground-top { fill: #2a0a0a; }
+  .empty { fill: rgba(30,30,30,0.4); rx: 1; ry: 1; }
+  .fog { fill: #1a1a2e; rx: 1; ry: 1; stroke: #16213e; stroke-width: 0.5; }
+  .crypt { fill: #1a0a2e; rx: 1; ry: 1; stroke: #4a1a5e; stroke-width: 0.5; }
+  .ghost { fill: #0a2a1e; rx: 1; ry: 1; stroke: #1a4a2e; stroke-width: 0.5; }
+  .skull { fill: #2a0a0a; rx: 1; ry: 1; stroke: #5a1a1a; stroke-width: 0.5; }
+  @keyframes flicker { 0%,100%{opacity:1} 50%{opacity:0.7} }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  @keyframes drift { 0%{transform:translateX(0)} 100%{transform:translateX(-20px)} }
+  @keyframes pulse-skull { 0%,100%{opacity:0.6} 50%{opacity:1} }
+</style>
+<defs>
+  <g id="hooded">
+    <rect x="6.0" y="0.0" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="7.2" y="0.0" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="8.4" y="0.0" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="4.8" y="1.2" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="6.0" y="1.2" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="7.2" y="1.2" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="8.4" y="1.2" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="9.6" y="1.2" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="3.6" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="4.8" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="6.0" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="7.2" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="8.4" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="9.6" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="10.8" y="2.4" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="3.6" y="3.6" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="4.8" y="3.6" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="6.0" y="3.6" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="7.2" y="3.6" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="8.4" y="3.6" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="9.6" y="3.6" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="10.8" y="3.6" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="3.6" y="4.8" width="1.2" height="1.2" fill="#1a1a1a" />
+    <rect x="4.8" y="4.8" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="6.0" y="4.8" width="1.2" height="1.2" fill="#ff4444" />
+    <rect x="7.2" y="4.8" width="1.2" height="1.2" fill="#ff4444" />
+    <rect x="8.4" y="4.8" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="9.6" y="4.8" width="1.2" height="1.2" fill="#ff4444" />
+    <rect x="10.8" y="4.8" width="1.2" height="1.2" fill="#ff4444" />
+    <rect x="4.8" y="6.0" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="6.0" y="6.0" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="7.2" y="6.0" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="8.4" y="6.0" width="1.2" height="1.2" fill="#2a2a2a" />
+    <rect x="3.6" y="7.2" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="4.8" y="7.2" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="6.0" y="7.2" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="7.2" y="7.2" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="8.4" y="7.2" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="9.6" y="7.2" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="2.4" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="3.6" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="4.8" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="6.0" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="7.2" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="8.4" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="9.6" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="10.8" y="8.4" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="2.4" y="9.6" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="3.6" y="9.6" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="7.2" y="9.6" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="8.4" y="9.6" width="1.2" height="1.2" fill="#3a1a2a" />
+    <rect x="2.4" y="10.8" width="1.2" height="1.2" fill="#1a0a1a" />
+    <rect x="3.6" y="10.8" width="1.2" height="1.2" fill="#1a0a1a" />
+    <rect x="7.2" y="10.8" width="1.2" height="1.2" fill="#1a0a1a" />
+    <rect x="8.4" y="10.8" width="1.2" height="1.2" fill="#1a0a1a" />
+  </g>
+  <g id="bat">
+    <rect x="2.0" y="0.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="6.0" y="0.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="1.0" y="1.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="2.0" y="1.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="4.0" y="1.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="6.0" y="1.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="7.0" y="1.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="0.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="1.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="2.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="3.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="4.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="5.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="6.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="7.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="8.0" y="2.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="1.0" y="3.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="2.0" y="3.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="3.0" y="3.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="5.0" y="3.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="6.0" y="3.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="7.0" y="3.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="2.0" y="4.0" width="1" height="1" fill="#2a2a2a" />
+    <rect x="6.0" y="4.0" width="1" height="1" fill="#2a2a2a" />
+  </g>
+  <g id="skull">
+    <rect x="0.8" y="0.0" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="1.6" y="0.0" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="2.4" y="0.0" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="3.2" y="0.0" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.0" y="0.8" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.8" y="0.8" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="1.6" y="0.8" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="2.4" y="0.8" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="3.2" y="0.8" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="4.0" y="0.8" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.0" y="1.6" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.8" y="1.6" width="0.8" height="0.8" fill="#1a1a1a" />
+    <rect x="1.6" y="1.6" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="2.4" y="1.6" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="3.2" y="1.6" width="0.8" height="0.8" fill="#1a1a1a" />
+    <rect x="4.0" y="1.6" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.0" y="2.4" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.8" y="2.4" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="1.6" y="2.4" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="2.4" y="2.4" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="3.2" y="2.4" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="4.0" y="2.4" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.8" y="3.2" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="1.6" y="3.2" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="3.2" y="3.2" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="4.0" y="3.2" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="0.8" y="4.0" width="0.8" height="0.8" fill="#cccccc" />
+    <rect x="3.2" y="4.0" width="0.8" height="0.8" fill="#cccccc" />
+  </g>
+  <g id="cross">
+    <rect x="3" y="0" width="2" height="8" fill="#3a3a3a" />
+    <rect x="0" y="2" width="8" height="2" fill="#3a3a3a" />
+  </g>
+  <g id="tomb">
+    <rect x="1" y="3" width="6" height="5" fill="#2a2a2a" stroke="#3a3a3a" />
+    <path d="M1,3 A3,3 0 0,1 7,3" fill="#2a2a2a" stroke="#3a3a3a" />
+  </g>
+</defs>
+  <rect width="100%" height="100%" class="bg" />
+  <circle cx="813" cy="20" r="14" fill="#ddd" opacity="0.9" />
+  <circle cx="816" cy="18" r="12" fill="#0a0a0f" />
+  <circle cx="664" cy="9" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="291" cy="17" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="764" cy="8" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.0s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="568" cy="7" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="42" cy="3" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="248" cy="34" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="584" cy="14" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="728" cy="36" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="469" cy="39" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="16" cy="12" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="358" cy="19" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="791" cy="23" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.3s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="399" cy="8" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="362" cy="40" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="54" cy="31" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="397" cy="7" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="653" cy="41" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="380" cy="38" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.6s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="81" cy="4" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.0s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="306" cy="7" r="0.5" fill="#ffffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4.6s" repeatCount="indefinite" />
+  </circle>
+  <rect x="0" y="158" width="873" height="55" class="ground" />
+  <rect x="0" y="158" width="873" height="2" class="ground-top" />
+  <line x1="123" y1="158" x2="123" y2="133" stroke="#2a1a1a" stroke-width="2" />
+  <line x1="123" y1="140" x2="115" y2="130" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="123" y1="146" x2="129" y2="136" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="409" y1="158" x2="409" y2="133" stroke="#2a1a1a" stroke-width="2" />
+  <line x1="409" y1="140" x2="401" y2="130" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="409" y1="146" x2="415" y2="136" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="304" y1="158" x2="304" y2="133" stroke="#2a1a1a" stroke-width="2" />
+  <line x1="304" y1="140" x2="296" y2="130" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="304" y1="146" x2="310" y2="136" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="484" y1="158" x2="484" y2="133" stroke="#2a1a1a" stroke-width="2" />
+  <line x1="484" y1="140" x2="476" y2="130" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="484" y1="146" x2="490" y2="136" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="670" y1="158" x2="670" y2="133" stroke="#2a1a1a" stroke-width="2" />
+  <line x1="670" y1="140" x2="662" y2="130" stroke="#2a1a1a" stroke-width="1.5" />
+  <line x1="670" y1="146" x2="676" y2="136" stroke="#2a1a1a" stroke-width="1.5" />
+  <rect x="0" y="153" width="873" height="8" fill="#1a1a2e" opacity="0.15">
+    <animate attributeName="x" values="0;-20;0" dur="8s" repeatCount="indefinite" />
+  </rect>
+  <rect x="0" y="157" width="873" height="8" fill="#1a1a2e" opacity="0.10999999999999999">
+    <animate attributeName="x" values="0;-20;0" dur="11s" repeatCount="indefinite" />
+  </rect>
+  <rect x="0" y="161" width="873" height="8" fill="#1a1a2e" opacity="0.06999999999999999">
+    <animate attributeName="x" values="0;-20;0" dur="14s" repeatCount="indefinite" />
+  </rect>
+  <use href="#bat" x="423" y="15" transform="scale(0.8)">
+    <animate attributeName="x" from="423" to="503" dur="15.0s" begin="1.0s" repeatCount="indefinite" />
+    <animate attributeName="y" values="15;5;15;20;15" dur="15.0s" begin="1.0s" repeatCount="indefinite" />
+  </use>
+  <use href="#bat" x="323" y="9" transform="scale(0.8)">
+    <animate attributeName="x" from="323" to="403" dur="16.9s" begin="0.9s" repeatCount="indefinite" />
+    <animate attributeName="y" values="9;-1;9;14;9" dur="16.9s" begin="0.9s" repeatCount="indefinite" />
+  </use>
+  <use href="#bat" x="300" y="15" transform="scale(0.8)">
+    <animate attributeName="x" from="300" to="380" dur="15.7s" begin="1.3s" repeatCount="indefinite" />
+    <animate attributeName="y" values="15;5;15;20;15" dur="15.7s" begin="1.3s" repeatCount="indefinite" />
+  </use>
+  <use href="#bat" x="705" y="40" transform="scale(0.8)">
+    <animate attributeName="x" from="705" to="785" dur="13.8s" begin="1.6s" repeatCount="indefinite" />
+    <animate attributeName="y" values="40;30;40;45;40" dur="13.8s" begin="1.6s" repeatCount="indefinite" />
+  </use>
+  <use href="#bat" x="107" y="19" transform="scale(0.8)">
+    <animate attributeName="x" from="107" to="187" dur="18.6s" begin="4.0s" repeatCount="indefinite" />
+    <animate attributeName="y" values="19;9;19;24;19" dur="18.6s" begin="4.0s" repeatCount="indefinite" />
+  </use>
+  <use href="#bat" x="460" y="22" transform="scale(0.8)">
+    <animate attributeName="x" from="460" to="540" dur="12.5s" begin="4.6s" repeatCount="indefinite" />
+    <animate attributeName="y" values="22;12;22;27;22" dur="12.5s" begin="4.6s" repeatCount="indefinite" />
+  </use>
+  <rect x="40" y="55" width="10" height="10" class="crypt" />
+  <rect x="40" y="69" width="10" height="10" class="crypt" />
+  <rect x="40" y="83" width="10" height="10" class="fog" />
+  <rect x="40" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="39" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="40" y="111" width="10" height="10" class="crypt" />
+  <rect x="40" y="125" width="10" height="10" class="crypt" />
+  <rect x="40" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="39" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="54" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="55" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="54" y="69" width="10" height="10" class="empty" />
+  <rect x="54" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="55" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="54" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="55" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="54" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="53" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="54" y="125" width="10" height="10" class="empty" />
+  <rect x="54" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="53" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="68" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="67" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="68" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="69" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="68" y="83" width="10" height="10" class="crypt" />
+  <rect x="68" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="69" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="68" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="69" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="68" y="125" width="10" height="10" class="crypt" />
+  <rect x="68" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="69" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="82" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="83" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="82" y="69" width="10" height="10" class="empty" />
+  <rect x="82" y="83" width="10" height="10" class="crypt" />
+  <rect x="82" y="97" width="10" height="10" class="crypt" />
+  <rect x="82" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="81" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="82" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="83" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="82" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="83" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="96" y="55" width="10" height="10" class="fog" />
+  <rect x="96" y="69" width="10" height="10" class="fog" />
+  <rect x="96" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="97" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="96" y="97" width="10" height="10" class="empty" />
+  <rect x="96" y="111" width="10" height="10" class="crypt" />
+  <rect x="96" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="95" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="96" y="139" width="10" height="10" class="fog" />
+  <rect x="110" y="55" width="10" height="10" class="crypt" />
+  <rect x="110" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="111" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="110" y="83" width="10" height="10" class="crypt" />
+  <rect x="110" y="97" width="10" height="10" class="fog" />
+  <rect x="110" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="111" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="110" y="125" width="10" height="10" class="crypt" />
+  <rect x="110" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="109" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="124" y="55" width="10" height="10" class="crypt" />
+  <rect x="124" y="69" width="10" height="10" class="fog" />
+  <rect x="124" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="123" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="124" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="123" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="124" y="111" width="10" height="10" class="empty" />
+  <rect x="124" y="125" width="10" height="10" class="fog" />
+  <rect x="124" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="125" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="138" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="139" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="138" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="139" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="138" y="83" width="10" height="10" class="fog" />
+  <rect x="138" y="97" width="10" height="10" class="fog" />
+  <rect x="138" y="111" width="10" height="10" class="crypt" />
+  <rect x="138" y="125" width="10" height="10" class="crypt" />
+  <rect x="138" y="139" width="10" height="10" class="empty" />
+  <rect x="152" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="151" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="152" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="153" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="152" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="151" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="152" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="151" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="152" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="151" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="152" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="151" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="152" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="151" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="166" y="55" width="10" height="10" class="fog" />
+  <rect x="166" y="69" width="10" height="10" class="crypt" />
+  <rect x="166" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="167" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="166" y="97" width="10" height="10" class="fog" />
+  <rect x="166" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="165" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="166" y="125" width="10" height="10" class="crypt" />
+  <rect x="166" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="165" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="180" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="181" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="180" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="181" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="180" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="181" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="180" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="181" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="180" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="179" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="180" y="125" width="10" height="10" class="crypt" />
+  <rect x="180" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="179" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="194" y="55" width="10" height="10" class="crypt" />
+  <rect x="194" y="69" width="10" height="10" class="crypt" />
+  <rect x="194" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="193" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="194" y="97" width="10" height="10" class="fog" />
+  <rect x="194" y="111" width="10" height="10" class="crypt" />
+  <rect x="194" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="193" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="194" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="195" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="208" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="209" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="208" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="207" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="208" y="83" width="10" height="10" class="fog" />
+  <rect x="208" y="97" width="10" height="10" class="crypt" />
+  <rect x="208" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="207" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="208" y="125" width="10" height="10" class="crypt" />
+  <rect x="208" y="139" width="10" height="10" class="fog" />
+  <rect x="222" y="55" width="10" height="10" class="crypt" />
+  <rect x="222" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="223" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="222" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="221" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="222" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="223" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="222" y="111" width="10" height="10" class="fog" />
+  <rect x="222" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="223" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="222" y="139" width="10" height="10" class="fog" />
+  <rect x="236" y="55" width="10" height="10" class="crypt" />
+  <rect x="236" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="237" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="236" y="83" width="10" height="10" class="crypt" />
+  <rect x="236" y="97" width="10" height="10" class="crypt" />
+  <rect x="236" y="111" width="10" height="10" class="fog" />
+  <rect x="236" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="237" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="236" y="139" width="10" height="10" class="crypt" />
+  <rect x="250" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="251" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="250" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="251" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="250" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="249" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="250" y="97" width="10" height="10" class="fog" />
+  <rect x="250" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="251" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="250" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="251" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="250" y="139" width="10" height="10" class="empty" />
+  <rect x="264" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="265" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="264" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="263" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="264" y="83" width="10" height="10" class="fog" />
+  <rect x="264" y="97" width="10" height="10" class="fog" />
+  <rect x="264" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="265" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="264" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="263" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="264" y="139" width="10" height="10" class="fog" />
+  <rect x="278" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="279" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="278" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="277" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="278" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="277" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="278" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="277" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="278" y="111" width="10" height="10" class="fog" />
+  <rect x="278" y="125" width="10" height="10" class="crypt" />
+  <rect x="278" y="139" width="10" height="10" class="fog" />
+  <rect x="292" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="291" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="292" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="291" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="292" y="83" width="10" height="10" class="empty" />
+  <rect x="292" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="293" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="292" y="111" width="10" height="10" class="crypt" />
+  <rect x="292" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="291" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="292" y="139" width="10" height="10" class="fog" />
+  <rect x="306" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="305" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="306" y="69" width="10" height="10" class="crypt" />
+  <rect x="306" y="83" width="10" height="10" class="fog" />
+  <rect x="306" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="307" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="306" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="305" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="306" y="125" width="10" height="10" class="crypt" />
+  <rect x="306" y="139" width="10" height="10" class="crypt" />
+  <rect x="320" y="55" width="10" height="10" class="fog" />
+  <rect x="320" y="69" width="10" height="10" class="crypt" />
+  <rect x="320" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="319" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="320" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="319" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="320" y="111" width="10" height="10" class="crypt" />
+  <rect x="320" y="125" width="10" height="10" class="fog" />
+  <rect x="320" y="139" width="10" height="10" class="fog" />
+  <rect x="334" y="55" width="10" height="10" class="empty" />
+  <rect x="334" y="69" width="10" height="10" class="fog" />
+  <rect x="334" y="83" width="10" height="10" class="crypt" />
+  <rect x="334" y="97" width="10" height="10" class="crypt" />
+  <rect x="334" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="335" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="334" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="335" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="334" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="333" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="348" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="349" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="348" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="349" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="348" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="347" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="348" y="97" width="10" height="10" class="crypt" />
+  <rect x="348" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="349" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="348" y="125" width="10" height="10" class="crypt" />
+  <rect x="348" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="347" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="362" y="55" width="10" height="10" class="crypt" />
+  <rect x="362" y="69" width="10" height="10" class="fog" />
+  <rect x="362" y="83" width="10" height="10" class="fog" />
+  <rect x="362" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="363" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="362" y="111" width="10" height="10" class="fog" />
+  <rect x="362" y="125" width="10" height="10" class="crypt" />
+  <rect x="362" y="139" width="10" height="10" class="fog" />
+  <rect x="376" y="55" width="10" height="10" class="crypt" />
+  <rect x="376" y="69" width="10" height="10" class="crypt" />
+  <rect x="376" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="377" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="376" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="377" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="376" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="377" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="376" y="125" width="10" height="10" class="crypt" />
+  <rect x="376" y="139" width="10" height="10" class="fog" />
+  <rect x="390" y="55" width="10" height="10" class="crypt" />
+  <rect x="390" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="389" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="390" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="391" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="390" y="97" width="10" height="10" class="crypt" />
+  <rect x="390" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="391" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="390" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="389" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="390" y="139" width="10" height="10" class="crypt" />
+  <rect x="404" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="403" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="404" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="403" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="404" y="83" width="10" height="10" class="crypt" />
+  <rect x="404" y="97" width="10" height="10" class="fog" />
+  <rect x="404" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="405" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="404" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="405" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="404" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="405" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="418" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="417" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="418" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="419" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="418" y="83" width="10" height="10" class="crypt" />
+  <rect x="418" y="97" width="10" height="10" class="crypt" />
+  <rect x="418" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="417" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="418" y="125" width="10" height="10" class="crypt" />
+  <rect x="418" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="419" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="432" y="55" width="10" height="10" class="crypt" />
+  <rect x="432" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="433" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="432" y="83" width="10" height="10" class="crypt" />
+  <rect x="432" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="431" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="432" y="111" width="10" height="10" class="crypt" />
+  <rect x="432" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="431" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="432" y="139" width="10" height="10" class="fog" />
+  <rect x="446" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="447" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="446" y="69" width="10" height="10" class="fog" />
+  <rect x="446" y="83" width="10" height="10" class="crypt" />
+  <rect x="446" y="97" width="10" height="10" class="empty" />
+  <rect x="446" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="445" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="446" y="125" width="10" height="10" class="fog" />
+  <rect x="446" y="139" width="10" height="10" class="empty" />
+  <rect x="460" y="55" width="10" height="10" class="fog" />
+  <rect x="460" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="459" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="460" y="83" width="10" height="10" class="fog" />
+  <rect x="460" y="97" width="10" height="10" class="fog" />
+  <rect x="460" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="461" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="460" y="125" width="10" height="10" class="crypt" />
+  <rect x="460" y="139" width="10" height="10" class="fog" />
+  <rect x="474" y="55" width="10" height="10" class="fog" />
+  <rect x="474" y="69" width="10" height="10" class="crypt" />
+  <rect x="474" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="475" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="474" y="97" width="10" height="10" class="empty" />
+  <rect x="474" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="473" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="474" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="473" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="474" y="139" width="10" height="10" class="crypt" />
+  <rect x="488" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="489" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="488" y="69" width="10" height="10" class="fog" />
+  <rect x="488" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="489" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="488" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="489" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="488" y="111" width="10" height="10" class="crypt" />
+  <rect x="488" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="489" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="488" y="139" width="10" height="10" class="crypt" />
+  <rect x="502" y="55" width="10" height="10" class="fog" />
+  <rect x="502" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="501" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="502" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="503" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="502" y="97" width="10" height="10" class="crypt" />
+  <rect x="502" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="503" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="502" y="125" width="10" height="10" class="fog" />
+  <rect x="502" y="139" width="10" height="10" class="empty" />
+  <rect x="516" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="515" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="516" y="69" width="10" height="10" class="empty" />
+  <rect x="516" y="83" width="10" height="10" class="fog" />
+  <rect x="516" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="517" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="516" y="111" width="10" height="10" class="empty" />
+  <rect x="516" y="125" width="10" height="10" class="empty" />
+  <rect x="516" y="139" width="10" height="10" class="crypt" />
+  <rect x="530" y="55" width="10" height="10" class="fog" />
+  <rect x="530" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="529" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="530" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="531" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="530" y="97" width="10" height="10" class="fog" />
+  <rect x="530" y="111" width="10" height="10" class="crypt" />
+  <rect x="530" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="531" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="530" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="531" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="544" y="55" width="10" height="10" class="crypt" />
+  <rect x="544" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="545" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="544" y="83" width="10" height="10" class="crypt" />
+  <rect x="544" y="97" width="10" height="10" class="crypt" />
+  <rect x="544" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="545" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="544" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="543" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="544" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="545" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="558" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="559" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="558" y="69" width="10" height="10" class="crypt" />
+  <rect x="558" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="557" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="558" y="97" width="10" height="10" class="crypt" />
+  <rect x="558" y="111" width="10" height="10" class="crypt" />
+  <rect x="558" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="557" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="558" y="139" width="10" height="10" class="crypt" />
+  <rect x="572" y="55" width="10" height="10" class="empty" />
+  <rect x="572" y="69" width="10" height="10" class="empty" />
+  <rect x="572" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="573" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="572" y="97" width="10" height="10" class="fog" />
+  <rect x="572" y="111" width="10" height="10" class="crypt" />
+  <rect x="572" y="125" width="10" height="10" class="fog" />
+  <rect x="572" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="573" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="586" y="55" width="10" height="10" class="crypt" />
+  <rect x="586" y="69" width="10" height="10" class="fog" />
+  <rect x="586" y="83" width="10" height="10" class="empty" />
+  <rect x="586" y="97" width="10" height="10" class="crypt" />
+  <rect x="586" y="111" width="10" height="10" class="crypt" />
+  <rect x="586" y="125" width="10" height="10" class="fog" />
+  <rect x="586" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="587" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="600" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="599" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="600" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="599" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="600" y="83" width="10" height="10" class="fog" />
+  <rect x="600" y="97" width="10" height="10" class="fog" />
+  <rect x="600" y="111" width="10" height="10" class="fog" />
+  <rect x="600" y="125" width="10" height="10" class="fog" />
+  <rect x="600" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="599" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="614" y="55" width="10" height="10" class="crypt" />
+  <rect x="614" y="69" width="10" height="10" class="fog" />
+  <rect x="614" y="83" width="10" height="10" class="fog" />
+  <rect x="614" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="615" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="614" y="111" width="10" height="10" class="crypt" />
+  <rect x="614" y="125" width="10" height="10" class="empty" />
+  <rect x="614" y="139" width="10" height="10" class="crypt" />
+  <rect x="628" y="55" width="10" height="10" class="crypt" />
+  <rect x="628" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="629" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="628" y="83" width="10" height="10" class="fog" />
+  <rect x="628" y="97" width="10" height="10" class="skull" />
+  <use href="#skull" x="627" y="92" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="628" y="111" width="10" height="10" class="fog" />
+  <rect x="628" y="125" width="10" height="10" class="crypt" />
+  <rect x="628" y="139" width="10" height="10" class="fog" />
+  <rect x="642" y="55" width="10" height="10" class="crypt" />
+  <rect x="642" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="641" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="642" y="83" width="10" height="10" class="empty" />
+  <rect x="642" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="643" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="642" y="111" width="10" height="10" class="fog" />
+  <rect x="642" y="125" width="10" height="10" class="skull" />
+  <use href="#skull" x="641" y="120" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="642" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="643" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="656" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="655" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="656" y="69" width="10" height="10" class="crypt" />
+  <rect x="656" y="83" width="10" height="10" class="skull" />
+  <use href="#skull" x="655" y="78" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="656" y="97" width="10" height="10" class="crypt" />
+  <rect x="656" y="111" width="10" height="10" class="fog" />
+  <rect x="656" y="125" width="10" height="10" class="fog" />
+  <rect x="656" y="139" width="10" height="10" class="crypt" />
+  <rect x="670" y="55" width="10" height="10" class="skull" />
+  <use href="#skull" x="669" y="50" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="670" y="69" width="10" height="10" class="crypt" />
+  <rect x="670" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="671" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="670" y="97" width="10" height="10" class="crypt" />
+  <rect x="670" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="669" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="670" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="671" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="670" y="139" width="10" height="10" class="crypt" />
+  <rect x="684" y="55" width="10" height="10" class="fog" />
+  <rect x="684" y="69" width="10" height="10" class="ghost" />
+  <use href="#cross" x="685" y="63" transform="scale(0.6)" opacity="0.5" />
+  <rect x="684" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="685" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="684" y="97" width="10" height="10" class="fog" />
+  <rect x="684" y="111" width="10" height="10" class="ghost" />
+  <use href="#cross" x="685" y="105" transform="scale(0.6)" opacity="0.5" />
+  <rect x="684" y="125" width="10" height="10" class="crypt" />
+  <rect x="684" y="139" width="10" height="10" class="ghost" />
+  <use href="#cross" x="685" y="133" transform="scale(0.6)" opacity="0.5" />
+  <rect x="698" y="55" width="10" height="10" class="fog" />
+  <rect x="698" y="69" width="10" height="10" class="fog" />
+  <rect x="698" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="699" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="698" y="97" width="10" height="10" class="crypt" />
+  <rect x="698" y="111" width="10" height="10" class="fog" />
+  <rect x="698" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="699" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="698" y="139" width="10" height="10" class="crypt" />
+  <rect x="712" y="55" width="10" height="10" class="crypt" />
+  <rect x="712" y="69" width="10" height="10" class="skull" />
+  <use href="#skull" x="711" y="64" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="712" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="713" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="712" y="97" width="10" height="10" class="fog" />
+  <rect x="712" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="711" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="712" y="125" width="10" height="10" class="ghost" />
+  <use href="#cross" x="713" y="119" transform="scale(0.6)" opacity="0.5" />
+  <rect x="712" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="711" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="726" y="55" width="10" height="10" class="ghost" />
+  <use href="#cross" x="727" y="49" transform="scale(0.6)" opacity="0.5" />
+  <rect x="726" y="69" width="10" height="10" class="fog" />
+  <rect x="726" y="83" width="10" height="10" class="ghost" />
+  <use href="#cross" x="727" y="77" transform="scale(0.6)" opacity="0.5" />
+  <rect x="726" y="97" width="10" height="10" class="crypt" />
+  <rect x="726" y="111" width="10" height="10" class="crypt" />
+  <rect x="726" y="125" width="10" height="10" class="crypt" />
+  <rect x="726" y="139" width="10" height="10" class="crypt" />
+  <rect x="740" y="55" width="10" height="10" class="fog" />
+  <rect x="740" y="69" width="10" height="10" class="crypt" />
+  <rect x="740" y="83" width="10" height="10" class="fog" />
+  <rect x="740" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="741" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="740" y="111" width="10" height="10" class="skull" />
+  <use href="#skull" x="739" y="106" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="740" y="125" width="10" height="10" class="crypt" />
+  <rect x="740" y="139" width="10" height="10" class="skull" />
+  <use href="#skull" x="739" y="134" transform="scale(0.7)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite" />
+  </use>
+  <rect x="754" y="55" width="10" height="10" class="fog" />
+  <rect x="754" y="69" width="10" height="10" class="crypt" />
+  <rect x="754" y="83" width="10" height="10" class="fog" />
+  <rect x="754" y="97" width="10" height="10" class="ghost" />
+  <use href="#cross" x="755" y="91" transform="scale(0.6)" opacity="0.5" />
+  <rect x="754" y="111" width="10" height="10" class="fog" />
+  <rect x="754" y="125" width="10" height="10" class="crypt" />
+  <rect x="754" y="139" width="10" height="10" class="fog" />
+  <path id="horror-path" d="M 40 146 Q 40 28 40 43 Q 47.0 28 54 43 Q 61.0 28 68 43 Q 75.0 28 82 43 Q 89.0 28 96 43 Q 103.0 28 110 43 Q 117.0 28 124 43 Q 131.0 28 138 43 Q 145.0 28 152 43 Q 159.0 28 166 43 Q 173.0 28 180 43 Q 187.0 28 194 43 Q 201.0 28 208 43 Q 215.0 28 222 43 Q 229.0 28 236 43 Q 243.0 28 250 43 Q 257.0 28 264 43 Q 271.0 28 278 43 Q 285.0 28 292 43 Q 299.0 28 306 43 Q 313.0 28 320 43 Q 327.0 42 334 57 Q 341.0 28 348 43 Q 355.0 28 362 43 Q 369.0 28 376 43 Q 383.0 28 390 43 Q 397.0 28 404 43 Q 411.0 28 418 43 Q 425.0 28 432 43 Q 439.0 28 446 43 Q 453.0 28 460 43 Q 467.0 28 474 43 Q 481.0 28 488 43 Q 495.0 28 502 43 Q 509.0 28 516 43 Q 523.0 28 530 43 Q 537.0 28 544 43 Q 551.0 28 558 43 Q 565.0 56 572 71 Q 579.0 28 586 43 Q 593.0 28 600 43 Q 607.0 28 614 43 Q 621.0 28 628 43 Q 635.0 28 642 43 Q 649.0 28 656 43 Q 663.0 28 670 43 Q 677.0 28 684 43 Q 691.0 28 698 43 Q 705.0 28 712 43 Q 719.0 28 726 43 Q 733.0 28 740 43 Q 747.0 28 754 43 Q 764 28 803 146" fill="none" stroke="none" />
+  <use href="#hooded">
+    <animateMotion dur="25s" repeatCount="indefinite">
+      <mpath href="#horror-path"/>
+    </animateMotion>
+  </use>
+  <!-- Haunted House -->
+  <path d="M 783 158 L 783 108 L 808 88 L 833 108 L 833 158 Z" fill="#1a0a1a" stroke="#2a1a2a" stroke-width="1" />
+  <rect x="793" y="123" width="12" height="18" fill="#0a0a0f" />
+  <rect x="811" y="123" width="12" height="18" fill="#0a0a0f" />
+  <rect x="795" y="125" width="8" height="12" fill="#ff4400" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <rect x="813" y="125" width="8" height="12" fill="#ff4400" opacity="0.4">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite" />
+  </rect>
+  <rect x="803" y="133" width="10" height="25" fill="#0a0505" />
+  <line x1="808" y1="83" x2="808" y2="93" stroke="#3a3a3a" stroke-width="1.5" />
+  <line x1="804" y1="87" x2="812" y2="87" stroke="#3a3a3a" stroke-width="1.5" />
+  <use href="#tomb" x="777" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="778" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="775" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="774" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="778" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="776" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="776" y="150" transform="scale(0.7)" opacity="0.6" />
+  <use href="#tomb" x="778" y="150" transform="scale(0.7)" opacity="0.6" />
+  <polyline points="519,40 514,60 522,60 517,80" fill="none" stroke="#ffffaa" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0.8;0;0.5;0;0" dur="8s" repeatCount="indefinite" />
+  </polyline>
+  <text x="40" y="30" fill="#ff4444" font-family="monospace" font-weight="bold" font-size="16" letter-spacing="2">
+    ABI-DE-JO
+    <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite" />
+  </text>
+  <text x="40" y="43" fill="#666" font-family="monospace" font-size="10" letter-spacing="1">
+    contribution graveyard
+  </text>
+  <text x="773" y="30" fill="#ff4444" font-family="monospace" font-size="10" text-anchor="end">
+    1,276 commits
+  </text>
+  <rect x="40" y="168" width="8" height="8" class="empty" />
+  <text x="52" y="175" fill="#555" font-family="monospace" font-size="7">No commits</text>
+  <rect x="120" y="168" width="8" height="8" class="fog" />
+  <text x="132" y="175" fill="#555" font-family="monospace" font-size="7">Low</text>
+  <rect x="200" y="168" width="8" height="8" class="crypt" />
+  <text x="212" y="175" fill="#555" font-family="monospace" font-size="7">Medium</text>
+  <rect x="280" y="168" width="8" height="8" class="ghost" />
+  <text x="292" y="175" fill="#555" font-family="monospace" font-size="7">High</text>
+  <rect x="360" y="168" width="8" height="8" class="skull" />
+  <text x="372" y="175" fill="#555" font-family="monospace" font-size="7">Maximum</text>
+  <text x="436" y="205" fill="#333" font-family="monospace" font-size="7" text-anchor="middle">
+    github.com/Abi-de-jo/Abi-de-jo
+  </text>
+</svg>

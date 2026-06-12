@@ -2,39 +2,51 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Abisheik%20(Abi)&fontSize=60&fontColor=fff&animation=twinkling&fontAlignY=35&desc=Full-Stack%20Developer%20|%20MERN%20Specialist%20|%20Tech%20Educator%20|%20Builder&descAlignY=60&descSize=18" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1200&color=00F5A0&center=true&vCenter=true&multiline=false&width=600&height=50&lines=Crafting+blazing-fast+UIs+%E2%9A%A1;Engineering+secure+%26+scalable+APIs+%F0%9F%94%90;Building+with+TypeScript+%26+React+%F0%9F%92%AA;Full-Stack+%40+Sree-Cognicoders+%F0%9F%8C%8D;Teaching+the+next+gen+of+devs+%F0%9F%93%9A;Automating+everything+%F0%9F%A4%96" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1200&color=00F5A0&center=true&vCenter=true&multiline=false&width=700&height=50&lines=Crafting+blazing-fast+UIs+%E2%9A%A1;Engineering+secure+%26+scalable+APIs;Building+with+TypeScript+%26+React;Full-Stack+%40+Sree-Cognicoders;Teaching+the+next+gen+of+devs;Automating+everything+%F0%9F%A4%96" alt="Typing SVG" />
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Abi-de-jo&style=for-the-badge&color=00bcd4&label=PROFILE+VIEWS" alt="Profile Views"/>
+<a href="https://github.com/Abi-de-jo"><img src="https://img.shields.io/badge/PROFILE_VIEWS-00bcd4?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Profile Views"/></a>
+<img src="https://komarev.com/ghpvc/?username=Abi-de-jo&style=for-the-badge&color=00bcd4&label=VIEWS&labelColor=0d1117" alt="Views"/>
 <img src="https://img.shields.io/github/followers/Abi-de-jo?style=for-the-badge&color=00f5a0&labelColor=0d1117&label=FOLLOWERS" alt="Followers"/>
-<a href="https://github.com/Abi-de-jo?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&color=7c3aed&label=REPOS&query=public_repos&url=https://api.github.com/users/Abi-de-jo" alt="Repos"/></a>
-<img src="https://img.shields.io/badge/Commits-1.2K+-brightgreen?style=for-the-badge&color=FF6F00" alt="Commits"/>
+<a href="https://github.com/Abi-de-jo?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&color=7c3aed&labelColor=0d1117&label=REPOS&query=public_repos&url=https://api.github.com/users/Abi-de-jo" alt="Repos"/></a>
+<img src="https://img.shields.io/badge/COMMITS-1.2K%2B-FF6F00?style=for-the-badge&labelColor=0d1117" alt="Commits"/>
 
 </div>
 
 ---
 
-## 👤 About Me
+## ▸ whoami
 
 ```typescript
-const abi = {
-  name: "R.Abisheik (Abi)",
-  role: "Full-Stack Developer",
-  company: "Sree-Cognicoders",
-  location: "Tamilnadu, India",
-  students: "50+ devs mentored",
-  stack: ["React", "Next.js", "TypeScript", "Node.js", "Express", "Prisma", "GraphQL"],
-  database: ["MongoDB", "PostgreSQL", "MySQL", "Redis"],
-  exploring: ["AI Integration", "DevOps", "Edge Computing", "VS Code Extensions"],
-  funFact: "I turn coffee into code and errors into lessons ☕",
-  availableForWork: true,
+const developer = {
+  handle:       "Abi-de-jo",
+  name:         "R.Abisheik (Abi)",
+  role:         "Full-Stack Developer",
+  org:          "Sree-Cognicoders · building enterprise systems",
+  location:     "Tamilnadu, India",
+  students:     50,
+  available:    true,
+
+  stack: [
+    "React", "Next.js", "TypeScript",
+    "Node.js", "Express", "Prisma", "GraphQL"
+  ],
+
+  database: [
+    "MongoDB", "PostgreSQL", "MySQL", "Redis"
+  ],
+
+  exploring: [
+    "AI Integration", "DevOps",
+    "Edge Computing", "VS Code Extensions"
+  ],
 };
 ```
 
 ---
 
-## 📊 GitHub Stats
+## ▸ stats
 
 <div align="center">
 
@@ -49,47 +61,35 @@ const abi = {
 
 ---
 
-## 🛠️ Tech Stack
+## ▸ tech-stack
 
 <div align="center">
 
-### 🎨 Frontend
-![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![TypeScript](https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+### frontend
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,bootstrap&perline=8" alt="Frontend Tech Stack" />
+</a>
 
-### ⚙️ Backend
-![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
+### backend
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=nodejs,express,graphql,python,fastapi&perline=8" alt="Backend Tech Stack" />
+</a>
 
-### 🗄️ Database & ORM
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+### database
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,prisma,redis&perline=8" alt="Database Tech Stack" />
+</a>
 
-### 🐳 DevOps & Tools
-![Docker](https://img.shields.io/badge/Docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+### devops & tools
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=docker,aws,vercel,git,postman,figma,vscode&perline=8" alt="DevOps Tech Stack" />
+</a>
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## ▸ featured-projects
 
 <table>
 <tr>
@@ -98,60 +98,60 @@ const abi = {
 <th width="34%">Description</th>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/Fahh"><b>🔊 Fahh</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/Fahh"><b>Fahh</b></a></td>
 <td>TypeScript · VS Code API</td>
 <td>VS Code extension that plays a sound when errors appear — catch bugs instantly</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/Fitmachi"><b>💪 Fitmachi</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/Fitmachi"><b>Fitmachi</b></a></td>
 <td>TypeScript · Full-Stack</td>
-<td>Fitness tracking & workout planning application</td>
+<td>Fitness tracking and workout planning application</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/AiMock_Interview"><b>🤖 AiMock Interview</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/AiMock_Interview"><b>AiMock Interview</b></a></td>
 <td>JavaScript · AI</td>
 <td>AI-powered mock interview tool for real-time practice</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/releasenotepro"><b>📝 ReleaseNotePro</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/releasenotepro"><b>ReleaseNotePro</b></a></td>
 <td>Multi-Agent · AI</td>
-<td>Automated release notes & changelog generator with multi-agent intelligence</td>
+<td>Automated release notes and changelog generator with multi-agent intelligence</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/Wedding-invitation"><b>💍 Wedding Invitation</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/Wedding-invitation"><b>Wedding Invitation</b></a></td>
 <td>TypeScript · Full-Stack</td>
-<td>Interactive wedding invitation with RSVP & gallery</td>
+<td>Interactive wedding invitation with RSVP and gallery</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/NailsByShmatko"><b>💅 NailsByShmatko</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/NailsByShmatko"><b>NailsByShmatko</b></a></td>
 <td>TypeScript · Next.js</td>
-<td>Professional salon booking & portfolio platform</td>
+<td>Professional salon booking and portfolio platform</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/Freelance_photography"><b>📸 Freelance Photography</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/Freelance_photography"><b>Freelance Photography</b></a></td>
 <td>TypeScript</td>
 <td>Photography portfolio platform for freelancers</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/codebyabi-portfolio"><b>🖥️ CodeByAbi Portfolio</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/codebyabi-portfolio"><b>CodeByAbi Portfolio</b></a></td>
 <td>HTML · CSS · JS</td>
-<td>Personal portfolio — projects, experiments & things I build</td>
+<td>Personal portfolio — projects, experiments, and things I build</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/graphql"><b>🔗 GraphQL Playground</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/graphql"><b>GraphQL Playground</b></a></td>
 <td>TypeScript · GraphQL</td>
 <td>GraphQL API exploration and implementation patterns</td>
 </tr>
 <tr>
-<td><a href="https://github.com/Abi-de-jo/batch-4"><b>📚 Batch-4 Teaching</b></a></td>
+<td><a href="https://github.com/Abi-de-jo/batch-4"><b>Batch-4</b></a></td>
 <td>HTML · CSS · JS</td>
-<td>Full-stack curriculum for 50+ students</td>
+<td>Full-stack curriculum delivered to 50+ students</td>
 </tr>
 </table>
 
 ---
 
-## 🏢 Organization — Sree-Cognicoders
+## ▸ org—sree-cognicoders
 
 <div align="center">
 
@@ -159,7 +159,7 @@ const abi = {
 |:------:|:----:|:-----:|
 | **Chronologix** — Time & Attendance | Full-Stack | TypeScript · Node.js · MySQL |
 | **Chronexa** — Enterprise Platform | Full-Stack | TypeScript · React · Node |
-| **Identra** — Identity Management | FE + BE | TypeScript · Express · Mail |
+| **Identra** — Identity Management | FE + BE | TypeScript · Express |
 | **Visitor Management System** | Full-Stack | TypeScript · React · Node |
 | **QMS** — Queue Management | Full-Stack | TypeScript |
 | **Onesuite** — All-in-one App | Full-Stack | TypeScript |
@@ -172,7 +172,7 @@ const abi = {
 
 ---
 
-## 📈 Contribution Activity
+## ▸ activity
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abi-de-jo&theme=react-dark&bg_color=0d1117&color=00f5a0&line=00bcd4&point=ffffff&area=true&area_color=00bcd4&hide_border=true&radius=8" width="100%"/>
@@ -180,69 +180,81 @@ const abi = {
 
 ---
 
-## 🏆 Trophies
+## ▸ trophies
+
+<div align="left">
+
+```
+$ curl -s https://api.github.com/users/Abi-de-jo/repos | jq length
+64
+
+$ curl -s https://api.github.com/search/commits?q=author:Abi-de-jo | jq .total_count
+1276
+
+$ echo "$((64 * 1276)) lines of evidence"
+81664
+```
+
+</div>
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abi-de-jo&theme=onestar&no-frame=true&no-bg=true&margin-w=8&column=7" />
+  <a href="https://github.com/ryo-ma/github-profile-trophy">
+    <img src="https://github-profile-trophy.vercel.app/?username=Abi-de-jo&theme=onedark&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="Trophies" />
+  </a>
+  <br/>
+  <sub>Note: if trophies are not rendering, re-enable the Vercel deployment at <a href="https://vercel.com">vercel.com</a> for <code>github-profile-trophy</code></sub>
 </div>
 
 ---
 
-## 🐍 Watch the Snake Eat My Contributions
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/github-contribution-grid-snake.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/github-contribution-grid-snake.svg" />
-  </picture>
-</div>
-
----
-
-## 🔗 Connect With Me
+## ▸ snake
 
 <div align="center">
 
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/codebyabi)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://youtube.com/codebyabi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/codebyabisheik/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abisheikabisheik102@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Abi-de-jo)
-
-</div>
-
----
-
-## 💻 Battle Station
-
-<div align="center">
-
-| Component | Spec |
-|:---------:|:----:|
-| 🖥️ **Machine** | Lenovo IdeaPad Slim 3 |
-| 🧠 **CPU** | AMD Ryzen 5 4600U |
-| 🎮 **GPU** | Radeon Integrated Graphics |
-| 💾 **RAM** | 8GB DDR4 |
-| 🐧 **OS** | Windows 11 / WSL2 Ubuntu |
-| ✏️ **Editor** | VS Code |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/github-contribution-grid-snake.svg" />
+  <img alt="github-contribution-snake" src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/github-contribution-grid-snake.svg" />
+</picture>
 
 </div>
 
 ---
 
-## 💡 Random Dev Wisdom
+## ▸ connect
+
+<div align="center">
+
+<a href="https://instagram.com/codebyabi"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white&logoSize=auto&labelColor=0d1117" alt="Instagram"/></a>
+<a href="https://youtube.com/codebyabi"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white&logoSize=auto&labelColor=0d1117" alt="YouTube"/></a>
+<a href="https://linkedin.com/in/codebyabisheik/"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white&logoSize=auto&labelColor=0d1117" alt="LinkedIn"/></a>
+<a href="mailto:abisheikabisheik102@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&logoSize=auto&labelColor=0d1117" alt="Gmail"/></a>
+
+</div>
+
+---
+
+## ▸ battle-station
+
+<div align="center">
+
+| **Component** | **Spec** |
+|:-------------:|:--------:|
+| **Machine** | Lenovo IdeaPad Slim 3 |
+| **CPU** | AMD Ryzen 5 4600U |
+| **GPU** | Radeon Integrated Graphics |
+| **RAM** | 8GB DDR4 |
+| **OS** | Windows 11 / WSL2 Ubuntu |
+| **Editor** | VS Code |
+
+</div>
+
+---
+
+## ▸ quote
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=true" />
-</div>
-
----
-
-## 🌟 Top Contributed Repos
-
-<div align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=Abi-de-jo&limit=5&theme=dark&combine_all_yearly_contributions=true&hide_border=true" />
 </div>
 
 ---
@@ -251,8 +263,10 @@ const abi = {
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=twinkling" width="100%"/>
 
-**"First, solve the problem. Then, write the code."** — John Johnson
+```
+"First, solve the problem. Then, write the code." — John Johnson
+```
 
-*Built with ☕ & 💻 by Abi · 64 repos · 1,200+ commits · 23 JavaScript · 11 TypeScript · 162 followers*
+<sub>64 repos · 1,276 commits · 23 JavaScript · 11 TypeScript · 162 followers</sub>
 
 </div>

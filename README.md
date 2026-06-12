@@ -8,10 +8,7 @@
 
 <div style="padding:40px;">
 
-<!-- HORROR BANNER -->
-<p align="center">
-  <img src="assets/banner.svg" alt="Abisheik horror banner" width="100%"/>
-</p>
+
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=32&pause=1500&color=aa0000&center=true&vCenter=true&width=900&height=60&lines=I+am+the+developer+of+the+night;I+write+code+that+never+dies;Welcome+to+the+graveyard" alt="horror typing"/>

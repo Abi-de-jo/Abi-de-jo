@@ -1,0 +1,37 @@
+name: 🎮 Ghost Runner Platformer
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"  # Every 4 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Ghost Runner game SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate-platformer-game.py \
+            --username ${{ github.repository_owner }} \
+            --output assets/ghost-runner.svg
+
+      - name: Commit and push
+        run: |
+          git config user.name "🎮 Ghost Runner Bot"
+          git config user.email "ghost-runner@ghosts.com"
+          git add assets/ghost-runner.svg
+          git diff --cached --quiet || \
+            (git commit -m "🎮 Ghost Runner: auto-update platformer game" && git push)

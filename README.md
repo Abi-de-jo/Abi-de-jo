@@ -72,7 +72,7 @@ Sree-Cognicoders // The Order 🏛️
 
 # 👻 GHOST HUNT GAME
 <p align="center">
-<img src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/main/assets/ghost-hunt-game.svg" alt="Ghost Hunt Game" width="95%">
+<img src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/main/assets/ghost-hunt-game.svg?v=2" alt="Ghost Hunt Game" width="95%">
 </p>
 <sup>*Ghosts hide in contribution cells. Keep committing to hunt them all! Updated every 6 hours.*</sup>
 

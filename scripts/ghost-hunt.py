@@ -1,143 +1,182 @@
 #!/usr/bin/env python3
 """
-👻 Ghost Hunt Game — Transforms GitHub contribution graph into a ghost hunt game
-Ghosts hide in contribution cells. Hunt them by committing!
+GHOST HUNT — Transform a Platane/snk contribution-snake SVG into a
+ghost-hunting themed game SVG.
+
+Reads:   assets/ghost-hunt-game.svg  (created upstream by Platane/snk)
+Writes:  assets/ghost-hunt-game.svg  (overwrites with the ghost-hunted version)
+
+The snake is recoloured purple, a "GHOST HUNT" header is dropped on top,
+a score / high-score HUD is added, and a handful of 👻 sprites are placed
+on randomly chosen active contribution cells.
 """
+from __future__ import annotations
 
-import argparse
 import random
-import xml.etree.ElementTree as ET
-from datetime import datetime
+import re
+import sys
+from pathlib import Path
 
-NS = {"svg": "http://www.w3.org/2000/svg"}
-random.seed(42)
+INPUT = Path("assets/ghost-hunt-game.svg")
+OUTPUT = INPUT
 
-def parse_args():
-    p = argparse.ArgumentParser()
-    p.add_argument("--input", default="dist/ghost-hunt.svg")
-    p.add_argument("--output", default="dist/ghost-hunt-game.svg")
-    p.add_argument("--username", default="Abi-de-jo")
-    return p.parse_args()
+PURPLE = "#8b5cf6"
+PURPLE_LIGHT = "#a78bfa"
+PURPLE_BG = "#1a0b2e"
+TITLE = "\U0001f47b GHOST HUNT"
+GHOST = "\U0001f47b"  # 👻
 
-def add_ghost_hunt_theme(root):
-    """Add ghost hunt elements to the SVG."""
-    
-    # Get viewBox dimensions
-    vb = root.get("viewBox", "0 0 900 300").split()
-    w, h = int(vb[2]), int(vb[3])
-    
-    # Add ghost hunt header
-    header = ET.Element("text")
-    header.set("x", str(w // 2))
-    header.set("y", "35")
-    header.set("text-anchor", "middle")
-    header.set("font-family", "system-ui, sans-serif")
-    header.set("font-size", "22")
-    header.set("font-weight", "800")
-    header.set("fill", "#c084fc")
-    header.set("letter-spacing", "2")
-    header.text = "👻 GHOST HUNT — Catch the ghosts in your commits!"
-    root.insert(0, header)
+# Fill colours Platane/snk uses for ACTIVE contribution cells.
+ACTIVE_FILLS = {
+    "#0e4429", "#006d32", "#26a641", "#39d353",  # github-dark
+    "#9be9a8", "#40c463", "#30a14e", "#216e39",  # github-light
+}
 
-    # Find contribution cells (rects in the SVG that represent contributions)
-    rects = root.findall(".//svg:rect", NS)
-    cells = []
-    
-    # Check for cells with fill colors (not background)
-    bg_color = "#161b22"
-    for rect in rects:
-        fill = rect.get("fill", "")
-        rx = rect.get("rx", "0")
-        if fill and fill != bg_color and fill != "none" and rx != "0":
-            cells.append(rect)
-    
-    # Ghost cells - randomly select some cells to be "haunted"
-    haunted = set()
-    ghost_cells = []
-    
-    if cells:
-        # Haunt about 8% of cells with ghosts
-        num_ghosts = max(3, len(cells) // 12)
-        chosen = random.sample(range(len(cells)), min(num_ghosts, len(cells)))
-        
-        for idx in chosen:
-            rect = cells[idx]
-            x = float(rect.get("x", 0))
-            y = float(rect.get("y", 0))
-            w_cell = float(rect.get("width", 13))
-            h_cell = float(rect.get("height", 13))
-            
-            ghost_cell = ET.Element("text")
-            ghost_cell.set("x", str(x + w_cell // 2))
-            ghost_cell.set("y", str(y + h_cell - 1))
-            ghost_cell.set("text-anchor", "middle")
-            ghost_cell.set("font-size", "12")
-            ghost_cell.set("dominant-baseline", "central")
-            ghost_cell.text = "👻"
-            
-            # Add animation — ghost appears and disappears
-            anim = ET.SubElement(ghost_cell, "animate")
-            anim.set("attributeName", "opacity")
-            anim.set("values", "1;0;1")
-            anim.set("dur", f"{random.uniform(2, 4):.1f}s")
-            anim.set("repeatCount", "indefinite")
-            
-            ghost_cells.append(ghost_cell)
-            haunted.add(idx)
+# Fill colours used for EMPTY / background cells — these are skipped.
+EMPTY_FILLS = {
+    "#161b22",  # github-dark empty
+    "#ebedf0",  # github-light empty
+    "#0d1117",  # dark page background
+    "none",
+    "transparent",
+}
 
-    # Add all ghost emojis
-    for gc in ghost_cells:
-        root.append(gc)
+EXTRA_CSS = """
+    /* Ghost Hunt theme overrides */
+    svg path  { stroke: #8b5cf6 !important; }
+    svg circle { fill:   #8b5cf6 !important; }
+  """
 
-    # Add stats
-    total_commits = len(cells)
-    ghosts_found = len(haunted)
-    
-    # Stats box at bottom
-    stats_group = ET.Element("g")
-    
-    stats_bg = ET.SubElement(stats_group, "rect")
-    stats_bg.set("x", "20")
-    stats_bg.set("y", str(h - 55))
-    stats_bg.set("width", str(w - 40))
-    stats_bg.set("height", "40")
-    stats_bg.set("rx", "8")
-    stats_bg.set("fill", "#0d1117")
-    stats_bg.set("stroke", "#8b5cf6")
-    stats_bg.set("stroke-width", "1")
-    stats_bg.set("opacity", "0.8")
-    
-    stats_text = ET.SubElement(stats_group, "text")
-    stats_text.set("x", "30")
-    stats_text.set("y", str(h - 32))
-    stats_text.set("font-family", "monospace")
-    stats_text.set("font-size", "13")
-    stats_text.set("fill", "#c4b5fd")
-    stats_text.text = f"👻 Ghosts Spotted: {ghosts_found}  |  📦 Total Commits: {total_commits}  |  🕐 Updated: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}"
-    
-    root.append(stats_group)
-    
-    # Add play instructions
-    tip = ET.Element("text")
-    tip.set("x", str(w // 2))
-    tip.set("y", str(h - 10))
-    tip.set("text-anchor", "middle")
-    tip.set("font-family", "monospace")
-    tip.set("font-size", "10")
-    tip.set("fill", "#6b7280")
-    tip.text = "👻 Ghosts hide in contribution cells. Keep committing to hunt them all!"
-    root.append(tip)
 
-def main():
-    args = parse_args()
-    
-    tree = ET.parse(args.input)
-    root = tree.getroot()
-    
-    add_ghost_hunt_theme(root)
-    
-    tree.write(args.output, encoding="unicode")
-    print(f"👻 Ghost Hunt game saved to {args.output}")
+def _attr(attrs: str, name: str) -> str | None:
+    m = re.search(rf'{name}="([^"]+)"', attrs)
+    return m.group(1) if m else None
+
+
+def find_active_cells(svg: str) -> list[dict]:
+    """Return [{x,y,w,h}, ...] for every active contribution-cell rect."""
+    cells: list[dict] = []
+    for m in re.finditer(r"<rect\b([^>]*?)/>", svg, re.DOTALL):
+        attrs = m.group(1)
+        fill = (_attr(attrs, "fill") or "").lower().strip()
+        if not fill or fill in EMPTY_FILLS or fill not in ACTIVE_FILLS:
+            continue
+        try:
+            x = float(_attr(attrs, "x") or 0)
+            y = float(_attr(attrs, "y") or 0)
+            w = float(_attr(attrs, "width") or 0)
+            h = float(_attr(attrs, "height") or 0)
+        except ValueError:
+            continue
+        if w == 0 or h == 0:
+            continue
+        cells.append({"x": x, "y": y, "w": w, "h": h})
+    return cells
+
+
+def make_ghosts(cells: list[dict], target: int) -> tuple[list[str], int]:
+    """Build 👻 overlay elements for a random subset of active cells."""
+    if not cells:
+        return [], 0
+    n = min(target, len(cells))
+    sample = random.sample(cells, n)
+    out: list[str] = []
+    for c in sample:
+        cx = c["x"] + c["w"] / 2
+        cy = c["y"] + c["h"] / 2
+        size = c["w"] * 1.7
+        delay = random.uniform(0, 4)
+        dur = random.uniform(2.5, 4.5)
+        out.append(
+            f'<text x="{cx:.2f}" y="{cy:.2f}" font-size="{size:.2f}" '
+            f'text-anchor="middle" dominant-baseline="central" '
+            f'fill="#ffffff" opacity="0.92" style="pointer-events:none">'
+            f"{GHOST}"
+            f'<animate attributeName="opacity" values="0.25;1;0.25" '
+            f'dur="{dur:.2f}s" begin="{delay:.2f}s" repeatCount="indefinite"/>'
+            f'<animateTransform attributeName="transform" type="translate" '
+            f'values="0,0;0,-2.5;0,0" dur="{dur:.2f}s" begin="{delay:.2f}s" '
+            f'repeatCount="indefinite"/>'
+            f"</text>"
+        )
+    return out, n
+
+
+def make_header(svg_w: int) -> list[str]:
+    return [
+        f'<rect x="{svg_w/2 - 145:.1f}" y="2" width="290" height="24" '
+        f'rx="12" ry="12" fill="{PURPLE_BG}" stroke="{PURPLE}" '
+        f'stroke-width="1" opacity="0.9"/>',
+        f'<text x="{svg_w/2:.1f}" y="19" '
+        f'font-family="Segoe UI, system-ui, sans-serif" font-size="13" '
+        f'font-weight="bold" fill="{PURPLE}" text-anchor="middle" '
+        f'letter-spacing="2.5">{TITLE}'
+        f'<animate attributeName="opacity" values="1;0.55;1" '
+        f'dur="2.5s" repeatCount="indefinite"/>'
+        f"</text>",
+    ]
+
+
+def make_hud(svg_w: int, score: int, high: int, ghosts: int) -> list[str]:
+    return [
+        f'<text x="10" y="19" font-family="ui-monospace, monospace" '
+        f'font-size="10" fill="{PURPLE_LIGHT}">'
+        f"\U0001f7e3 PURPLE SNAKE"
+        f"</text>",
+        f'<text x="{svg_w - 10:.1f}" y="19" '
+        f'font-family="ui-monospace, monospace" font-size="10" '
+        f'fill="{PURPLE_LIGHT}" text-anchor="end">'
+        f"\U0001f47b {score}/{high} \u00b7 \U0001f47b\u00d7{ghosts}"
+        f"</text>",
+    ]
+
+
+def main() -> int:
+    if not INPUT.exists():
+        print(f"::error::Input SVG not found: {INPUT}", file=sys.stderr)
+        print("Make sure Platane/snk ran successfully first.", file=sys.stderr)
+        return 1
+
+    svg = INPUT.read_text(encoding="utf-8")
+    random.seed()
+
+    # 1) Merge purple-snake CSS into the existing <style> block.
+    if "<style" in svg:
+        svg = re.sub(r"</style>", EXTRA_CSS + "</style>", svg, count=1)
+    else:
+        svg = re.sub(
+            r"(<svg[^>]*>)",
+            r"\1<style>" + EXTRA_CSS + "</style>",
+            svg,
+            count=1,
+        )
+
+    # 2) Figure out SVG width for centred header placement.
+    w_match = re.search(r'<svg[^>]*\swidth="(\d+(?:\.\d+)?)"', svg)
+    svg_w = int(float(w_match.group(1))) if w_match else 800
+
+    # 3) Locate active cells, then place ghosts on a random subset.
+    cells = find_active_cells(svg)
+    target = random.randint(8, 20)
+    ghosts, actual = make_ghosts(cells, target)
+
+    # 4) Score / header / HUD.
+    score = actual * random.randint(1, 3)
+    high = score + random.randint(2, 8)
+    header = make_header(svg_w)
+    hud = make_hud(svg_w, score, high, actual)
+
+    # 5) Inject every overlay right before </svg>.
+    overlays = "\n".join(header + hud + ghosts)
+    svg = svg.replace("</svg>", overlays + "\n</svg>")
+
+    OUTPUT.write_text(svg, encoding="utf-8")
+    print(
+        f"\U0001f47b Ghost hunt SVG written to {OUTPUT} "
+        f"({len(svg):,} bytes, {actual} ghosts, score={score}/{high})"
+    )
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

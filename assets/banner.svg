@@ -1,93 +1,192 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 240" width="1000" height="240">
   <defs>
+    <!-- Background gradient -->
     <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="240">
       <stop offset="0%" stop-color="#0a0a0f"/>
       <stop offset="50%" stop-color="#0f0520"/>
       <stop offset="100%" stop-color="#0a0a0f"/>
     </linearGradient>
-    <linearGradient id="glowLine" x1="0" y1="0" x2="1000" y2="0">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#a855f7" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.8"/>
-      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+
+    <!-- Yellow to cyan title gradient -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="500" y2="0">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="50%" stop-color="#facc15"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
     </linearGradient>
-    <linearGradient id="titleGrad" x1="0" y1="0" x2="1000" y2="0">
-      <stop offset="0%" stop-color="#a855f7"/>
-      <stop offset="50%" stop-color="#06b6d4"/>
-      <stop offset="100%" stop-color="#a855f7"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+
+    <!-- Avatar glow ring -->
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="75%" stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="85%" stop-color="#a855f7" stop-opacity="0.4"/>
+      <stop offset="92%" stop-color="#c084fc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Ghost eye white -->
+    <radialGradient id="eyeWhite">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="titleGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="softGlow">
       <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="avatarGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
 
   <!-- Background -->
   <rect width="1000" height="240" fill="url(#bg)" rx="16"/>
 
-  <!-- Subtle grid dots -->
-  <g fill="#a855f7" opacity="0.04">
-    <circle cx="50" cy="30" r="1.5"/><circle cx="150" cy="30" r="1.5"/>
-    <circle cx="250" cy="30" r="1.5"/><circle cx="350" cy="30" r="1.5"/>
-    <circle cx="450" cy="30" r="1.5"/><circle cx="550" cy="30" r="1.5"/>
-    <circle cx="650" cy="30" r="1.5"/><circle cx="750" cy="30" r="1.5"/>
-    <circle cx="850" cy="30" r="1.5"/><circle cx="950" cy="30" r="1.5"/>
-    <circle cx="50" cy="70" r="1.5"/><circle cx="150" cy="70" r="1.5"/>
-    <circle cx="250" cy="70" r="1.5"/><circle cx="350" cy="70" r="1.5"/>
-    <circle cx="450" cy="70" r="1.5"/><circle cx="550" cy="70" r="1.5"/>
-    <circle cx="650" cy="70" r="1.5"/><circle cx="750" cy="70" r="1.5"/>
-    <circle cx="850" cy="70" r="1.5"/><circle cx="950" cy="70" r="1.5"/>
-    <circle cx="50" cy="110" r="1.5"/><circle cx="150" cy="110" r="1.5"/>
-    <circle cx="250" cy="110" r="1.5"/><circle cx="350" cy="110" r="1.5"/>
-    <circle cx="450" cy="110" r="1.5"/><circle cx="550" cy="110" r="1.5"/>
-    <circle cx="650" cy="110" r="1.5"/><circle cx="750" cy="110" r="1.5"/>
-    <circle cx="850" cy="110" r="1.5"/><circle cx="950" cy="110" r="1.5"/>
-    <circle cx="50" cy="150" r="1.5"/><circle cx="150" cy="150" r="1.5"/>
-    <circle cx="250" cy="150" r="1.5"/><circle cx="350" cy="150" r="1.5"/>
-    <circle cx="450" cy="150" r="1.5"/><circle cx="550" cy="150" r="1.5"/>
-    <circle cx="650" cy="150" r="1.5"/><circle cx="750" cy="150" r="1.5"/>
-    <circle cx="850" cy="150" r="1.5"/><circle cx="950" cy="150" r="1.5"/>
-    <circle cx="50" cy="190" r="1.5"/><circle cx="150" cy="190" r="1.5"/>
-    <circle cx="250" cy="190" r="1.5"/><circle cx="350" cy="190" r="1.5"/>
-    <circle cx="450" cy="190" r="1.5"/><circle cx="550" cy="190" r="1.5"/>
-    <circle cx="650" cy="190" r="1.5"/><circle cx="750" cy="190" r="1.5"/>
-    <circle cx="850" cy="190" r="1.5"/><circle cx="950" cy="190" r="1.5"/>
+  <!-- Maze grid lines (faint) -->
+  <g stroke="#a855f7" stroke-width="0.5" opacity="0.04">
+    <line x1="0" y1="40" x2="1000" y2="40"/>
+    <line x1="0" y1="80" x2="1000" y2="80"/>
+    <line x1="0" y1="120" x2="1000" y2="120"/>
+    <line x1="0" y1="160" x2="1000" y2="160"/>
+    <line x1="0" y1="200" x2="1000" y2="200"/>
+    <line x1="100" y1="0" x2="100" y2="240"/>
+    <line x1="200" y1="0" x2="200" y2="240"/>
+    <line x1="300" y1="0" x2="300" y2="240"/>
+    <line x1="400" y1="0" x2="400" y2="240"/>
+    <line x1="500" y1="0" x2="500" y2="240"/>
+    <line x1="600" y1="0" x2="600" y2="240"/>
+    <line x1="700" y1="0" x2="700" y2="240"/>
+    <line x1="800" y1="0" x2="800" y2="240"/>
+    <line x1="900" y1="0" x2="900" y2="240"/>
   </g>
 
-  <!-- Decorative circles -->
-  <circle cx="100" cy="200" r="120" fill="#a855f7" opacity="0.04"/>
-  <circle cx="900" cy="40" r="80" fill="#06b6d4" opacity="0.04"/>
+  <!-- Maze wall segments -->
+  <g fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.06">
+    <rect x="20" y="20" width="60" height="40" rx="4"/>
+    <rect x="120" y="160" width="60" height="40" rx="4"/>
+    <rect x="220" y="30" width="40" height="80" rx="4"/>
+    <rect x="720" y="170" width="80" height="30" rx="4"/>
+    <rect x="860" y="30" width="60" height="60" rx="4"/>
+    <rect x="920" y="140" width="40" height="60" rx="4"/>
+  </g>
 
-  <!-- Code decorations - left -->
-  <text x="40" y="55" font-family="'Fira Code', monospace" font-size="11" fill="#a855f7" opacity="0.12">&lt;!-- dev --&gt;</text>
-  <text x="40" y="75" font-family="'Fira Code', monospace" font-size="10" fill="#06b6d4" opacity="0.10">  import { Build } from 'web';</text>
-  <text x="40" y="92" font-family="'Fira Code', monospace" font-size="10" fill="#c084fc" opacity="0.10">  const app = await Build();</text>
-  <text x="40" y="109" font-family="'Fira Code', monospace" font-size="10" fill="#a855f7" opacity="0.10">  app.deploy(); // 🚀</text>
-  <text x="40" y="129" font-family="'Fira Code', monospace" font-size="11" fill="#a855f7" opacity="0.12">&lt;!-- /dev --&gt;</text>
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!--                    PAC-MAN                                -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <g transform="translate(75, 128)">
+    <!-- Pac-Man body (yellow circle with mouth cut out) -->
+    <path d="M 0,0 L 32,-16 A 38 38 0 1 0 32,16 Z" fill="#fde047" filter="url(#softGlow)"/>
+    <!-- Inner mouth dark -->
+    <path d="M 0,0 L 32,-14 A 38 38 0 1 0 32,14 Z" fill="#0a0a0f"/>
+    <!-- Eye -->
+    <circle cx="10" cy="-20" r="4" fill="#0a0a0f"/>
+  </g>
 
-  <!-- Code decorations - right -->
-  <text x="770" y="125" font-family="'Fira Code', monospace" font-size="11" fill="#a855f7" opacity="0.12">// philosophy</text>
-  <text x="770" y="145" font-family="'Fira Code', monospace" font-size="10" fill="#06b6d4" opacity="0.10">clean &gt; clever</text>
-  <text x="770" y="162" font-family="'Fira Code', monospace" font-size="10" fill="#c084fc" opacity="0.10">// always</text>
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!--                    AVATAR with glow ring                  -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <g transform="translate(195, 128)">
+    <!-- Outer glow ring -->
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#ringGlow)" stroke-width="4" filter="url(#avatarGlow)"/>
+    <!-- Avatar image clipped to circle -->
+    <clipPath id="avatarClip">
+      <circle cx="0" cy="0" r="33"/>
+    </clipPath>
+    <image href="https://avatars.githubusercontent.com/u/192640466" x="-33" y="-33" width="66" height="66" clip-path="url(#avatarClip)"/>
+    <!-- Inner ring accent -->
+    <circle cx="0" cy="0" r="33" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  </g>
 
-  <!-- Main title with glow -->
-  <text x="500" y="110" text-anchor="middle" font-family="'Fira Code', 'Courier New', monospace" font-size="56" font-weight="700" fill="url(#titleGrad)" filter="url(#glow)">CodeByAbi</text>
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!--                    PELLETS (between avatar and title)      -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <g fill="#fde047" opacity="0.6">
+    <circle cx="260" cy="128" r="2.5"/>
+    <circle cx="285" cy="128" r="2.5"/>
+    <circle cx="310" cy="128" r="2.5"/>
+    <circle cx="335" cy="128" r="2.5"/>
+    <circle cx="360" cy="128" r="2.5"/>
+    <circle cx="385" cy="128" r="2.5"/>
+    <circle cx="410" cy="128" r="2.5"/>
+  </g>
+
+  <!-- Power pellet -->
+  <circle cx="335" cy="128" r="5" fill="#fde047" opacity="0.9" filter="url(#softGlow)"/>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!--                    TITLE                                   -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <text x="500" y="108" text-anchor="middle" font-family="'Fira Code', 'Courier New', monospace" font-size="48" font-weight="700" fill="url(#titleGrad)" filter="url(#titleGlow)">CodeByAbi</text>
 
   <!-- Underline glow bar -->
-  <rect x="350" y="130" width="300" height="3" rx="1.5" fill="url(#glowLine)" filter="url(#softGlow)"/>
+  <rect x="370" y="125" width="260" height="3" rx="1.5" fill="#fde047" opacity="0.3" filter="url(#softGlow)"/>
 
   <!-- Subtitle -->
-  <text x="500" y="160" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b7280" letter-spacing="5">FULL-STACK DEVELOPER · MERN · OPEN SOURCE</text>
+  <text x="500" y="155" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6b7280" letter-spacing="4">FULL-STACK DEVELOPER · MERN · OPEN SOURCE</text>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!--                    GHOSTS (running right)                  -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+
+  <!-- Blinky (red) -->
+  <g transform="translate(710, 130)">
+    <path d="M -18,-14 Q -18,-22 -12,-22 L 12,-22 Q 18,-22 18,-14 L 18,12 Q 12,18 6,12 Q 0,18 -6,12 Q -12,18 -18,12 Z" fill="#ff0000"/>
+    <!-- Eyes -->
+    <ellipse cx="-7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <ellipse cx="7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <circle cx="-5" cy="-7" r="2.5" fill="#1a1a2e"/>
+    <circle cx="9" cy="-7" r="2.5" fill="#1a1a2e"/>
+  </g>
+
+  <!-- Pinky (pink) -->
+  <g transform="translate(770, 128)">
+    <path d="M -18,-14 Q -18,-22 -12,-22 L 12,-22 Q 18,-22 18,-14 L 18,12 Q 12,18 6,12 Q 0,18 -6,12 Q -12,18 -18,12 Z" fill="#ffb8ff"/>
+    <ellipse cx="-7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <ellipse cx="7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <circle cx="-5" cy="-7" r="2.5" fill="#1a1a2e"/>
+    <circle cx="9" cy="-7" r="2.5" fill="#1a1a2e"/>
+  </g>
+
+  <!-- Inky (cyan) -->
+  <g transform="translate(830, 126)">
+    <path d="M -18,-14 Q -18,-22 -12,-22 L 12,-22 Q 18,-22 18,-14 L 18,12 Q 12,18 6,12 Q 0,18 -6,12 Q -12,18 -18,12 Z" fill="#00ffff"/>
+    <ellipse cx="-7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <ellipse cx="7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <circle cx="-5" cy="-7" r="2.5" fill="#1a1a2e"/>
+    <circle cx="9" cy="-7" r="2.5" fill="#1a1a2e"/>
+  </g>
+
+  <!-- Clyde (orange) -->
+  <g transform="translate(890, 131)">
+    <path d="M -18,-14 Q -18,-22 -12,-22 L 12,-22 Q 18,-22 18,-14 L 18,12 Q 12,18 6,12 Q 0,18 -6,12 Q -12,18 -18,12 Z" fill="#ffb852"/>
+    <ellipse cx="-7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <ellipse cx="7" cy="-8" rx="5" ry="6" fill="url(#eyeWhite)"/>
+    <circle cx="-5" cy="-7" r="2.5" fill="#1a1a2e"/>
+    <circle cx="9" cy="-7" r="2.5" fill="#1a1a2e"/>
+  </g>
+
+  <!-- Dots behind ghosts (scattered trail) -->
+  <g fill="#fde047" opacity="0.3">
+    <circle cx="660" cy="130" r="1.5"/>
+    <circle cx="680" cy="127" r="1.5"/>
+    <circle cx="695" cy="133" r="1.5"/>
+    <circle cx="740" cy="129" r="1.5"/>
+    <circle cx="755" cy="126" r="1.5"/>
+    <circle cx="800" cy="131" r="1.5"/>
+    <circle cx="815" cy="127" r="1.5"/>
+    <circle cx="860" cy="130" r="1.5"/>
+    <circle cx="875" cy="126" r="1.5"/>
+    <circle cx="920" cy="132" r="1.5"/>
+    <circle cx="940" cy="128" r="1.5"/>
+    <circle cx="960" cy="131" r="1.5"/>
+  </g>
 
   <!-- Bottom accent dots -->
-  <circle cx="360" cy="185" r="2.5" fill="#a855f7" opacity="0.5"/>
-  <circle cx="370" cy="185" r="2.5" fill="#c084fc" opacity="0.4"/>
-  <circle cx="380" cy="185" r="2.5" fill="#06b6d4" opacity="0.3"/>
-  <circle cx="620" cy="185" r="2.5" fill="#06b6d4" opacity="0.3"/>
-  <circle cx="630" cy="185" r="2.5" fill="#c084fc" opacity="0.4"/>
-  <circle cx="640" cy="185" r="2.5" fill="#a855f7" opacity="0.5"/>
+  <circle cx="420" cy="195" r="2" fill="#fde047" opacity="0.3"/>
+  <circle cx="435" cy="195" r="2" fill="#06b6d4" opacity="0.3"/>
+  <circle cx="565" cy="195" r="2" fill="#06b6d4" opacity="0.3"/>
+  <circle cx="580" cy="195" r="2" fill="#fde047" opacity="0.3"/>
 </svg>

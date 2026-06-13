@@ -3,8 +3,11 @@
 # [𝐂𝐨𝐝𝐞𝐁𝐲𝐀𝐛𝐢](https://github.com/Abi-de-jo)
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;MERN+Stack+%E2%80%A2+TypeScript;Open+Source+%E2%80%A2+Clean+Code;Building+for+the+web" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FDE047&center=true&vCenter=true&width=500&lines=Eating+bugs+for+breakfast;Chasing+ghosts+daily;Power+pellet+mode+%E2%80%A2+ON;Waka+waka+waka;Full-Stack+Developer" alt="Typing SVG" />
 </a>
+
+<!-- Pac-Man decorative separator -->
+<pre><b style="color:#fde047">ᗧ</b><span style="color:#6b7280">·</span><span style="color:#ff0000">•</span><span style="color:#ffb8ff">•</span><span style="color:#00ffff">•</span><span style="color:#ffb852">•</span></pre>
 
 <br><br>
 
@@ -123,7 +126,7 @@ philosophy: "Clean code over clever code — always."
 <div align="center">
 
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Abi-de-jo&theme=discord&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10&title_color=a855f7" alt="Trophies" />
+  <img src="https://github-profile-trophy-tawny.vercel.app/?username=Abi-de-jo&theme=discord&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10&title_color=a855f7" alt="Trophies" />
 </a>
 
 <br><br>
@@ -160,6 +163,6 @@ philosophy: "Clean code over clever code — always."
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=120&section=footer&text=CodeByAbi%20%E2%80%A2%202025&fontSize=16&fontColor=e2e8f0" width="100%" alt="Footer Wave" />
+<img src="assets/footer.svg" width="100%" alt="Pac-Man Footer" />
 
 </div>

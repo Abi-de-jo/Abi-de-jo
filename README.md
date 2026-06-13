@@ -1,5 +1,5 @@
 <p align="center">
-<img src="assets/ghost-banner.svg" alt="CodeByAbi Ghost Banner" width="900">
+<img src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/main/assets/ghost-banner.svg" alt="CodeByAbi Ghost Banner" width="900">
 </p>
 
 # 👻 SPECTRAL PRESENCE

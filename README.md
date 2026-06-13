@@ -1,129 +1,90 @@
 <div align="center">
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" role="img" aria-label="CodeByAbi animated ghost banner">
-  <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="50%" stop-color="#131022"/>
-      <stop offset="100%" stop-color="#0d1117"/>
-    </linearGradient>
-    <linearGradient id="ghostGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#8b5cf6"/>
-      <stop offset="100%" stop-color="#6d28d9"/>
-    </linearGradient>
-    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.7"/>
-      <stop offset="60%" stop-color="#6d28d9" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-
-  <style>
-    .float { animation: float 4s ease-in-out infinite; }
-    .fade { animation: fade 6s ease-in-out infinite; }
-    .blink-left { animation: blink 5s infinite; transform-origin: center; transform-box: fill-box; }
-    .blink-right { animation: blink 5s infinite; transform-origin: center; transform-box: fill-box; }
-    .pulse-glow { animation: pulseGlow 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
-    .twinkle-a { animation: twinkle 2.5s ease-in-out infinite; }
-    .twinkle-b { animation: twinkle 3s ease-in-out infinite 0.4s; }
-    .twinkle-c { animation: twinkle 2s ease-in-out infinite 0.8s; }
-    .twinkle-d { animation: twinkle 3.5s ease-in-out infinite 1.2s; }
-    .twinkle-e { animation: twinkle 2.8s ease-in-out infinite 0.2s; }
-    .twinkle-f { animation: twinkle 3.2s ease-in-out infinite 1.5s; }
-    .badge-hide { animation: badgeHide 8s ease-in-out infinite; }
-    .text-glow { animation: textGlow 4s ease-in-out infinite; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    @keyframes fade {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.15; }
-    }
-    @keyframes blink {
-      0%, 90%, 100% { transform: scaleY(1); }
-      93%, 97% { transform: scaleY(0.1); }
-    }
-    @keyframes pulseGlow {
-      0%, 100% { transform: scale(1); opacity: 0.4; }
-      50% { transform: scale(1.3); opacity: 0.75; }
-    }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.2; }
-      50% { opacity: 1; }
-    }
-    @keyframes badgeHide {
-      0%, 40% { transform: translateX(0); opacity: 1; }
-      50%, 60% { transform: translateX(40px); opacity: 0; }
-      70%, 100% { transform: translateX(0); opacity: 1; }
-    }
-    @keyframes textGlow {
-      0%, 100% { filter: drop-shadow(0 0 4px #8b5cf6) drop-shadow(0 0 8px #6d28d9); }
-      50% { filter: drop-shadow(0 0 12px #c084fc) drop-shadow(0 0 22px #8b5cf6); }
-    }
-  </style>
-
-  <rect width="900" height="280" fill="url(#bgGrad)"/>
-
-  <g fill="#a78bfa">
-    <circle class="twinkle-a" cx="80" cy="50" r="1.5"/>
-    <circle class="twinkle-b" cx="150" cy="30" r="1"/>
-    <circle class="twinkle-c" cx="220" cy="80" r="1.5"/>
-    <circle class="twinkle-d" cx="680" cy="40" r="1"/>
-    <circle class="twinkle-e" cx="760" cy="70" r="1.5"/>
-    <circle class="twinkle-f" cx="830" cy="50" r="1"/>
-    <circle class="twinkle-a" cx="120" cy="200" r="1"/>
-    <circle class="twinkle-c" cx="780" cy="180" r="1.5"/>
-    <circle class="twinkle-b" cx="40" cy="120" r="1"/>
-    <circle class="twinkle-d" cx="860" cy="120" r="1"/>
-    <circle class="twinkle-e" cx="180" cy="150" r="1"/>
-    <circle class="twinkle-f" cx="720" cy="200" r="1"/>
-  </g>
-
-  <text x="60" y="190" font-family="monospace" font-size="120" fill="#6d28d9" opacity="0.35" font-weight="bold">{</text>
-  <text x="820" y="190" font-family="monospace" font-size="120" fill="#6d28d9" opacity="0.35" font-weight="bold">}</text>
-
-  <text x="450" y="28" font-family="monospace" font-size="13" fill="#a78bfa" text-anchor="middle" opacity="0.8">while(true) { code() }</text>
-
-  <g transform="translate(620, 80)">
-    <g class="badge-hide">
-      <rect x="0" y="0" width="120" height="30" rx="15" ry="15" fill="#0d1117" stroke="#8b5cf6" stroke-width="2"/>
-      <text x="60" y="20" font-family="monospace" font-size="12" font-weight="bold" fill="#a78bfa" text-anchor="middle" letter-spacing="1.5">GHOST MODE</text>
-    </g>
-  </g>
-
-  <g class="float">
-    <ellipse class="pulse-glow" cx="450" cy="130" rx="90" ry="100" fill="url(#glowGrad)"/>
-
-    <g class="fade">
-      <text x="335" y="145" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6" text-anchor="middle" opacity="0.9">&lt;</text>
-      <text x="565" y="145" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6" text-anchor="middle" opacity="0.9">/&gt;</text>
-
-      <path d="M 390 110 A 60 60 0 0 1 510 110 L 510 180 Q 495 200 480 180 Q 465 200 450 180 Q 435 200 420 180 Q 405 200 390 180 Z" fill="url(#ghostGrad)" stroke="#a78bfa" stroke-width="1.5"/>
-
-      <ellipse cx="410" cy="125" rx="9" ry="5" fill="#f0abfc" opacity="0.55"/>
-      <ellipse cx="490" cy="125" rx="9" ry="5" fill="#f0abfc" opacity="0.55"/>
-
-      <ellipse class="blink-left" cx="425" cy="100" rx="7" ry="11" fill="#0d1117"/>
-      <ellipse class="blink-right" cx="475" cy="100" rx="7" ry="11" fill="#0d1117"/>
-
-      <circle cx="422" cy="95" r="2" fill="#ffffff"/>
-      <circle cx="472" cy="95" r="2" fill="#ffffff"/>
-
-      <path d="M 435 130 Q 450 142 465 130" fill="none" stroke="#0d1117" stroke-width="2.5" stroke-linecap="round"/>
-    </g>
-  </g>
-
-  <text class="text-glow" x="450" y="225" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">CodeByAbi</text>
-
-  <text x="450" y="252" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#94a3b8" text-anchor="middle">Full-Stack Developer &amp; MERN Specialist</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280">
+<defs>
+<linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#0d1117"/>
+<stop offset="50%" stop-color="#131022"/>
+<stop offset="100%" stop-color="#0d1117"/>
+</linearGradient>
+<linearGradient id="ghostGrad" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#8b5cf6"/>
+<stop offset="100%" stop-color="#6d28d9"/>
+</linearGradient>
+<radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+<stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.7"/>
+<stop offset="60%" stop-color="#6d28d9" stop-opacity="0.25"/>
+<stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<style>
+@keyframes ghostFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes ghostFade{0%,100%{opacity:1}50%{opacity:0.15}}
+@keyframes blink{0%,90%,100%{transform:scaleY(1)}93%,97%{transform:scaleY(0.1)}}
+@keyframes pulseGlow{0%,100%{transform:scale(1);opacity:0.4}50%{transform:scale(1.3);opacity:0.75}}
+@keyframes twinkle{0%,100%{opacity:0.2}50%{opacity:1}}
+@keyframes badgeHide{0%,40%{opacity:1;transform:translateX(0)}50%,60%{opacity:0;transform:translateX(40px)}70%,100%{opacity:1;transform:translateX(0)}}
+@keyframes textGlow{0%,100%{filter:drop-shadow(0 0 4px #8b5cf6) drop-shadow(0 0 8px #6d28d9)}50%{filter:drop-shadow(0 0 12px #c084fc) drop-shadow(0 0 22px #8b5cf6)}}
+.ghost-group{animation:ghostFloat 4s ease-in-out infinite,ghostFade 6s ease-in-out infinite;transform-origin:450px 150px}
+.eye{animation:blink 5s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+.glow{animation:pulseGlow 3s ease-in-out infinite;transform-origin:450px 140px}
+.star{animation:twinkle 3s ease-in-out infinite}
+.s2{animation-delay:0.4s}.s3{animation-delay:0.8s}.s4{animation-delay:1.2s}.s5{animation-delay:1.6s}.s6{animation-delay:2s}
+.badge{animation:badgeHide 8s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+.title{animation:textGlow 4s ease-in-out infinite}
+.brackets{animation:ghostFloat 5s ease-in-out infinite}
+.b2{animation-delay:1s}
+</style>
+<rect width="900" height="280" fill="url(#bgGrad)"/>
+<g fill="#c4b5fd">
+<circle class="star" cx="60" cy="40" r="1.4"/>
+<circle class="star s2" cx="120" cy="220" r="1.2"/>
+<circle class="star s3" cx="180" cy="60" r="1.6"/>
+<circle class="star s4" cx="80" cy="150" r="1"/>
+<circle class="star s5" cx="220" cy="200" r="1.3"/>
+<circle class="star s6" cx="320" cy="30" r="1.1"/>
+<circle class="star" cx="380" cy="240" r="1.4"/>
+<circle class="star s2" cx="520" cy="50" r="1.2"/>
+<circle class="star s3" cx="600" cy="220" r="1.5"/>
+<circle class="star s4" cx="680" cy="35" r="1"/>
+<circle class="star s5" cx="740" cy="180" r="1.3"/>
+<circle class="star s6" cx="820" cy="80" r="1.4"/>
+<circle class="star" cx="860" cy="220" r="1.1"/>
+<circle class="star s3" cx="450" cy="20" r="1.2"/>
+<circle class="star s4" cx="40" cy="100" r="1"/>
+<circle class="star s5" cx="880" cy="150" r="1.2"/>
+<circle class="star s2" cx="280" cy="120" r="0.9"/>
+<circle class="star s6" cx="620" cy="130" r="0.9"/>
+</g>
+<text x="450" y="25" text-anchor="middle" font-family="monospace" font-size="11" fill="#6d28d9" opacity="0.7">while(true) { code() }</text>
+<text class="brackets" x="55" y="160" font-family="monospace" font-size="40" fill="#8b5cf6" opacity="0.5">{</text>
+<text class="brackets b2" x="825" y="160" font-family="monospace" font-size="40" fill="#8b5cf6" opacity="0.5">}</text>
+<g class="badge">
+<rect x="720" y="55" width="130" height="26" rx="13" fill="#0d1117" stroke="#8b5cf6" stroke-width="1.5"/>
+<circle cx="734" cy="68" r="4" fill="#8b5cf6"/>
+<text x="748" y="72" font-family="monospace" font-size="11" fill="#c4b5fd" font-weight="700">GHOST MODE</text>
+</g>
+<text x="335" y="145" text-anchor="middle" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6" opacity="0.9">&lt;</text>
+<text x="565" y="145" text-anchor="middle" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6" opacity="0.9">/&gt;</text>
+<circle class="glow" cx="450" cy="140" r="110" fill="url(#glowGrad)"/>
+<g class="ghost-group">
+<path d="M390 110 A60 60 0 0 1 510 110 L510 180 Q495 200 480 180 Q465 200 450 180 Q435 200 420 180 Q405 200 390 180 Z" fill="url(#ghostGrad)" stroke="#a78bfa" stroke-width="1.5"/>
+<ellipse cx="410" cy="125" rx="9" ry="5" fill="#f0abfc" opacity="0.55"/>
+<ellipse cx="490" cy="125" rx="9" ry="5" fill="#f0abfc" opacity="0.55"/>
+<ellipse class="eye" cx="425" cy="100" rx="7" ry="11" fill="#0d1117"/>
+<ellipse class="eye" cx="475" cy="100" rx="7" ry="11" fill="#0d1117"/>
+<circle cx="422" cy="95" r="2" fill="#fff"/>
+<circle cx="472" cy="95" r="2" fill="#fff"/>
+<path d="M435 130 Q450 142 465 130" fill="none" stroke="#0d1117" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<text class="title" x="450" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#ffffff">CodeByAbi</text>
+<text x="450" y="256" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Full-Stack Developer &amp; MERN Specialist</text>
 </svg>
 
 </div>
 
 # 👻 SPECTRAL PRESENCE
-**R.Abisheik** · CodeByAbi · Full-Stack Developer · MERN Specialist  
+**R.Abisheik** · CodeByAbi · Full-Stack Developer · MERN Specialist
 📍 Tamilnadu · 🕯️ Coding after midnight · ☕ Black coffee fuel
 
 # 👻 THE HAUNTED STACK
@@ -178,7 +139,6 @@ Personal portfolio · Creative showcase 🎨
 
 # 👻 THE ORDER
 Sree-Cognicoders // The Order 🏛️
-
 > Teaching 50+ students · Shaping the next generation of full-stack engineers
 
 # 👻 SUMMON ME

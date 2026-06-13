@@ -70,6 +70,12 @@ Sree-Cognicoders // The Order 🏛️
 <img src="https://komarev.com/ghpvc/?username=Abi-de-jo&color=8b5cf6&style=flat-square&label=Ghost+Sightings" alt="Profile Views">
 </p>
 
+# 👻 GHOST HUNT GAME
+<p align="center">
+<img src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/main/assets/ghost-hunt-game.svg" alt="Ghost Hunt Game" width="95%">
+</p>
+<sup>*Ghosts hide in contribution cells. Keep committing to hunt them all! Updated every 6 hours.*</sup>
+
 ---
 <p align="center">
 👻 Haunting production systems since 2020 · Senior Code Spirit at Sree-Cognicoders 👻

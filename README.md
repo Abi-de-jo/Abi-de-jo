@@ -1,77 +1,74 @@
 <div align="center">
 
-# 👻 CodeByAbi
+# 𝐂𝐨𝐝𝐞𝐁𝐲𝐀𝐛𝐢
 
-**FULL-STACK DEVELOPER · MERN STACK · OPEN SOURCE**
-
-[![Profile Views](https://komarev.com/ghpvc/?username=Abi-de-jo&color=8b5cf6&style=flat-square&label=GHOST+VIEWS)](https://github.com/Abi-de-jo)
-[![Discord](https://img.shields.io/badge/Discord-Abi_de_jo-8b5cf6?style=flat-square&logo=discord&logoColor=white)](https://discord.com/users/Abi-de-jo)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Abi_de_jo-8b5cf6?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/Abi-de-jo)
-
----
-
-<!-- BANNER: Game title screen with animated character, stars, moon, and ghosts -->
-<img src="assets/ghost-banner.svg" width="900" height="300" alt="CodeByAbi Banner">
-
----
-
-## 🎮 Ghost Hunter — Live Commit Graph Game
-
-<!-- GAME: Real-time platformer generated from your actual GitHub contributions -->
-<img src="assets/ghost-runner.svg" width="900" height="420" alt="Ghost Runner Platformer">
-
-> *Your commits build the terrain. The Ghost Hunter runs, jumps, and collects ⭐ along your contribution graph.*
-> <br>🔄 Updated every **4 hours** via GitHub Actions
-
----
-
-## 👻 Legacy Ghost Hunt
-
-<!-- LEGACY GAME: Snake-based ghost hunt overlay -->
-<img src="assets/ghost-hunt-game.svg" width="900" height="200" alt="Ghost Hunt Game">
-
-> *Classic snake grid with 👻 haunting your most active cells.*
-> <br>🔄 Updated **every hour**
-
----
-
-## 🛠️ Tech Stack & Tools
-
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-f7df1e?style=for-the-badge&logo=javascript&logoColor=000)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=fff)
-![React](https://img.shields.io/badge/-React-61dafb?style=for-the-badge&logo=react&logoColor=000)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=fff)
-![MongoDB](https://img.shields.io/badge/-MongoDB-47a248?style=for-the-badge&logo=mongodb&logoColor=fff)
-![Express](https://img.shields.io/badge/-Express-000?style=for-the-badge&logo=express&logoColor=fff)
-![HTML5](https://img.shields.io/badge/-HTML5-e34f26?style=for-the-badge&logo=html5&logoColor=fff)
-![CSS3](https://img.shields.io/badge/-CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=fff)
-![Git](https://img.shields.io/badge/-Git-f05032?style=for-the-badge&logo=git&logoColor=fff)
-![VS Code](https://img.shields.io/badge/-VS%20Code-007acc?style=for-the-badge&logo=visualstudiocode&logoColor=fff)
-
-</div>
-
----
-
-## 📊 Contribution Statistics
-
-<div align="center">
-
-<!-- GitHub Stats Cards with purple theme -->
-<img src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=a78bfa&text_color=c4b5fd&border_color=6d28d9" width="48%" alt="GitHub Stats">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=8b5cf6&text_color=c4b5fd&border_color=6d28d9" width="48%" alt="Top Languages">
+<sup><i>full-stack developer · open source · clean code</i></sup>
 
 <br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Abi-de-jo&theme=midnight-purple&hide_border=true&background=0d1117&stroke=8b5cf6&ring=8b5cf6&fire=a78bfa&currStreakNum=c4b5fd&sideNums=c4b5fd&currStreakLabel=8b5cf6&sideLabels=6d28d9&dates=6d28d9" width="70%" alt="Streak Stats">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Building+for+the+web;React+%7C+Node+%7C+MongoDB;Open+source+enthusiast;Clean+code+%E2%89%A5+clever+code" alt="Typing SVG" /></a>
+
+<br>
+
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=Abi-de-jo&label=visitors&countColor=%23a855f7&style=flat-square)](https://github.com/Abi-de-jo)
+[![Discord](https://img.shields.io/badge/Discord-@abi__de__jo-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/users/Abi-de-jo)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-abi--de--jo-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/Abi-de-jo)
+[![Email](https://img.shields.io/badge/Email-contact-8b5cf6?style=flat-square&logo=minutemailer&logoColor=white)](mailto:contact@codebyabi.dev)
 
 </div>
 
 ---
 
-## 🏆 Trophy Case
+<!-- CUSTOM BANNER -->
+<img src="assets/banner.svg" width="100%" alt="CodeByAbi Banner">
+
+---
+
+## 👨‍💻 About Me
+
+```yaml
+name: Abi
+role: Full-Stack Developer
+stack:
+  - React / TypeScript
+  - Node.js / Express
+  - MongoDB
+focus: Building production-grade web applications
+philosophy: "Clean code over clever code — always."
+```
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+[![My Skills](https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,mongodb,html,css,tailwind,git,github,vscode,postman,linux&theme=dark)](https://skillicons.dev)
+
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+<a href="https://github.com/Abi-de-jo">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0a0a0f&title_color=a855f7&icon_color=a855f7&text_color=e2e8f0&border_color=1e1e2e&include_all_commits=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0a0a0f&title_color=a855f7&text_color=e2e8f0&border_color=1e1e2e" />
+</a>
+
+<br>
+
+<a href="https://github.com/Abi-de-jo">
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Abi-de-jo&theme=midnight-purple&hide_border=true&background=0a0a0f&stroke=a855f7&ring=a855f7&fire=c084fc&currStreakNum=e2e8f0&sideNums=e2e8f0&currStreakLabel=a855f7&sideLabels=a855f7&dates=6b7280" />
+</a>
+
+</div>
+
+---
+
+## 🏆 Achievements
 
 <div align="center">
 
@@ -81,31 +78,33 @@
 
 ---
 
-## 🎯 Recent Activity
+## 🐍 Contribution Graph
 
-<!--RECENT_ACTIVITY:start-->
-<!-- Automatically updated by GitHub Actions -->
-<!--RECENT_ACTIVITY:end-->
+<div align="center">
+
+<!-- Contribution snake animation generated by Platane/snk -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/snake-light.svg" />
+  <img alt="GitHub Contribution Snake" src="assets/snake-dark.svg" width="100%" />
+</picture>
+
+<br>
+<sub><i>🐍 My contributions sneak around the grid — updated daily</i></sub>
+
+</div>
 
 ---
 
-## 🌙 About Me
+## 📌 Recent Activity
 
-```text
-👻 Role      : Ghost Developer (Full-Stack)
-🎮 Stack     : MERN (MongoDB, Express, React, Node.js)
-💻 Currently : Building production-grade web applications
-🏆 Goal      : Clean code, scalable architecture, great UX
-🎯 Level     : Enterprise-Ready
-```
+<!--RECENT_ACTIVITY:start-->
+<!--RECENT_ACTIVITY:end-->
 
 ---
 
 <div align="center">
 
-*This profile README regenerates automatically every 4 hours —*  
-*because even ghosts need to keep their game sharp.* 👻
-
-**© 2025 CodeByAbi · Made with 💜 and too much coffee**
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer&text=CodeByAbi%20%E2%80%A2%202025&fontSize=16&fontColor=e2e8f0" width="100%" alt="Footer Wave" />
 
 </div>

@@ -16,7 +16,7 @@
 </radialGradient>
 </defs>
 <rect width="900" height="280" fill="url(#bgGrad)"/>
-<!--- STARS --->
+<!-- STARS -->
 <g fill="#c4b5fd">
 <circle cx="60" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
 <circle cx="120" cy="220" r="1.2"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" begin="0.4s" repeatCount="indefinite"/></circle>
@@ -37,16 +37,16 @@
 <circle cx="280" cy="120" r="0.9"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" begin="0.2s" repeatCount="indefinite"/></circle>
 <circle cx="620" cy="130" r="0.9"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.2s" begin="1.3s" repeatCount="indefinite"/></circle>
 </g>
-<!--- CODE TEXT --->
+<!-- CODE -->
 <text x="450" y="25" text-anchor="middle" font-family="monospace" font-size="11" fill="#6d28d9" opacity="0.7">while(true) { code() }</text>
-<!--- BRACKETS --->
+<!-- BRACKETS -->
 <text x="55" y="160" font-family="monospace" font-size="40" fill="#8b5cf6" opacity="0.5">
 <animate attributeName="opacity" values="0.5;0.9;0.5" dur="5s" repeatCount="indefinite"/>
 {</text>
 <text x="825" y="160" font-family="monospace" font-size="40" fill="#8b5cf6" opacity="0.5">
 <animate attributeName="opacity" values="0.5;0.9;0.5" dur="5s" begin="1s" repeatCount="indefinite"/>
 }</text>
-<!--- GHOST MODE BADGE --->
+<!-- BADGE -->
 <g>
 <animateTransform attributeName="transform" type="translate" values="0,0;40,0;0,0" dur="8s" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="1;0;1" dur="8s" repeatCount="indefinite"/>
@@ -54,40 +54,41 @@
 <circle cx="734" cy="68" r="4" fill="#8b5cf6"/>
 <text x="748" y="72" font-family="monospace" font-size="11" fill="#c4b5fd" font-weight="700">GHOST MODE</text>
 </g>
-<!--- ANGLE BRACKETS --->
+<!-- ANGLE BRACKETS -->
 <text x="335" y="145" text-anchor="middle" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6" opacity="0.9">
 <animate attributeName="opacity" values="1;0.15;1" dur="6s" repeatCount="indefinite"/>
 &lt;</text>
 <text x="565" y="145" text-anchor="middle" font-family="monospace" font-size="30" font-weight="bold" fill="#8b5cf6" opacity="0.9">
 <animate attributeName="opacity" values="1;0.15;1" dur="6s" repeatCount="indefinite"/>
 /&gt;</text>
-<!--- GLOW --->
+<!-- GLOW -->
 <circle cx="450" cy="140" r="110" fill="url(#glowGrad)">
 <animate attributeName="r" values="100;130;100" dur="3s" repeatCount="indefinite"/>
 <animate attributeName="opacity" values="0.4;0.75;0.4" dur="3s" repeatCount="indefinite"/>
 </circle>
-<!--- GHOST --->
+<!-- GHOST BODY -->
 <g>
 <animateTransform attributeName="transform" type="translate" values="0,0;0,-10;0,0" dur="4s" repeatCount="indefinite"/>
 <path d="M390 110 A60 60 0 0 1 510 110 L510 180 Q495 200 480 180 Q465 200 450 180 Q435 200 420 180 Q405 200 390 180 Z" fill="url(#ghostGrad)" stroke="#a78bfa" stroke-width="1.5"/>
 <ellipse cx="410" cy="125" rx="9" ry="5" fill="#f0abfc" opacity="0.55"/>
 <ellipse cx="490" cy="125" rx="9" ry="5" fill="#f0abfc" opacity="0.55"/>
-<!--- LEFT EYE --->
+<!-- LEFT EYE -->
 <g>
 <animateTransform attributeName="transform" type="scale" values="1 1;1 0.1;1 1" dur="5s" repeatCount="indefinite"/>
 <ellipse cx="425" cy="100" rx="7" ry="11" fill="#0d1117"/>
 </g>
-<!--- RIGHT EYE --->
+<!-- RIGHT EYE -->
 <g>
 <animateTransform attributeName="transform" type="scale" values="1 1;1 0.1;1 1" dur="5s" repeatCount="indefinite"/>
 <ellipse cx="475" cy="100" rx="7" ry="11" fill="#0d1117"/>
 </g>
 <circle cx="422" cy="95" r="2" fill="#fff"/>
 <circle cx="472" cy="95" r="2" fill="#fff"/>
+<!-- MOUTH -->
 <path d="M435 130 Q450 142 465 130" fill="none" stroke="#0d1117" stroke-width="2.5" stroke-linecap="round"/>
 </g>
-<!--- TITLE --->
+<!-- TITLE -->
 <text x="450" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="32" font-weight="800" fill="#ffffff">CodeByAbi</text>
-<!--- SUBTITLE --->
+<!-- SUBTITLE -->
 <text x="450" y="256" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#94a3b8">Full-Stack Developer &amp; MERN Specialist</text>
 </svg>

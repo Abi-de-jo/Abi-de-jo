@@ -1,299 +1,121 @@
-<!-- HORROR THEME WRAPPER - extends full width to cover grey GitHub background -->
-<div style="background-color:#0a0000;background-image:linear-gradient(180deg, #0a0000 0%, #1a0505 100%);padding:0;border-radius:8px;border:1px solid #3a0000;">
+<div align="center">
 
-<!-- GIANT HORROR HERO - fills the visible top of profile with horror bg -->
-<p align="center" style="margin:0;padding:0;line-height:0;">
-  <img src="assets/hero.svg" alt="Abisheik horror hero" width="100%" style="display:block;"/>
-</p>
+<!-- 👻 ANIMATED GHOST BANNER - Floating, blinking, hide-and-seek ghost with coding theme -->
 
-<div style="padding:40px;">
-
-
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Creepster&size=32&pause=1500&color=aa0000&center=true&vCenter=true&width=900&height=60&lines=I+am+the+developer+of+the+night;I+write+code+that+never+dies;Welcome+to+the+graveyard" alt="horror typing"/>
-</p>
-
-<br/>
-
-<!-- STATS -->
-<p align="center">
-  <img src="assets/stats.svg" alt="github stats" width="800"/>
-</p>
-
-<br/>
-
-<!-- DIVIDER 1 -->
-<p align="center">
-  <img src="assets/divider.svg" alt="horror divider" width="100%"/>
-</p>
-
-<br/>
-
-<!-- THE DEVELOPER -->
-<div style="background-color:#1a0505;padding:25px;border-radius:6px;border:1px solid #5a0000;margin:20px 0;">
-
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:0 0 20px 0;">THE DEVELOPER</h2>
-
-<div style="background-color:#0a0000;padding:20px;border-radius:4px;border:1px solid #3a0000;font-family:monospace;color:#aa0000;font-size:14px;line-height:1.6;">
-
-```
-> whoami
-```
-
-<span style="color:#ff0000;font-weight:bold;">R.Abisheik</span> <span style="color:#5a0000;">// full-stack developer</span>
-<span style="color:#5a0000;">location:</span> <span style="color:#aa0000;">tamilnadu, india</span>
-<span style="color:#5a0000;">status:</span> <span style="color:#aa0000;">coding after midnight</span>
-<span style="color:#5a0000;">fears:</span> <span style="color:#aa0000;">null</span>
-<span style="color:#5a0000;">coffee:</span> <span style="color:#aa0000;">black as my soul</span>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 280'%3E%3Cdefs%3E%3Cstyle%3E@keyframes ghostFloat%7B0%25,100%25%7Btransform:translateY(0px)%7D50%25%7Btransform:translateY(-18px)%7D%7D@keyframes ghostFade%7B0%25,100%25%7Bopacity:0.3%7D15%25,85%25%7Bopacity:1%7D%7D@keyframes blink%7B0%25,85%25,100%25%7Btransform:scaleY(1)%7D92%25%7Btransform:scaleY(0.15)%7D%7D@keyframes floatText%7B0%25,100%25%7Btransform:translateY(0px)%7D50%25%7Btransform:translateY(-6px)%7D%7D@keyframes sparkle%7B0%25,100%25%7Bopacity:0;transform:scale(0)%7D50%25%7Bopacity:1;transform:scale(1)%7D%7D@keyframes hideSeek%7B0%25%7Bopacity:0;transform:translateY(20px) scale(0.9)%7D10%25%7Bopacity:1;transform:translateY(0) scale(1)%7D80%25%7Bopacity:1;transform:translateY(0) scale(1)%7D90%25%7Bopacity:0;transform:translateY(-30px) scale(1.1)%7D100%25%7Bopacity:0;transform:translateY(-30px) scale(1.1)%7D%7D@keyframes glow%7B0%25,100%25%7Bfilter:drop-shadow(0 0 8px %23c084fc)%7D50%25%7Bfilter:drop-shadow(0 0 20px %23a855f7) drop-shadow(0 0 40px %238b5cf6)%7D%7D.st0%7Banimation:ghostFloat 4s ease-in-out infinite%7D.st1%7Banimation:ghostFade 5s ease-in-out infinite,glow 3s ease-in-out infinite%7D.st2%7Banimation:blink 3.5s ease-in-out infinite%7D.st3%7Banimation:hideSeek 8s ease-in-out infinite%7D.st4%7Banimation:sparkle 3s ease-in-out infinite%7D%3C/style%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238b5cf6'/%3E%3Cstop offset='100%25' style='stop-color:%236d28d9'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='50%25' cy='50%25' r='50%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffffff;stop-opacity:0.15'/%3E%3Cstop offset='100%25' style='stop-color:%23ffffff;stop-opacity:0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='900' height='280' fill='%230d1117' rx='16'/%3E%3Ccircle cx='120' cy='80' r='2' fill='%23ffffff' opacity='0.4'%3E%3Canimate attributeName='opacity' values='0.4;0;0.4' dur='3s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='780' cy='50' r='1.5' fill='%23ffffff' opacity='0.3'%3E%3Canimate attributeName='opacity' values='0.3;0;0.3' dur='2.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='800' cy='200' r='1' fill='%23ffffff' opacity='0.5'%3E%3Canimate attributeName='opacity' values='0.5;0;0.5' dur='4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='50' cy='200' r='2' fill='%23ffffff' opacity='0.2'%3E%3Canimate attributeName='opacity' values='0.2;0;0.2' dur='3.5s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='300' cy='240' r='1.5' fill='%23ffffff' opacity='0.3'%3E%3Canimate attributeName='opacity' values='0.3;0;0.3' dur='2.8s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='650' cy='230' r='2' fill='%23ffffff' opacity='0.25'%3E%3Canimate attributeName='opacity' values='0.25;0;0.25' dur='3.2s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='160' cy='140' r='1' fill='%23ffffff' opacity='0.35'%3E%3Canimate attributeName='opacity' values='0.35;0;0.35' dur='2.2s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='750' cy='120' r='1.5' fill='%23ffffff' opacity='0.4'%3E%3Canimate attributeName='opacity' values='0.4;0;0.4' dur='3.7s' repeatCount='indefinite'/%3E%3C/circle%3E%3C!-- MAIN GHOST --%3E%3Cg class='st1'%3E%3Cg class='st0'%3E%3Cpath d='M400,210 C400,210 380,195 365,200 C350,205 340,195 340,195 C340,195 320,210 310,200 C300,190 280,210 280,210 L280,120 C280,85 310,55 350,55 L370,55 C410,55 440,85 440,120 L440,210 Z' fill='url(%23g1)' opacity='0.9'/%3E%3C!-- Ghost bottom waves --%3E%3Cpath d='M400,210 C400,210 380,195 365,200 C350,205 340,195 340,195 C340,195 320,210 310,200 C300,190 280,210 280,210' fill='none' stroke='url(%23g1)' stroke-width='3'/%3E%3C!-- Eyes --%3E%3Cg class='st2'%3E%3Cellipse cx='335' cy='105' rx='12' ry='14' fill='%230d1117'/%3E%3Cellipse cx='385' cy='105' rx='12' ry='14' fill='%230d1117'/%3E%3Ccircle cx='338' cy='100' r='4' fill='%23ffffff'/%3E%3Ccircle cx='388' cy='100' r='4' fill='%23ffffff'/%3E%3C/g%3E%3C!-- Mouth --%3E%3Cpath d='M348,135 Q360,150 372,135' fill='none' stroke='%230d1117' stroke-width='3' stroke-linecap='round'/%3E%3C!-- Coding ghost arms holding bracket symbols --%3E%3Ctext x='260' y='140' font-family='monospace' font-size='24' fill='%23a78bfa' opacity='0.7'%3E%3C/%3E%3Ctext x='445' y='140' font-family='monospace' font-size='24' fill='%23a78bfa' opacity='0.7'%3E%3E%3C/text%3E%3C/g%3E%3C/g%3E%3C!-- TEXT --%3E%3Ctext x='560' y='85' font-family='system-ui,sans-serif' font-size='36' font-weight='800' fill='%23ffffff'%3ECodeByAbi%3Canimate attributeName='opacity' values='1;0.6;1' dur='3s' repeatCount='indefinite'/%3E%3C/text%3E%3Ctext x='560' y='120' font-family='monospace' font-size='14' fill='%2394a3b8'%3EFull-Stack Developer %26 MERN Specialist%3C/text%3E%3C!-- Ghost badge --%3E%3Cg class='st3'%3E%3Crect x='558' y='140' width='100' height='28' rx='14' fill='%238b5cf6'/%3E%3Ctext x='608' y='159' font-family='system-ui,sans-serif' font-size='12' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E%F0%9F%91%BB GHOST MODE%3C/text%3E%3C/g%3E%3C!-- Animated brackets --%3E%3Ctext x='570' y='215' font-family='monospace' font-size='32' fill='%23a78bfa' opacity='0.5'%3E%3Canimate attributeName='opacity' values='0.5;0.2;0.5' dur='2s' repeatCount='indefinite'/%3E%7B%7D%3C/text%3E%3Ctext x='570' y='245' font-family='monospace' font-size='14' fill='%238b5cf6' opacity='0.4'%3E%3Canimate attributeName='opacity' values='0.4;0.1;0.4' dur='2.5s' repeatCount='indefinite'/%3Ewhile(true) %7B code() %7D%3C/text%3E%3C/svg%3E">
+  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 280'%3E%3Cdefs%3E%3Cstyle%3E@keyframes ghostFloat%7B0%25,100%25%7Btransform:translateY(0px)%7D50%25%7Btransform:translateY(-18px)%7D%7D@keyframes ghostFade%7B0%25,100%25%7Bopacity:0.3%7D15%25,85%25%7Bopacity:1%7D%7D@keyframes blink%7B0%25,85%25,100%25%7Btransform:scaleY(1)%7D92%25%7Btransform:scaleY(0.15)%7D%7D@keyframes glow%7B0%25,100%25%7Bfilter:drop-shadow(0 0 8px %23c084fc)%7D50%25%7Bfilter:drop-shadow(0 0 20px %23a855f7) drop-shadow(0 0 40px %238b5cf6)%7D%7D.st0%7Banimation:ghostFloat 4s ease-in-out infinite%7D.st1%7Banimation:ghostFade 5s ease-in-out infinite,glow 3s ease-in-out infinite%7D.st2%7Banimation:blink 3.5s ease-in-out infinite%7D.st3%7Banimation:hideSeek 8s ease-in-out infinite%7D%3C/style%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%238b5cf6'/%3E%3Cstop offset='100%25' style='stop-color:%236d28d9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='280' fill='%23f3e8ff' rx='16'/%3E%3C!-- LIGHT MODE GHOST --%3E%3Cg class='st1'%3E%3Cg class='st0'%3E%3Cpath d='M400,210 C400,210 380,195 365,200 C350,205 340,195 340,195 C340,195 320,210 310,200 C300,190 280,210 280,210 L280,120 C280,85 310,55 350,55 L370,55 C410,55 440,85 440,120 L440,210 Z' fill='%237c3aed' opacity='0.85'/%3E%3Cpath d='M400,210 C400,210 380,195 365,200 C350,205 340,195 340,195 C340,195 320,210 310,200 C300,190 280,210 280,210' fill='none' stroke='%237c3aed' stroke-width='3'/%3E%3Cg class='st2'%3E%3Cellipse cx='335' cy='105' rx='12' ry='14' fill='%23ffffff'/%3E%3Cellipse cx='385' cy='105' rx='12' ry='14' fill='%23ffffff'/%3E%3Ccircle cx='338' cy='100' r='4' fill='%233b0764'/%3E%3Ccircle cx='388' cy='100' r='4' fill='%233b0764'/%3E%3C/g%3E%3Cpath d='M348,135 Q360,150 372,135' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round'/%3E%3Ctext x='260' y='140' font-family='monospace' font-size='24' fill='%23933cde' opacity='0.6'%3E%3C/%3E%3Ctext x='445' y='140' font-family='monospace' font-size='24' fill='%23933cde' opacity='0.6'%3E%3E%3C/text%3E%3C/g%3E%3C/g%3E%3Ctext x='560' y='85' font-family='system-ui,sans-serif' font-size='36' font-weight='800' fill='%235b21a6'%3ECodeByAbi%3Canimate attributeName='opacity' values='1;0.6;1' dur='3s' repeatCount='indefinite'/%3E%3C/text%3E%3Ctext x='560' y='120' font-family='monospace' font-size='14' fill='%236b21a8'%3EFull-Stack Developer %26 MERN Specialist%3C/text%3E%3Cg class='st3'%3E%3Crect x='558' y='140' width='100' height='28' rx='14' fill='%237c3aed'/%3E%3Ctext x='608' y='159' font-family='system-ui,sans-serif' font-size='12' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E%F0%9F%91%BB GHOST MODE%3C/text%3E%3C/g%3E%3Ctext x='570' y='215' font-family='monospace' font-size='32' fill='%23933cde' opacity='0.5'%3E%3Canimate attributeName='opacity' values='0.5;0.2;0.5' dur='2s' repeatCount='indefinite'/%3E%7B%7D%3C/text%3E%3Ctext x='570' y='245' font-family='monospace' font-size='14' fill='%237c3aed' opacity='0.4'%3E%3Canimate attributeName='opacity' values='0.4;0.1;0.4' dur='2.5s' repeatCount='indefinite'/%3Ewhile(true) %7B code() %7D%3C/text%3E%3C/svg%3E" alt="CodeByAbi Ghost Banner" width="900">
+</picture>
 
 </div>
 
-<br/>
+<br>
 
-<div style="background-color:#0a0000;padding:20px;border-radius:4px;border:1px solid #3a0000;font-family:monospace;color:#aa0000;font-size:14px;line-height:1.8;">
+## 👻 SPECTRAL PRESENCE
 
-I build production-grade systems for the modern web. <span style="color:#ff0000;">React, TypeScript, Node.js, PostgreSQL, MongoDB, Prisma.</span> The full stack. Frontend to backend, infrastructure to deployment. No frameworks I cannot defend. No language I cannot pick up. I ship code that works in production -- not just on my machine.
+**R.Abisheik** · CodeByAbi · Full-Stack Developer · MERN Specialist
+📍 Tamilnadu · 🕯️ Coding after midnight · ☕ Black coffee fuel
 
-As a core contributor at <span style="color:#ff0000;font-weight:bold;">Sree-Cognicoders</span>, I architect and ship enterprise systems handling real-world complexity: identity management, queue monitoring, time tracking, visitor management. The kind of systems that fail in production if you are not careful. I am careful.
+<br>
 
-I also teach. Over <span style="color:#ff0000;font-weight:bold;">50 students</span> trained in full-stack development. The next generation of engineers will be better than me. That is the goal.
+## 👻 THE HAUNTED STACK
+<br>
 
-</div>
+### 👻 Frontend
+TypeScript · React · Next.js · React Native · Tailwind · Redux
 
-</div>
+### 👻 Backend
+Node.js · Python · Go · GraphQL · Prisma · PostgreSQL · MongoDB
 
-<br/>
+### 👻 Infrastructure
+Docker · AWS · Firebase · Auth0 · Git Actions · Cloudflare
 
-<!-- DIVIDER COFFIN -->
-<p align="center">
-  <img src="assets/divider-coffin.svg" alt="coffin divider" width="100%"/>
-</p>
+### 👻 Tools
+VS Code · Figma · Postman · Linux · Git · Biome
 
-<br/>
+<br>
 
-<!-- THE STACK -->
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:20px 0;">THE STACK</h2>
+## 👻 GRAVEYARD PROJECTS
 
-<p align="center">
-  <img src="assets/stack.svg" alt="tech stack" width="800"/>
-</p>
+### 👻 Fahh
+VS Code extension · Catch bugs by ear 🔊
+`TypeScript`
 
-<br/>
+### 👻 Fitmachi
+Fitness tracking · Workout planning · Analytics 💪
+`TypeScript`
 
-<!-- DIVIDER 1 -->
-<p align="center">
-  <img src="assets/divider.svg" alt="horror divider" width="100%"/>
-</p>
+### 👻 AiMock Interview
+AI-powered mock interview · Real-time feedback 🎯
+`JavaScript`
 
-<br/>
+### 👻 ReleaseNotePro
+Multi-agent AI · Automated release notes 📝
+`Multi-Agent AI`
 
-<!-- THE CORPSE COUNT -->
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:20px 0;">THE CORPSE COUNT</h2>
+### 👻 Wedding Invitation
+Interactive invites · RSVP · Gallery 💍
+`TypeScript`
 
-<div style="background-color:#1a0505;padding:5px;border-radius:6px;border:1px solid #5a0000;">
+### 👻 NailsByShmatko
+Salon booking · Portfolio platform 💅
+`Next.js`
 
-<table style="width:100%;border-collapse:collapse;font-family:monospace;">
-<thead>
-<tr style="background-color:#3a0000;color:#ff0000;">
-<th align="left" style="padding:12px;border:1px solid #5a0000;color:#ff0000;">PROJECT</th>
-<th align="left" style="padding:12px;border:1px solid #5a0000;color:#ff0000;">STACK</th>
-<th align="left" style="padding:12px;border:1px solid #5a0000;color:#ff0000;">PURPOSE</th>
-</tr>
-</thead>
-<tbody style="color:#aa0000;">
-<tr style="background-color:#0a0000;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/Fahh" style="color:#ff0000;text-decoration:none;"><b>Fahh</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">VS Code extension. Plays a sound when errors appear. Catch bugs by ear, not by sight.</td>
-</tr>
-<tr style="background-color:#1a0505;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/Fitmachi" style="color:#ff0000;text-decoration:none;"><b>Fitmachi</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Fitness tracking. Workout planning. Progress analytics.</td>
-</tr>
-<tr style="background-color:#0a0000;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/AiMock_Interview" style="color:#ff0000;text-decoration:none;"><b>AiMock Interview</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">JavaScript</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">AI-powered mock interview. Real-time practice with feedback.</td>
-</tr>
-<tr style="background-color:#1a0505;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/releasenotepro" style="color:#ff0000;text-decoration:none;"><b>ReleaseNotePro</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Multi-Agent AI</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Automated release notes. Multi-agent intelligence.</td>
-</tr>
-<tr style="background-color:#0a0000;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/Wedding-invitation" style="color:#ff0000;text-decoration:none;"><b>Wedding Invitation</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Interactive wedding invitation with RSVP and gallery.</td>
-</tr>
-<tr style="background-color:#1a0505;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/NailsByShmatko" style="color:#ff0000;text-decoration:none;"><b>NailsByShmatko</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Next.js</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Salon booking platform. Portfolio for nail artists.</td>
-</tr>
-<tr style="background-color:#0a0000;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/Freelance_photography" style="color:#ff0000;text-decoration:none;"><b>Freelance Photography</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Photography platform. Freelancers and clients connected.</td>
-</tr>
-<tr style="background-color:#1a0505;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/codebyabi-portfolio" style="color:#ff0000;text-decoration:none;"><b>CodeByAbi Portfolio</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">HTML/CSS/JS</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Personal portfolio. Projects and experiments.</td>
-</tr>
-<tr style="background-color:#0a0000;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/graphql" style="color:#ff0000;text-decoration:none;"><b>GraphQL Playground</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">GraphQL</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">API exploration and implementation patterns.</td>
-</tr>
-<tr style="background-color:#1a0505;">
-<td style="padding:10px;border:1px solid #3a0000;"><a href="https://github.com/Abi-de-jo/batch-4" style="color:#ff0000;text-decoration:none;"><b>Batch-4</b></a></td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Full-Stack</td>
-<td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Full-stack curriculum. 50+ students trained.</td>
-</tr>
-</tbody>
-</table>
+### 👻 Freelance Photography
+Photography platform · Connect clients 📸
+`TypeScript`
 
-</div>
+### 👻 CodeByAbi Portfolio
+Personal portfolio · Creative showcase 🎨
+`HTML/CSS/JS/TS`
 
-<br/>
+<br>
 
-<!-- DIVIDER COFFIN -->
-<p align="center">
-  <img src="assets/divider-coffin.svg" alt="coffin divider" width="100%"/>
-</p>
-
-<br/>
-
-<!-- THE ORDER -->
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:20px 0;">THE ORDER</h2>
-
-<p align="center" style="color:#aa0000;font-family:monospace;font-size:14px;">Production systems built at Sree-Cognicoders</p>
-
-<div style="background-color:#1a0505;padding:5px;border-radius:6px;border:1px solid #5a0000;">
-
-<table style="width:100%;border-collapse:collapse;font-family:monospace;">
-<thead>
-<tr style="background-color:#3a0000;">
-<th align="left" style="padding:12px;border:1px solid #5a0000;color:#ff0000;">SYSTEM</th>
-<th align="left" style="padding:12px;border:1px solid #5a0000;color:#ff0000;">ROLE</th>
-<th align="left" style="padding:12px;border:1px solid #5a0000;color:#ff0000;">STACK</th>
-</tr>
-</thead>
-<tbody style="color:#aa0000;">
-<tr style="background-color:#0a0000;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Chronologix</b> <span style="color:#5a0000;">// Time & Attendance</span></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript, Node, MySQL</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Chronexa</b> <span style="color:#5a0000;">// Enterprise Platform</span></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript, React, Node</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Identra</b> <span style="color:#5a0000;">// Identity Management</span></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript, Express</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Visitor Management</b></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript, React, Node</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">QMS</b> <span style="color:#5a0000;">// Queue Management</span></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Onesuite</b> <span style="color:#5a0000;">// All-in-one App</span></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Ghobase</b> <span style="color:#5a0000;">// Notifications & Jobs</span></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">Backend</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript, Node.js</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Meal Management</b></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Time Tracking</b></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript, React</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:10px;border:1px solid #3a0000;"><b style="color:#ff0000;">Intranet Portal</b></td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">FE + BE</td><td style="padding:10px;border:1px solid #3a0000;color:#aa0000;">TypeScript</td></tr>
-</tbody>
-</table>
-
-</div>
-
-<br/>
-
-<!-- DIVIDER 1 -->
-<p align="center">
-  <img src="assets/divider.svg" alt="horror divider" width="100%"/>
-</p>
-
-<br/>
-
-<!-- THE GRAVEYARD -->
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:20px 0;">THE GRAVEYARD</h2>
-
-<p align="center" style="color:#aa0000;font-family:monospace;font-size:14px;">The contribution graph rendered as a haunted graveyard. Every commit is a tombstone. Maximum activity days rise as skulls. Bats swarm across the blood moon. The hooded wanderer traverses the path of code.</p>
+## 👻 UNDEAD STATS
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/horror.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/horror.svg"/>
-    <img alt="contribution graveyard" src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/horror.svg"/>
-  </picture>
+<img src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=8b5cf6&text_color=e2e8f0" alt="GitHub Stats" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Abi-de-jo&theme=midnight-purple&hide_border=true&background=0d1117&ring=a78bfa&fire=8b5cf6&currStreakLabel=e2e8f0" alt="GitHub Streak" width="48%" />
 </p>
 
-<br/>
-
-<!-- DIVIDER 1 -->
 <p align="center">
-  <img src="assets/divider.svg" alt="horror divider" width="100%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=e2e8f0" alt="Top Languages" width="40%" />
 </p>
 
-<br/>
+<br>
 
-<!-- THE RITUALS -->
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:20px 0;">THE RITUALS</h2>
+## 👻 HAUNTED CONTRIBUTIONS
 
-<div style="background-color:#0a0000;padding:20px;border-radius:4px;border:1px solid #3a0000;font-family:monospace;color:#aa0000;font-size:14px;line-height:1.8;">
-
-```
-> ps aux | grep abi
-```
-
-<span style="color:#5a0000;">instagram --></span> <a href="https://instagram.com/codebyabi" style="color:#ff0000;text-decoration:none;">instagram.com/codebyabi</a>
-<span style="color:#5a0000;">youtube   --></span> <a href="https://youtube.com/codebyabi" style="color:#ff0000;text-decoration:none;">youtube.com/codebyabi</a>
-<span style="color:#5a0000;">linkedin  --></span> <a href="https://linkedin.com/in/codebyabisheik/" style="color:#ff0000;text-decoration:none;">linkedin.com/in/codebyabisheik</a>
-<span style="color:#5a0000;">email     --></span> <a href="mailto:abisheikabisheik102@gmail.com" style="color:#ff0000;text-decoration:none;">abisheikabisheik102@gmail.com</a>
-
-</div>
-
-<br/>
-
-<!-- DIVIDER COFFIN -->
 <p align="center">
-  <img src="assets/divider-coffin.svg" alt="coffin divider" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Abi-de-jo&bg_color=0d1117&color=a78bfa&line=8b5cf6&point=c084fc&area=true&area_color=6d28d9&hide_border=true" alt="Contribution Graph" width="95%" />
 </p>
 
-<br/>
+<br>
 
-<!-- THE ALTAR -->
-<h2 align="center" style="color:#cc0000;font-family:monospace;letter-spacing:6px;font-size:24px;margin:20px 0;">THE ALTAR</h2>
+## 👻 THE ORDER
 
-<div style="background-color:#1a0505;padding:5px;border-radius:6px;border:1px solid #5a0000;">
+Sree-Cognicoders // The Order 🏛️
 
-<table style="width:100%;border-collapse:collapse;font-family:monospace;">
-<tbody style="color:#aa0000;">
-<tr style="background-color:#0a0000;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;width:30%;"><b style="color:#ff0000;">MACHINE</b></td><td style="padding:12px;border:1px solid #3a0000;">Lenovo IdeaPad Slim 3</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;"><b style="color:#ff0000;">CPU</b></td><td style="padding:12px;border:1px solid #3a0000;">AMD Ryzen 5 4600U</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;"><b style="color:#ff0000;">GPU</b></td><td style="padding:12px;border:1px solid #3a0000;">Radeon Integrated Graphics</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;"><b style="color:#ff0000;">RAM</b></td><td style="padding:12px;border:1px solid #3a0000;">8GB DDR4</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;"><b style="color:#ff0000;">OS</b></td><td style="padding:12px;border:1px solid #3a0000;">Windows 11 / WSL2 Ubuntu</td></tr>
-<tr style="background-color:#1a0505;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;"><b style="color:#ff0000;">EDITOR</b></td><td style="padding:12px;border:1px solid #3a0000;">VS Code</td></tr>
-<tr style="background-color:#0a0000;"><td style="padding:12px;border:1px solid #3a0000;color:#5a0000;"><b style="color:#ff0000;">THEME</b></td><td style="padding:12px;border:1px solid #3a0000;">Dark. Always dark.</td></tr>
-</tbody>
-</table>
+> Teaching 50+ students · Shaping the next generation of full-stack engineers
 
-</div>
+<br>
 
-<br/>
+## 👻 SUMMON ME
 
-<!-- DIVIDER 1 -->
 <p align="center">
-  <img src="assets/divider.svg" alt="horror divider" width="100%"/>
+<a href="https://www.youtube.com/channel/UCTEUF6w84xLXPRfs7AYkTXQ"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+<a href="https://www.instagram.com/codebyabi"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://github.com/Abi-de-jo"><img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 </p>
 
-<br/>
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=Abi-de-jo&color=8b5cf6&style=flat-square&label=👻+Ghost+Sightings" alt="Profile Views" />
+</p>
 
-<!-- FOOTER -->
-<div align="center" style="background-color:#0a0000;padding:30px;border-radius:6px;border:1px solid #3a0000;">
+<br>
 
-<div style="background-color:#1a0505;padding:15px;border-radius:4px;border:1px solid #3a0000;display:inline-block;font-family:monospace;color:#aa0000;font-size:14px;">
-&gt; exit
-</div>
+---
 
-<br/>
-
-<p style="font-family:monospace;color:#5a0000;font-size:13px;font-style:italic;">"First, solve the problem. Then, write the code." -- John Johnson</p>
-
-</div>
-
-</div>
-</div>
-<!-- END HORROR THEME WRAPPER -->
+<p align="center">
+👻 <em>Haunting production systems since 2020 · Senior Code Spirit at Sree-Cognicoders</em> 👻
+</p>

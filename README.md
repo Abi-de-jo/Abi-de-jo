@@ -1,28 +1,42 @@
 <div align="center">
 
-# 𝐂𝐨𝐝𝐞𝐁𝐲𝐀𝐛𝐢
+# [𝐂𝐨𝐝𝐞𝐁𝐲𝐀𝐛𝐢](https://github.com/Abi-de-jo)
 
-<sup><i>full-stack developer · open source · clean code</i></sup>
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;MERN+Stack+%E2%80%A2+TypeScript;Open+Source+%E2%80%A2+Clean+Code;Building+for+the+web" alt="Typing SVG" />
+</a>
 
-<br>
+<br><br>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=500&lines=Building+for+the+web;React+%7C+Node+%7C+MongoDB;Open+source+enthusiast;Clean+code+%E2%89%A5+clever+code" alt="Typing SVG" /></a>
-
-<br>
-
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=Abi-de-jo&label=visitors&countColor=%23a855f7&style=flat-square)](https://github.com/Abi-de-jo)
-[![Discord](https://img.shields.io/badge/Discord-@abi__de__jo-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/users/Abi-de-jo)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-abi--de--jo-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/Abi-de-jo)
-[![Email](https://img.shields.io/badge/Email-contact-8b5cf6?style=flat-square&logo=minutemailer&logoColor=white)](mailto:contact@codebyabi.dev)
+<!-- VISITOR BADGE -->
+<a href="https://github.com/Abi-de-jo">
+  <img src="https://api.visitorbadge.io/api/visitors?path=Abi-de-jo&label=visitors&countColor=%23a855f7&style=flat-square&labelStyle=upper" />
+</a>
+<a href="https://discord.com/users/Abi-de-jo">
+  <img src="https://img.shields.io/badge/Discord-@Abi__de__jo-5865F2?style=flat-square&logo=discord&logoColor=white" />
+</a>
+<a href="https://linkedin.com/in/Abi-de-jo">
+  <img src="https://img.shields.io/badge/LinkedIn-Abi--de--jo-0A66C2?style=flat-square&logo=linkedin&logoColor=white" />
+</a>
+<a href="mailto:contact@codebyabi.dev">
+  <img src="https://img.shields.io/badge/Email-contact-8b5cf6?style=flat-square&logo=minutemailer&logoColor=white" />
+</a>
 
 </div>
 
 ---
 
-<!-- CUSTOM BANNER -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                          BANNER                                -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
 <img src="assets/banner.svg" width="100%" alt="CodeByAbi Banner">
 
 ---
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                         ABOUT                                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 ## 👨‍💻 About Me
 
@@ -30,81 +44,122 @@
 name: Abi
 role: Full-Stack Developer
 stack:
-  - React / TypeScript
-  - Node.js / Express
-  - MongoDB
-focus: Building production-grade web applications
+  - React / TypeScript / Next.js
+  - Node.js / Express / MongoDB
+  - HTML5 / CSS3 / Tailwind
+focus: Production-grade web applications
 philosophy: "Clean code over clever code — always."
 ```
 
 ---
 
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                       TECH STACK                               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
 ## 🛠️ Tech Stack
 
 <div align="center">
 
-[![My Skills](https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,mongodb,html,css,tailwind,git,github,vscode,postman,linux&theme=dark)](https://skillicons.dev)
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,express,mongodb,html,css,tailwind,git,github,vscode,postman,linux&theme=dark&perline=8" alt="Tech Stack" />
+</a>
 
 </div>
 
 ---
 
-## 📊 GitHub Analytics
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                    GITHUB STATISTICS                            -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## 📊 GitHub Statistics
 
 <div align="center">
 
-<a href="https://github.com/Abi-de-jo">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0a0a0f&title_color=a855f7&icon_color=a855f7&text_color=e2e8f0&border_color=1e1e2e&include_all_commits=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0a0a0f&title_color=a855f7&text_color=e2e8f0&border_color=1e1e2e" />
-</a>
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&theme=midnight-purple&hide_border=true&bg_color=0a0a0f&title_color=a855f7&icon_color=a855f7&text_color=e2e8f0&border_color=1e1e2e&include_all_commits=true&count_private=true" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&theme=midnight-purple&hide_border=true&bg_color=0a0a0f&title_color=a855f7&text_color=e2e8f0&border_color=1e1e2e" width="100%" />
+    </td>
+  </tr>
+</table>
 
 <br>
 
 <a href="https://github.com/Abi-de-jo">
-  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Abi-de-jo&theme=midnight-purple&hide_border=true&background=0a0a0f&stroke=a855f7&ring=a855f7&fire=c084fc&currStreakNum=e2e8f0&sideNums=e2e8f0&currStreakLabel=a855f7&sideLabels=a855f7&dates=6b7280" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Abi-de-jo&theme=midnight-purple&hide_border=true&background=0a0a0f&stroke=a855f7&ring=a855f7&fire=c084fc&currStreakNum=e2e8f0&sideNums=e2e8f0&currStreakLabel=a855f7&sideLabels=a855f7&dates=6b7280" width="70%" />
 </a>
 
 </div>
 
 ---
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                    ACTIVITY GRAPH                               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## 📈 Contribution Activity
+
+<div align="center">
+
+<a href="https://github.com/Abi-de-jo">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Abi-de-jo&bg_color=0a0a0f&color=a855f7&line=a855f7&point=c084fc&area=true&hide_border=true&radius=8" width="95%" />
+</a>
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                       TROPHIES                                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 ## 🏆 Achievements
 
 <div align="center">
 
-[![Trophy](https://github-profile-trophy.vercel.app/?username=Abi-de-jo&theme=discord&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10)](https://github.com/ryo-ma/github-profile-trophy)
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=Abi-de-jo&theme=discord&no-frame=true&no-bg=true&column=8&margin-w=10&margin-h=10&title_color=a855f7" alt="Trophies" />
+</a>
+
+<br><br>
+<sub><i>Trophies auto-refresh via the GitHub Trophy API</i></sub>
 
 </div>
 
 ---
 
-## 🐍 Contribution Graph
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                   PAC-MAN CONTRIBUTION GRAPH                    -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+
+## 👻 Pac-Man Contribution Graph
 
 <div align="center">
 
-<!-- Contribution snake animation generated by Platane/snk -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="assets/snake-light.svg" />
-  <img alt="GitHub Contribution Snake" src="assets/snake-dark.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/pacman-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/pacman-contribution-graph.svg" />
+  <img alt="Pac-Man Contribution Graph" src="https://raw.githubusercontent.com/Abi-de-jo/Abi-de-jo/output/pacman-contribution-graph.svg" width="100%" />
 </picture>
 
 <br>
-<sub><i>🐍 My contributions sneak around the grid — updated daily</i></sub>
+<sub><i>👻 Pac-Man chases your contributions — auto-updated every 12 hours</i></sub>
 
 </div>
 
 ---
 
-## 📌 Recent Activity
-
-<!--RECENT_ACTIVITY:start-->
-<!--RECENT_ACTIVITY:end-->
-
----
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                         FOOTER                                 -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer&text=CodeByAbi%20%E2%80%A2%202025&fontSize=16&fontColor=e2e8f0" width="100%" alt="Footer Wave" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=120&section=footer&text=CodeByAbi%20%E2%80%A2%202025&fontSize=16&fontColor=e2e8f0" width="100%" alt="Footer Wave" />
 
 </div>

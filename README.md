@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 <!-- â•â•â•â•â•â•â•â•â•â•â• ANIMATED PAC-MAN EATING GHOSTS â•â•â•â•â•â•â•â•â•â•â• -->
 

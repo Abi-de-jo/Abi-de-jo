@@ -80,7 +80,7 @@ philosophy: "Clean code over clever code — always."
 ```
    · · · · · · 🟦🟦🟦🟦🟦 · · · 🟦🟦🟦🟦🟦 · · · · · ·
    ·     🟦     🟦              🟦     🟦
-   🟡    🟦     [⚛ï¸ React]  [TS]     🟦    ·    👻
+   🟡    🟦     [⚛ React]  [TS]     🟦    ·    👻
    ·     🟦     🟦              🟦     🟦
    · · · · · · 🟦🟦🟦🟦🟦 · · · 🟦🟦🟦🟦🟦 · · · · · ·
                   🟦                🟦
@@ -112,7 +112,7 @@ philosophy: "Clean code over clever code — always."
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TECH STACK BADGES â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 
-## ðŸ› ï¸ Tech Stack
+## 🛠️ï¸ Tech Stack
 
 <div align="center">
 

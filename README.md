@@ -1,7 +1,3 @@
-<div align="center">
-
-<!-- ═══════════ ANIMATED PAC-MAN EATING GHOSTS ═══════════ -->
-
 <style>
 .pac-scene {
   position: relative;
@@ -288,7 +284,9 @@
 }
 .pac-sub em { color: #22d3ee; font-style: normal; }
 </style>
+<div align="center">
 
+<!-- ═══════════ ANIMATED PAC-MAN EATING GHOSTS ═══════════ -->
 <!-- Title (outside scene) -->
 <a href="https://github.com/Abi-de-jo" style="text-decoration:none;">
   <div class="pac-title">🟡 C O D E B Y A B I 🍒</div>

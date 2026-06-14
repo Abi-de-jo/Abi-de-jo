@@ -440,16 +440,16 @@ philosophy: "Clean code over clever code — always."
 
 <br>
 
-### <span style="color:#22d3ee">ðŸŽ¨ Frontend</span>
+### <span style="color:#22d3ee">🎨 Frontend</span>
 **React · TypeScript · Next.js**
 
-### <span style="color:#22c55e">âš™ï¸ Backend</span>
+### <span style="color:#22c55e">⚙ï¸ Backend</span>
 **Node.js · Express · MongoDB**
 
-### <span style="color:#fb923c">ðŸŽ¯ Styling</span>
+### <span style="color:#fb923c">🎯 Styling</span>
 **HTML5 · CSS3 · Tailwind**
 
-### <span style="color:#a855f7">ðŸš€ Focus</span>
+### <span style="color:#a855f7">🚀 Focus</span>
 **Production-grade web applications**
 
 </td>
@@ -462,19 +462,19 @@ philosophy: "Clean code over clever code — always."
 <br>
 
 ```
-   · · · · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · · · ·
-   ·     ðŸŸ¦     ðŸŸ¦              ðŸŸ¦     ðŸŸ¦
-   ðŸŸ¡    ðŸŸ¦     [âš›ï¸ React]  [TS]     ðŸŸ¦    ·    👻
-   ·     ðŸŸ¦     ðŸŸ¦              ðŸŸ¦     ðŸŸ¦
-   · · · · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · · · ·
-                  ðŸŸ¦                ðŸŸ¦
-   [ðŸŸ¢ Node] [ex Express] [N Next]  ðŸŸ¦
-   ðŸŸ¡        ðŸŸ¦         ðŸŸ¦         ðŸŸ¦    ðŸŸ¡
-   · · · · ·ðŸŸ¦ðŸŸ¦ðŸŸ¦· · · · · · · ·ðŸŸ¦ðŸŸ¦ðŸŸ¦· · · · ·
+   · · · · · · 🟦🟦🟦🟦🟦 · · · 🟦🟦🟦🟦🟦 · · · · · ·
+   ·     🟦     🟦              🟦     🟦
+   🟡    🟦     [⚛ï¸ React]  [TS]     🟦    ·    👻
+   ·     🟦     🟦              🟦     🟦
+   · · · · · · 🟦🟦🟦🟦🟦 · · · 🟦🟦🟦🟦🟦 · · · · · ·
+                  🟦                🟦
+   [ðŸŸ¢ Node] [ex Express] [N Next]  🟦
+   🟡        🟦         🟦         🟦    🟡
+   · · · · ·🟦🟦🟦· · · · · · · ·🟦🟦🟦· · · · ·
                   [ðŸƒ Mongo]
 ```
 
-*ðŸŸ¡ = power-pellet ready · chasing down bugs daily*
+*🟡 = power-pellet ready · chasing down bugs daily*
 
 </div>
 
@@ -587,6 +587,6 @@ philosophy: "Clean code over clever code — always."
 
 <br><br>
 
-<sub>ðŸŸ¡ <b>WAKA WAKA</b> · built with â¤ï¸ in Chennai · Â© R.Abisheik</sub>
+<sub>🟡 <b>WAKA WAKA</b> · built with ❤️ in Chennai · © R.Abisheik</sub>
 
 </div>

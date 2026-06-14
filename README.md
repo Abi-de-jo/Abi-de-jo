@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- â•â•â•â•â•â•â•â•â•â•â• ANIMATED PAC-MAN EATING GHOSTS â•â•â•â•â•â•â•â•â•â•â• -->
+<!-- ═══════════ ANIMATED PAC-MAN EATING GHOSTS ═══════════ -->
 
 <style>
 .pac-scene {
@@ -17,7 +17,7 @@
   font-family: 'Courier New', 'Consolas', monospace;
 }
 
-/* â”€â”€â”€ BACKGROUND NAME â€” "Codebyabi" reveals as ghosts are eaten â”€â”€â”€ */
+/* ─── BACKGROUND NAME — "Codebyabi" reveals as ghosts are eaten ─── */
 .pac-name {
   position: absolute;
   top: 50%; left: 50%;
@@ -49,7 +49,7 @@
   100% { opacity: 0.06; transform: translate(-50%, -50%) scale(1); }
 }
 
-/* â”€â”€â”€ HUD â”€â”€â”€ */
+/* ─── HUD ─── */
 .pac-hud {
   position: absolute; top: 0; left: 0; right: 0;
   height: 30px;
@@ -64,7 +64,7 @@
 .pac-hud-title { color: #a855f7; font-weight: bold; }
 .pac-hud-lives  { color: #fde047; }
 
-/* â”€â”€â”€ Maze walls â”€â”€â”€ */
+/* ─── Maze walls ─── */
 .pac-wall {
   position: absolute;
   background: linear-gradient(180deg, #3b82f6 0%, #1e3a8a 100%);
@@ -75,7 +75,7 @@
 .mh { height: 4px; }
 .mv { width: 4px; }
 
-/* â”€â”€â”€ Pac-Man â€” glides from left to right across ghosts â”€â”€â”€ */
+/* ─── Pac-Man — glides from left to right across ghosts ─── */
 @keyframes pm-glide {
   0%   { left: 5%;  transform: scaleX(1); }
   50%  { left: 80%; transform: scaleX(1); }
@@ -134,7 +134,7 @@
   z-index: 7;
 }
 
-/* â”€â”€â”€ Ghosts â€” wrapper handles position+hover, inner handles eat â”€â”€â”€ */
+/* ─── Ghosts — wrapper handles position+hover, inner handles eat ─── */
 .ghost-wrap {
   position: absolute;
   z-index: 4;
@@ -163,11 +163,11 @@
 .g-4 { color: #fb923c; animation: eat-4 10s linear infinite; }
 
 /* Each ghost's eat moment matches Pac-Man reaching its x position:
-   Pac-Man at left:5% (t=0) â†’ left:80% (t=5s), linear.
-   Ghost 1 at 24% â†’ caught at t=1.25s (12.5%)
-   Ghost 2 at 43% â†’ caught at t=2.5s  (25%)
-   Ghost 3 at 61% â†’ caught at t=3.75s (37.5%)
-   Ghost 4 at 80% â†’ caught at t=5s    (50%)  */
+   Pac-Man at left:5% (t=0) → left:80% (t=5s), linear.
+   Ghost 1 at 24% → caught at t=1.25s (12.5%)
+   Ghost 2 at 43% → caught at t=2.5s  (25%)
+   Ghost 3 at 61% → caught at t=3.75s (37.5%)
+   Ghost 4 at 80% → caught at t=5s    (50%)  */
 @keyframes eat-1 {
   0%, 12%   { opacity: 1; transform: scale(1);   filter: drop-shadow(0 0 8px #ef4444); }
   12.5%     { opacity: 1; transform: scale(1.4); filter: drop-shadow(0 0 24px #ef4444) brightness(2); }   /* caught */
@@ -201,7 +201,7 @@
   100%      { opacity: 1; transform: scale(1); }
 }
 
-/* â”€â”€â”€ Eat burst particles (âœ¦) at each ghost's x position â”€â”€â”€ */
+/* ─── Eat burst particles (✦) at each ghost's x position ─── */
 .pac-eat {
   position: absolute;
   font-size: 24px;
@@ -243,7 +243,7 @@
   100%       { opacity: 0; }
 }
 
-/* â”€â”€â”€ Static yellow dots (no sparkle) â”€â”€â”€ */
+/* ─── Static yellow dots (no sparkle) ─── */
 .pac-dot {
   position: absolute;
   width: 6px; height: 6px;
@@ -253,7 +253,7 @@
   /* No animation - plain yellow dots */
 }
 
-/* â”€â”€â”€ Power pellets (keep pulsing) â”€â”€â”€ */
+/* ─── Power pellets (keep pulsing) ─── */
 @keyframes pellet-pulse {
   0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 16px #fde047; }
   50%      { opacity: 0.4; transform: scale(0.65); box-shadow: 0 0 6px #fde047; }
@@ -267,7 +267,7 @@
   z-index: 3;
 }
 
-/* â”€â”€â”€ Title block â”€â”€â”€ */
+/* ─── Title block ─── */
 .pac-title {
   text-align: center;
   font-family: 'Courier New', monospace;
@@ -291,21 +291,21 @@
 
 <!-- Title (outside scene) -->
 <a href="https://github.com/Abi-de-jo" style="text-decoration:none;">
-  <div class="pac-title">ðŸŸ¡ C O D E B Y A B I ðŸ’</div>
+  <div class="pac-title">🟡 C O D E B Y A B I 🍒</div>
 </a>
-<div class="pac-sub">â–¸ FULL-STACK DEVELOPER Â· MERN SPECIALIST Â· <em>CODING IN THE GRAVEYARD</em> â—‚</div>
+<div class="pac-sub">▸ FULL-STACK DEVELOPER · MERN SPECIALIST · <em>CODING IN THE GRAVEYARD</em> ◂</div>
 
 <!-- Game scene -->
 <div class="pac-scene">
 
-  <!-- Big background name â€” appears as ghosts are eaten -->
+  <!-- Big background name — appears as ghosts are eaten -->
   <div class="pac-name">Codebyabi</div>
 
   <!-- HUD -->
   <div class="pac-hud">
     <span class="pac-hud-score">1UP&nbsp; <b>024680</b></span>
-    <span class="pac-hud-title">â—€ PAC-MAN â–¶</span>
-    <span class="pac-hud-lives">â™¥â™¥â™¥</span>
+    <span class="pac-hud-title">◀ PAC-MAN ▶</span>
+    <span class="pac-hud-lives">♥♥♥</span>
   </div>
 
   <!-- Maze walls -->
@@ -361,29 +361,29 @@
   <div class="pac-pellet" style="top:165px; left:11%;"></div>
   <div class="pac-pellet" style="top:165px; right:11%;"></div>
 
-  <!-- Eat burst particles (âœ¦ at each ghost's x position) -->
-  <div class="pac-eat eat-1">âœ¦</div>
-  <div class="pac-eat eat-2">âœ¦</div>
-  <div class="pac-eat eat-3">âœ¦</div>
-  <div class="pac-eat eat-4">âœ¦</div>
+  <!-- Eat burst particles (✦ at each ghost's x position) -->
+  <div class="pac-eat eat-1">✦</div>
+  <div class="pac-eat eat-2">✦</div>
+  <div class="pac-eat eat-3">✦</div>
+  <div class="pac-eat eat-4">✦</div>
 
   <!-- Pac-Man with eye -->
   <div class="pac-pm">
     <div class="pac-pm-eye" style="right: 8px;"></div>
   </div>
 
-  <!-- 4 ghosts â€” wrapper handles position+hover, inner ghost handles eat effect -->
+  <!-- 4 ghosts — wrapper handles position+hover, inner ghost handles eat effect -->
   <div class="ghost-wrap gw-1">
-    <div class="pac-ghost g-1">ðŸ‘»</div>
+    <div class="pac-ghost g-1">👻</div>
   </div>
   <div class="ghost-wrap gw-2">
-    <div class="pac-ghost g-2">ðŸ‘»</div>
+    <div class="pac-ghost g-2">👻</div>
   </div>
   <div class="ghost-wrap gw-3">
-    <div class="pac-ghost g-3">ðŸ‘»</div>
+    <div class="pac-ghost g-3">👻</div>
   </div>
   <div class="ghost-wrap gw-4">
-    <div class="pac-ghost g-4">ðŸ‘»</div>
+    <div class="pac-ghost g-4">👻</div>
   </div>
 
 </div>
@@ -416,6 +416,8 @@
 
 </div>
 
+
+
 ---
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ABOUT + MAZE PANEL â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
@@ -424,7 +426,7 @@
 <tr>
 <td width="50%" valign="top" style="padding-right:20px;">
 
-## ðŸ‘¨â€ðŸ’» About Me
+## 👨‍💻 About Me
 
 ```yaml
 name: R.Abisheik
@@ -433,19 +435,19 @@ location: Chennai, TamilNadu
 company: Sree-Cognicoders
 blog: codebyabi.dev
 joined: 2023
-philosophy: "Clean code over clever code â€” always."
+philosophy: "Clean code over clever code — always."
 ```
 
 <br>
 
 ### <span style="color:#22d3ee">ðŸŽ¨ Frontend</span>
-**React Â· TypeScript Â· Next.js**
+**React · TypeScript · Next.js**
 
 ### <span style="color:#22c55e">âš™ï¸ Backend</span>
-**Node.js Â· Express Â· MongoDB**
+**Node.js · Express · MongoDB**
 
 ### <span style="color:#fb923c">ðŸŽ¯ Styling</span>
-**HTML5 Â· CSS3 Â· Tailwind**
+**HTML5 · CSS3 · Tailwind**
 
 ### <span style="color:#a855f7">ðŸš€ Focus</span>
 **Production-grade web applications**
@@ -455,24 +457,24 @@ philosophy: "Clean code over clever code â€” always."
 
 <div align="center">
 
-### ðŸ‘» The Stack â€” *Waka Waka Edition*
+### 👻 The Stack — *Waka Waka Edition*
 
 <br>
 
 ```
-   Â· Â· Â· Â· Â· Â· ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ Â· Â· Â· ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ Â· Â· Â· Â· Â· Â·
-   Â·     ðŸŸ¦     ðŸŸ¦              ðŸŸ¦     ðŸŸ¦
-   ðŸŸ¡    ðŸŸ¦     [âš›ï¸ React]  [TS]     ðŸŸ¦    Â·    ðŸ‘»
-   Â·     ðŸŸ¦     ðŸŸ¦              ðŸŸ¦     ðŸŸ¦
-   Â· Â· Â· Â· Â· Â· ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ Â· Â· Â· ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ Â· Â· Â· Â· Â· Â·
+   · · · · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · · · ·
+   ·     ðŸŸ¦     ðŸŸ¦              ðŸŸ¦     ðŸŸ¦
+   ðŸŸ¡    ðŸŸ¦     [âš›ï¸ React]  [TS]     ðŸŸ¦    ·    👻
+   ·     ðŸŸ¦     ðŸŸ¦              ðŸŸ¦     ðŸŸ¦
+   · · · · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ðŸŸ¦ · · · · · ·
                   ðŸŸ¦                ðŸŸ¦
    [ðŸŸ¢ Node] [ex Express] [N Next]  ðŸŸ¦
    ðŸŸ¡        ðŸŸ¦         ðŸŸ¦         ðŸŸ¦    ðŸŸ¡
-   Â· Â· Â· Â· Â·ðŸŸ¦ðŸŸ¦ðŸŸ¦Â· Â· Â· Â· Â· Â· Â· Â·ðŸŸ¦ðŸŸ¦ðŸŸ¦Â· Â· Â· Â· Â·
+   · · · · ·ðŸŸ¦ðŸŸ¦ðŸŸ¦· · · · · · · ·ðŸŸ¦ðŸŸ¦ðŸŸ¦· · · · ·
                   [ðŸƒ Mongo]
 ```
 
-*ðŸŸ¡ = power-pellet ready Â· chasing down bugs daily*
+*ðŸŸ¡ = power-pellet ready · chasing down bugs daily*
 
 </div>
 
@@ -486,7 +488,7 @@ philosophy: "Clean code over clever code â€” always."
 
 <div align="center">
 
-> ### ðŸ† *"Clean code over clever code â€” always."*
+> ### ðŸ† *"Clean code over clever code — always."*
 
 </div>
 
@@ -506,7 +508,7 @@ philosophy: "Clean code over clever code â€” always."
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• GITHUB STATS â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 
-## ðŸ“Š GitHub Statistics
+## 📊 GitHub Statistics
 
 <div align="center">
 
@@ -531,7 +533,7 @@ philosophy: "Clean code over clever code â€” always."
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ACTIVITY GRAPH â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 
-## ðŸ“ˆ Contribution Activity
+## 📈 Contribution Activity
 
 <div align="center">
 
@@ -558,7 +560,7 @@ philosophy: "Clean code over clever code â€” always."
 
 <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• PAC-MAN CONTRIBUTION GRAPH â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
 
-## ðŸ‘» Pac-Man Contribution Graph
+## 👻 Pac-Man Contribution Graph
 
 <div align="center">
 
@@ -569,7 +571,7 @@ philosophy: "Clean code over clever code â€” always."
 </picture>
 
 <br>
-<sub><i>ðŸ‘» Pac-Man chases your contributions â€” auto-updated every 12 hours</i></sub>
+<sub><i>👻 Pac-Man chases your contributions — auto-updated every 12 hours</i></sub>
 
 </div>
 
@@ -585,6 +587,6 @@ philosophy: "Clean code over clever code â€” always."
 
 <br><br>
 
-<sub>ðŸŸ¡ <b>WAKA WAKA</b> Â· built with â¤ï¸ in Chennai Â· Â© R.Abisheik</sub>
+<sub>ðŸŸ¡ <b>WAKA WAKA</b> · built with â¤ï¸ in Chennai · Â© R.Abisheik</sub>
 
 </div>

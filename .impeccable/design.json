@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T02:49:46+05:30",
+  "title": "Design System: CodeByAbi Developer Game World",
+  "extensions": {
+    "colorMeta": {
+      "void": { "role": "neutral", "displayName": "Void", "canonical": "#080b13", "tonalRamp": ["#030407", "#080b13", "#111827", "#273047", "#4b566e", "#8491a8", "#c5ccd8", "#f4f7ff"] },
+      "panel": { "role": "neutral", "displayName": "Panel", "canonical": "#0d111f", "tonalRamp": ["#05070c", "#0d111f", "#182238", "#303950", "#59647a", "#8491a8", "#c5ccd8", "#f4f7ff"] },
+      "phosphor-mint": { "role": "primary", "displayName": "Phosphor Mint", "canonical": "#7df9c2", "tonalRamp": ["#06251a", "#0d4732", "#176a4c", "#218f67", "#37b985", "#7df9c2", "#b9fddd", "#effff8"] },
+      "electric-violet": { "role": "secondary", "displayName": "Electric Violet", "canonical": "#b98cff", "tonalRamp": ["#1b0b36", "#32125f", "#4e218c", "#713bb8", "#9562dd", "#b98cff", "#d8bdff", "#f5edff"] },
+      "screen-amber": { "role": "tertiary", "displayName": "Screen Amber", "canonical": "#ffd166", "tonalRamp": ["#2a1b02", "#553905", "#805a0b", "#ac7d17", "#d7a63a", "#ffd166", "#ffe6a6", "#fff8e5"] },
+      "alert-coral": { "role": "tertiary", "displayName": "Alert Coral", "canonical": "#ff7a8a", "tonalRamp": ["#33070d", "#64121e", "#951f31", "#c83c50", "#eb5d70", "#ff7a8a", "#ffb5be", "#fff0f2"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "HUD Display", "purpose": "Hero, system, and end-screen statements." },
+      "body": { "displayName": "Console Body", "purpose": "Project descriptions and readable supporting copy." },
+      "label": { "displayName": "Telemetry Label", "purpose": "Short categories, states, and measurements." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ambient-loop", "value": "2.4s-8s ease-in-out infinite", "purpose": "Continuous world activity such as floating hardware, runners, paths, and scan lines." },
+      { "name": "stepped-status", "value": "1s-3s steps(1) infinite", "purpose": "Cursors, indicator lights, and pixel-state changes." },
+      { "name": "reduced-motion", "value": "prefers-reduced-motion: reduce", "purpose": "Stops animation while preserving every object's correct static position." }
+    ],
+    "breakpoints": [
+      { "name": "profile-mobile", "value": "520px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Game Panel",
+      "kind": "custom",
+      "refersTo": "game-panel",
+      "description": "Large dark HUD container for a complete game system.",
+      "html": "<section class=\"ds-game-panel\"><span class=\"ds-game-label\">PLAYER DATA</span><strong>82</strong></section>",
+      "css": ".ds-game-panel{background:#0d111f;color:#f4f7ff;border:1px solid #303950;border-radius:18px;padding:40px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.ds-game-label{display:block;color:#7df9c2;font-size:12px;font-weight:700;letter-spacing:.16em;margin-bottom:16px}.ds-game-panel strong{font-size:42px}.ds-game-panel:focus-within{outline:2px solid #7df9c2;outline-offset:3px}"
+    },
+    {
+      "name": "Portal",
+      "kind": "nav",
+      "refersTo": "portal",
+      "description": "Compact game control linking to a real destination.",
+      "html": "<a class=\"ds-portal\" href=\"#\"><span>ENTER</span><strong>PORTFOLIO</strong></a>",
+      "css": ".ds-portal{display:grid;align-content:center;width:220px;height:64px;padding:0 18px;background:#111827;color:#f4f7ff;border:2px solid #7df9c2;clip-path:polygon(0 0,100% 0,100% 76%,93% 100%,0 100%);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;text-decoration:none}.ds-portal span{color:#7df9c2;font-size:10px;letter-spacing:.16em}.ds-portal strong{font-size:16px}.ds-portal:hover{background:#172238}.ds-portal:focus-visible{outline:2px solid #f4f7ff;outline-offset:4px}"
+    },
+    {
+      "name": "Mission Tile",
+      "kind": "card",
+      "description": "A truthful repository summary inside the mission-select system.",
+      "html": "<article class=\"ds-mission\"><span>ANDROID · KOTLIN</span><strong>PENNY</strong><p>Local-first offline money tracker</p></article>",
+      "css": ".ds-mission{background:#111827;color:#f4f7ff;border:1px solid #303950;clip-path:polygon(0 0,100% 0,100% 82%,95% 100%,0 100%);padding:20px 24px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.ds-mission span{color:#7df9c2;font-size:10px;letter-spacing:.16em}.ds-mission strong{display:block;margin-top:8px;font-size:20px}.ds-mission p{color:#8491a8;margin:8px 0 0;font-size:13px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Playable Developer Workbench",
+    "overview": "The profile is one continuous developer game world rather than a stack of unrelated badges or generated banners. Every surface looks like part of the same late-night build session. The world is playful but useful: visitors understand Abi's role, projects, activity, and contact paths without decoding the theme.",
+    "keyCharacteristics": [
+      "Ink-black layered surfaces with four sparse signal colors.",
+      "Crisp one-pixel rules, pixel characters, and authored vector icons.",
+      "Monospaced HUD typography with strong size and weight steps.",
+      "Continuous game language across hero, portals, missions, data, and contribution history.",
+      "GitHub-safe SVG motion with a complete reduced-motion fallback."
+    ],
+    "rules": [
+      { "name": "Signal Discipline", "body": "Signal colors label meaning; they do not become decorative gradients or full-surface washes.", "section": "colors" },
+      { "name": "HUD Legibility", "body": "Expanded tracking belongs to short labels only; project descriptions and actionable names stay compact enough to scan on mobile.", "section": "typography" },
+      { "name": "Console Layer", "body": "Use tonal separation and one-pixel structure for hierarchy; do not add ambient card shadows or translucent glass.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep every new section inside the same developer-game vocabulary.",
+      "Do use real repositories, verified public counts, and generated contribution data.",
+      "Do author SVG icons and motion with readable static and reduced-motion states.",
+      "Do preserve the direct route from project art to working GitHub links."
+    ],
+    "donts": [
+      "Don't reintroduce badge walls, unrelated stats services, or standalone generated hero art.",
+      "Don't mix glassmorphism, gradients, soft dashboard cards, or generic portfolio templates into the console world.",
+      "Don't invent employers, awards, clients, metrics, or project outcomes.",
+      "Don't let animation change an object's base coordinates or cover readable text."
+    ]
+  }
+}

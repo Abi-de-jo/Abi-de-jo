@@ -4,12 +4,12 @@
 
 <table>
   <tr>
-    <td><a href="https://codebyabi.dev"><img src="assets/portal-site.svg" alt="Enter portfolio" width="210"></a></td>
+    <td><a href="https://codebyabi.com"><img src="assets/portal-site.svg" alt="Enter portfolio" width="210"></a></td>
     <td><a href="https://github.com/Abi-de-jo?tab=repositories"><img src="assets/portal-github.svg" alt="Open repositories" width="210"></a></td>
   </tr>
   <tr>
-    <td><a href="https://linkedin.com/in/Abi-de-jo"><img src="assets/portal-linkedin.svg" alt="Visit LinkedIn" width="210"></a></td>
-    <td><a href="mailto:contact@codebyabi.dev"><img src="assets/portal-email.svg" alt="Send email" width="210"></a></td>
+    <td><a href="https://linkedin.com/in/codebyabisheik"><img src="assets/portal-linkedin.svg" alt="Visit LinkedIn" width="210"></a></td>
+    <td><a href="mailto:developer.abisheik@gmail.com"><img src="assets/portal-email.svg" alt="Send email" width="210"></a></td>
   </tr>
 </table>
 

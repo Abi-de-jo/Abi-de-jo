@@ -22,11 +22,11 @@
 <img src="assets/mission-select.svg" width="100%" alt="Selected CodeByAbi projects">
 
 <p>
-  <a href="https://github.com/Abi-de-jo/secretdrop"><strong>SECRET DROP</strong></a>
+  <a href="https://github.com/Abi-de-jo/penny"><strong>PENNY</strong></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/Abi-de-jo/Fahh"><strong>FAHH</strong></a>
+  <a href="https://github.com/Abi-de-jo/phone-guard"><strong>PHONE GUARD</strong></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://github.com/Abi-de-jo/devscope"><strong>DEVSCOPE</strong></a>
+  <a href="https://github.com/Abi-de-jo/opencode"><strong>OPENCODE</strong></a>
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="https://github.com/Abi-de-jo/Athena-AI"><strong>ATHENA AI</strong></a>
 </p>

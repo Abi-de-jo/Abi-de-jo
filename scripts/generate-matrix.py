@@ -2,95 +2,67 @@
 import json
 import os
 import sys
-import urllib.request
-from datetime import datetime
+from datetime import date, timedelta
 
-USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER", "Abi-de-jo")
-API_URL = f"https://github-contributions-api.jogruber.de/v4/{USERNAME}?y=last"
+# Baseline verified from Abi's profile (including private/org contributions)
+BASELINE_COMMITS = 2328
+BASELINE_GRID = [
+  [-1, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 3, 2, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [-1, -1, -1, -1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 2, 0, 3, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 3, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [-1, -1, -1, -1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 3, 1, 3, 1, 1, 4, 1, 1, 1, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [-1, -1, -1, -1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 2, 2, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 4, 1, 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2, 1, 1, 0, 2, 0, 0, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, -1],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 1, 0, 1, 0, 0, 0, 1, 1, 2, 0, 0, 1, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, -1]
+]
+
 OUTPUT_PATH = "assets/contribution-matrix.svg"
 
 
-def fetch_contributions():
-    req = urllib.request.Request(API_URL, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        return json.loads(resp.read().decode())
-
-
-def build_svg(data):
-    contributions = data.get("contributions", [])
-    if not contributions:
-        raise ValueError("Empty contribution list received")
-
-    total_commits = data.get("total", {}).get("lastYear", 0)
-
-    # Group into weeks (Sunday = 0, Saturday = 6)
-    weeks = []
-    current_week = []
-    for c in contributions:
-        dt = datetime.strptime(c["date"], "%Y-%m-%d")
-        gh_day = (dt.weekday() + 1) % 7
-        if gh_day == 0 and current_week:
-            weeks.append(current_week)
-            current_week = []
-        current_week.append({
-            "date": c["date"],
-            "count": c["count"],
-            "level": c["level"],
-            "gh_day": gh_day,
-            "month": dt.strftime("%b").upper(),
-            "day_of_month": dt.day,
-        })
-    if current_week:
-        weeks.append(current_week)
-
+def build_svg(grid=BASELINE_GRID, total_commits=BASELINE_COMMITS):
     start_x = 88
     start_y = 138
     tile_size = 14
     gap = 5
     step = tile_size + gap
 
-    # Month labels
-    months_svg = []
-    last_month = ""
-    for wi, w in enumerate(weeks):
-        for d in w:
-            if d["day_of_month"] == 1 or (wi == 0 and not last_month):
-                m_name = d["month"]
-                if m_name != last_month:
-                    mx = start_x + wi * step
-                    months_svg.append(
-                        f'<text x="{mx}" y="{start_y - 12}" fill="#8290a8" class="m tiny">{m_name}</text>'
-                    )
-                    last_month = m_name
+    start_sunday = date(2025, 12, 28)
+    month_cols = {
+        'JAN': 0, 'FEB': 5, 'MAR': 9, 'APR': 13, 'MAY': 17, 'JUN': 22,
+        'JUL': 26, 'AUG': 30, 'SEP': 35, 'OCT': 39, 'NOV': 44, 'DEC': 48
+    }
 
-    # Day labels
+    months_svg = []
+    for m_name, col_idx in month_cols.items():
+        mx = start_x + col_idx * step
+        months_svg.append(f'<text x="{mx}" y="{start_y - 12}" fill="#8290a8" class="m tiny">{m_name}</text>')
+
     days_svg = [
         f'<text x="{start_x - 14}" y="{start_y + 1 * step + 11}" text-anchor="end" fill="#64748b" class="m tiny">MON</text>',
         f'<text x="{start_x - 14}" y="{start_y + 3 * step + 11}" text-anchor="end" fill="#64748b" class="m tiny">WED</text>',
         f'<text x="{start_x - 14}" y="{start_y + 5 * step + 11}" text-anchor="end" fill="#64748b" class="m tiny">FRI</text>',
     ]
 
-    # Level styling
     level_styles = {
         0: 'fill="#131826" stroke="#1f293d"',
         1: 'fill="#1b4d3e" stroke="#2dd4bf" stroke-opacity=".5"',
         2: 'fill="#237a57" stroke="#7df9c2" stroke-opacity=".8"',
         3: 'fill="#7df9c2" stroke="#a7f3d0" class="lvl3"',
-        4: 'fill="#b98cff" stroke="#e9d5ff" class="lvl4"',
+        4: 'fill="#ffd166" stroke="#fff" class="lvl4"'
     }
 
     tiles_svg = []
-    for wi, w in enumerate(weeks):
-        for d in w:
-            tx = start_x + wi * step
-            ty = start_y + d["gh_day"] * step
-            lvl = d["level"]
+    for col in range(53):
+        for row in range(7):
+            lvl = grid[row][col]
+            if lvl < 0:
+                continue
+            tx = start_x + col * step
+            ty = start_y + row * step
             style = level_styles.get(lvl, level_styles[0])
-            cnt = d["count"]
-            date_str = d["date"]
-            tiles_svg.append(
-                f'<rect x="{tx}" y="{ty}" width="{tile_size}" height="{tile_size}" rx="2" {style}><title>{date_str}: {cnt} contributions</title></rect>'
-            )
+            dt = start_sunday + timedelta(days=col * 7 + row)
+            date_str = dt.strftime('%Y-%m-%d')
+            tiles_svg.append(f'<rect x="{tx}" y="{ty}" width="{tile_size}" height="{tile_size}" rx="2" {style}><title>{date_str} (Level {lvl})</title></rect>')
 
     months_str = "\n  ".join(months_svg)
     days_str = "\n  ".join(days_svg)
@@ -98,7 +70,7 @@ def build_svg(data):
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
   <title id="title">Commit Raid: 365-Day Battle Matrix</title>
-  <desc id="desc">An animated game arena visualizing Abi's {total_commits} annual GitHub contributions across 53 weeks with health bars, combo streaks, and combat drone patrol.</desc>
+  <desc id="desc">An animated game arena visualizing Abi's {total_commits:,} annual GitHub contributions in 2026 across 53 weeks with health bars, combo streaks, and combat drone patrol.</desc>
   <defs>
     <linearGradient id="arena-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#0b0f1a"/>
@@ -119,8 +91,8 @@ def build_svg(data):
       .wheel{{animation:spin .5s linear infinite;transform-box:fill-box;transform-origin:center}}
       .eye{{animation:blink 3s steps(1) infinite}}
       .scanbeam{{animation:sweep 8s linear infinite}}
-      .lvl3{{filter:drop-shadow(0 0 3px #7df9c2)}}
-      .lvl4{{filter:drop-shadow(0 0 5px #b98cff);animation:pulse 2s ease-in-out infinite}}
+      .lvl3{{filter:drop-shadow(0 0 4px #7df9c2)}}
+      .lvl4{{filter:drop-shadow(0 0 6px #ffd166);animation:pulse 2s ease-in-out infinite}}
       @keyframes blink{{50%{{opacity:.2}}}}
       @keyframes pulse{{0%,100%{{opacity:.55}}50%{{opacity:1}}}}
       @keyframes spin{{to{{transform:rotate(360deg)}}}}
@@ -150,7 +122,7 @@ def build_svg(data):
   <!-- Top Header Bar -->
   <circle cx="45" cy="44" r="7" fill="#7df9c2" class="dot"/>
   <text x="68" y="42" fill="#f4f7ff" class="m" font-size="22" font-weight="700" letter-spacing="2">COMMIT RAID // SECTOR 365</text>
-  <text x="68" y="60" fill="#7df9c2" class="m cap">ANNUAL EXPEDITION · {total_commits} COMMITS LOGGED</text>
+  <text x="68" y="60" fill="#7df9c2" class="m cap">2026 EXPEDITION · {total_commits:,} COMMITS LOGGED</text>
 
   <!-- Player Status / Health Bars -->
   <g transform="translate(635 28)">
@@ -162,9 +134,9 @@ def build_svg(data):
 
   <g transform="translate(815 28)">
     <rect x="0" y="0" width="165" height="38" rx="6" fill="#121828" stroke="#28344c"/>
-    <text x="12" y="15" fill="#8491a8" class="m tiny">EXP // {total_commits} POWER</text>
+    <text x="12" y="15" fill="#8491a8" class="m tiny">EXP // {total_commits:,} POWER</text>
     <rect x="12" y="21" width="141" height="8" rx="2" fill="#1e293b"/>
-    <rect x="12" y="21" width="124" height="8" rx="2" fill="#b98cff"/>
+    <rect x="12" y="21" width="138" height="8" rx="2" fill="#b98cff"/>
   </g>
 
   <!-- Boss Clear Badge -->
@@ -172,7 +144,7 @@ def build_svg(data):
     <rect x="0" y="0" width="160" height="38" rx="6" fill="#121828" stroke="#7df9c2" stroke-width="1.5"/>
     <circle cx="20" cy="19" r="6" fill="#7df9c2" class="pulse"/>
     <text x="34" y="24" fill="#f4f7ff" class="m tiny" font-weight="700">BOSS: CLEARED</text>
-    <text x="135" y="24" fill="#ffd166" class="m tiny">★ 32</text>
+    <text x="135" y="24" fill="#ffd166" class="m tiny">★ 74</text>
   </g>
 
   <path d="M40 82h1120" stroke="#222c42"/>
@@ -225,28 +197,28 @@ def build_svg(data):
   </g>
 
   <!-- Legend -->
-  <g transform="translate(710 330)">
+  <g transform="translate(690 330)">
     <text fill="#8491a8" class="m tiny">MATRIX CHARGE LEVEL</text>
     <g transform="translate(0 18)">
       <rect x="0" y="0" width="14" height="14" rx="2" fill="#131826" stroke="#1f293d"/>
       <text x="20" y="11" fill="#8491a8" class="m tiny">IDLE</text>
 
-      <rect x="80" y="0" width="14" height="14" rx="2" fill="#1b4d3e" stroke="#2dd4bf" stroke-opacity=".5"/>
-      <text x="100" y="11" fill="#8491a8" class="m tiny">1-2</text>
+      <rect x="70" y="0" width="14" height="14" rx="2" fill="#1b4d3e" stroke="#2dd4bf" stroke-opacity=".5"/>
+      <text x="90" y="11" fill="#8491a8" class="m tiny">1-9</text>
 
-      <rect x="150" y="0" width="14" height="14" rx="2" fill="#237a57" stroke="#7df9c2" stroke-opacity=".8"/>
-      <text x="170" y="11" fill="#8491a8" class="m tiny">3-5</text>
+      <rect x="135" y="0" width="14" height="14" rx="2" fill="#237a57" stroke="#7df9c2" stroke-opacity=".8"/>
+      <text x="155" y="11" fill="#8491a8" class="m tiny">10-19</text>
 
-      <rect x="220" y="0" width="14" height="14" rx="2" fill="#7df9c2" stroke="#a7f3d0" class="lvl3"/>
-      <text x="240" y="11" fill="#8491a8" class="m tiny">6-8</text>
+      <rect x="215" y="0" width="14" height="14" rx="2" fill="#7df9c2" stroke="#a7f3d0" class="lvl3"/>
+      <text x="235" y="11" fill="#8491a8" class="m tiny">20-29</text>
 
-      <rect x="290" y="0" width="14" height="14" rx="2" fill="#b98cff" stroke="#e9d5ff" class="lvl4"/>
-      <text x="310" y="11" fill="#8491a8" class="m tiny">9+ HYPER</text>
+      <rect x="295" y="0" width="14" height="14" rx="2" fill="#ffd166" stroke="#fff" class="lvl4"/>
+      <text x="315" y="11" fill="#8491a8" class="m tiny">30+ HYPER</text>
     </g>
   </g>
 
   <!-- Bottom Ticker -->
-  <text x="45" y="420" fill="#64748b" class="m tiny">SECTOR STATUS: 53 WEEKS ACTIVE · AUTO-SYNCED DAILY · CLICK ANYWHERE TO VIEW REPOSITORIES</text>
+  <text x="45" y="420" fill="#64748b" class="m tiny">SECTOR STATUS: 2,328 COMMITS LOGGED ACROSS 2026 · 151 ACTIVE COMBAT DAYS · LEVEL 74 BUILDER</text>
   <text x="1155" y="420" text-anchor="end" fill="#7df9c2" class="m cap">SYSTEM ARMED <tspan class="dot">█</tspan></text>
 </svg>
 """
@@ -254,17 +226,10 @@ def build_svg(data):
 
 
 def main():
-    try:
-        data = fetch_contributions()
-        svg = build_svg(data)
-        with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-            f.write(svg)
-        print(f"Successfully generated {OUTPUT_PATH}")
-    except Exception as e:
-        print(f"Error generating matrix: {e}", file=sys.stderr)
-        # If output doesn't exist, fail; otherwise keep existing
-        if not os.path.exists(OUTPUT_PATH):
-            sys.exit(1)
+    svg = build_svg()
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"Successfully generated {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":

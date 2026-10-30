@@ -31,11 +31,21 @@ jobs:
           perl -0pi -e 's/(id="repos-value"[^>]*>)[^<]*/$1$ENV{REPOS}/' assets/live-console.svg
           perl -0pi -e 's/(id="followers-value"[^>]*>)[^<]*/$1$ENV{FOLLOWERS}/' assets/live-console.svg
           perl -0pi -e 's/(id="following-value"[^>]*>)[^<]*/$1$ENV{FOLLOWING}/' assets/live-console.svg
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate contribution matrix SVG
+        env:
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+        run: |
+          python3 scripts/generate-matrix.py
 
       - name: Save changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/live-console.svg
-          git diff --staged --quiet || git commit -m "chore: update profile player data [skip ci]"
+          git add assets/live-console.svg assets/contribution-matrix.svg
+          git diff --staged --quiet || git commit -m "chore: update profile player data and matrix [skip ci]"
           git push

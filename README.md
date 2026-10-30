@@ -37,6 +37,9 @@
 
 <br><br>
 
-<img src="assets/end-screen.svg" width="100%" alt="Continue the adventure with CodeByAbi">
+<a href="https://github.com/Abi-de-jo"><img src="assets/contribution-matrix.svg" width="100%" alt="Commit Raid: 365-Day Battle Matrix"></a>
 
+<br><br>
+
+<img src="assets/end-screen.svg" width="100%" alt="Continue the adventure with CodeByAbi">
 </div>

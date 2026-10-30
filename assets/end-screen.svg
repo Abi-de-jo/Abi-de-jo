@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Continue the adventure</title><desc id="desc">A game end screen invites visitors to build something with Abi.</desc>
+  <defs><style>.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}.c{animation:b 1s steps(1) infinite}.ship{animation:f 5s ease-in-out infinite}@keyframes b{50%{opacity:0}}@keyframes f{0%{transform:translate(-70px,140px)}50%,100%{transform:translate(1230px,140px)}}@media(prefers-reduced-motion:reduce){.ship{transform:translate(-60px,140px)}*{animation:none!important}}</style></defs>
+  <rect width="1200" height="190" rx="18" fill="#080b13"/><path d="M0 155h1200" stroke="#273047"/>
+  <g class="ship"><path d="M0 0h38l14 10-14 10H0l12-10z" fill="#b98cff"/><path d="M-30 6h25m-16 8h16" stroke="#7df9c2" stroke-width="3"/></g>
+  <text x="600" y="62" text-anchor="middle" fill="#f4f7ff" class="m" font-size="28" font-weight="700" letter-spacing="3">THE NEXT QUEST IS NOT LOADED YET</text><text x="600" y="96" text-anchor="middle" fill="#7df9c2" class="m" font-size="16" letter-spacing="2">LET'S BUILD IT <tspan class="c">█</tspan></text><text x="600" y="130" text-anchor="middle" fill="#8390a8" class="m" font-size="12" letter-spacing="2">CODEBYABI · PLAYER ONE · ALWAYS SHIPPING</text>
+</svg>

@@ -1,0 +1,41 @@
+name: Update profile player data
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read public GitHub profile data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          data=$(curl --fail --silent --show-error \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/users/${{ github.repository_owner }}")
+          echo "REPOS=$(jq -r '.public_repos' <<< "$data")" >> "$GITHUB_ENV"
+          echo "FOLLOWERS=$(jq -r '.followers' <<< "$data")" >> "$GITHUB_ENV"
+          echo "FOLLOWING=$(jq -r '.following' <<< "$data")" >> "$GITHUB_ENV"
+
+      - name: Update SVG values
+        run: |
+          perl -0pi -e 's/(id="repos-value"[^>]*>)[^<]*/$1$ENV{REPOS}/' assets/live-console.svg
+          perl -0pi -e 's/(id="followers-value"[^>]*>)[^<]*/$1$ENV{FOLLOWERS}/' assets/live-console.svg
+          perl -0pi -e 's/(id="following-value"[^>]*>)[^<]*/$1$ENV{FOLLOWING}/' assets/live-console.svg
+
+      - name: Save changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live-console.svg
+          git diff --staged --quiet || git commit -m "chore: update profile player data [skip ci]"
+          git push

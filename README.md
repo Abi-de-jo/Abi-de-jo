@@ -1,62 +1,42 @@
-<p align="center">
-  <img src="assets/abi-battlestation.png" width="100%" alt="Abi's late-night developer battlestation">
-</p>
+<div align="center">
 
-<h1 align="center">ABI // PLAYER ONE</h1>
+<img src="assets/game-world.svg" width="100%" alt="Animated CodeByAbi developer game world">
 
-<p align="center">
-  <strong>Full-stack developer. Product builder. Professional bug hunter.</strong><br>
-  I turn late-night ideas into fast, useful software for the web and mobile.
-</p>
-
-<p align="center">
-  <a href="https://codebyabi.dev">PORTFOLIO</a>
-  &nbsp;&nbsp;&#9670;&nbsp;&nbsp;
-  <a href="https://linkedin.com/in/Abi-de-jo">LINKEDIN</a>
-  &nbsp;&nbsp;&#9670;&nbsp;&nbsp;
-  <a href="mailto:contact@codebyabi.dev">EMAIL</a>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="assets/loadout.svg" width="100%" alt="Abi's developer loadout: React, TypeScript, Next.js, Node.js, Express, MongoDB, PostgreSQL, Git and Linux">
-</p>
-
-<table align="center">
+<table>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🎮 CURRENT QUEST</h3>
-      <p>Shipping production-ready apps that feel simple, fast, and genuinely good to use.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>⚡ SPECIAL ABILITY</h3>
-      <p>Taking an idea from rough sketch to interface, API, database, and working release.</p>
-    </td>
+    <td><a href="https://codebyabi.dev"><img src="assets/portal-site.svg" alt="Enter portfolio" width="210"></a></td>
+    <td><a href="https://github.com/Abi-de-jo?tab=repositories"><img src="assets/portal-github.svg" alt="Open repositories" width="210"></a></td>
   </tr>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🧠 PASSIVE SKILL</h3>
-      <p>Learning whatever the next build needs, then making the complicated parts feel obvious.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>👾 BOSS FIGHT</h3>
-      <p>Edge cases, broken builds, mysterious production bugs, and the last 10% of polish.</p>
-    </td>
+    <td><a href="https://linkedin.com/in/Abi-de-jo"><img src="assets/portal-linkedin.svg" alt="Visit LinkedIn" width="210"></a></td>
+    <td><a href="mailto:contact@codebyabi.dev"><img src="assets/portal-email.svg" alt="Send email" width="210"></a></td>
   </tr>
 </table>
 
 <br>
 
-<div align="center">
+<img src="assets/quest-board.svg" width="100%" alt="Animated journey from idea to shipped product">
 
-### LIVE SAVE DATA
+<br>
 
-<img src="https://github-readme-stats.vercel.app/api?username=Abi-de-jo&show_icons=true&hide_border=true&bg_color=00000000&title_color=a78bfa&text_color=8b949e&icon_color=22d3ee&hide_title=true&rank_icon=github" height="150" alt="Abi's GitHub stats">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abi-de-jo&layout=compact&hide_border=true&bg_color=00000000&title_color=a78bfa&text_color=8b949e&langs_count=6" height="150" alt="Abi's most used languages">
+<img src="assets/mission-select.svg" width="100%" alt="Selected CodeByAbi projects">
+
+<p>
+  <a href="https://github.com/Abi-de-jo/secretdrop"><strong>SECRET DROP</strong></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Abi-de-jo/Fahh"><strong>FAHH</strong></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Abi-de-jo/devscope"><strong>DEVSCOPE</strong></a>
+  &nbsp;&nbsp;·&nbsp;&nbsp;
+  <a href="https://github.com/Abi-de-jo/Athena-AI"><strong>ATHENA AI</strong></a>
+</p>
+
+<br>
+
+<a href="https://github.com/Abi-de-jo"><img src="assets/live-console.svg" width="100%" alt="Live player data: public repositories, followers, following and active since year"></a>
 
 <br><br>
 
-<sub>PRESS START ON SOMETHING INTERESTING · <a href="mailto:contact@codebyabi.dev">LET'S BUILD</a></sub>
+<img src="assets/end-screen.svg" width="100%" alt="Continue the adventure with CodeByAbi">
 
 </div>
